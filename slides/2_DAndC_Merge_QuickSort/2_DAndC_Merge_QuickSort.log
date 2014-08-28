@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  28 AUG 2014 01:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  28 AUG 2014 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**1_asymptotics_recurrence_sorting.tex
-(./1_asymptotics_recurrence_sorting.tex
+**2_DAndC_Merge_QuickSort.tex
+(./2_DAndC_Merge_QuickSort.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texmf/tex/latex/beamer/base/beamer.cls
@@ -676,8 +676,8 @@ Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
 (/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemeorchid.sty
 Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)) (./1_asymptotics_recurrence_sorting.aux)
-\openout1 = `1_asymptotics_recurrence_sorting.aux'.
+)) (./2_DAndC_Merge_QuickSort.aux)
+\openout1 = `2_DAndC_Merge_QuickSort.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
@@ -772,10 +772,9 @@ LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
 LaTeX Info: Redefining \nameref on input line 22.
 
-(./1_asymptotics_recurrence_sorting.out)
-(./1_asymptotics_recurrence_sorting.out)
+(./2_DAndC_Merge_QuickSort.out) (./2_DAndC_Merge_QuickSort.out)
 \@outlinefile=\write5
-\openout5 = `1_asymptotics_recurrence_sorting.out'.
+\openout5 = `2_DAndC_Merge_QuickSort.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 22.
@@ -846,344 +845,278 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 LaTeX Info: Redefining \includegraphics on input line 22.
 
-(./1_asymptotics_recurrence_sorting.nav)
+(./2_DAndC_Merge_QuickSort.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 26.
 
 [1
 
-{/home/neo/.texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 51.
+{/home/neo/.texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 49.
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 51.
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2
+) [3
 
-]
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 58.
- [3
-
-]
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 74.
-
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 74.
-
-LaTeX Font Info:    No file OMScmss.fd. on input line 74.
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 74.
-
-[4
+] [4
 
 ] [5
 
 ] [6
 
-] <rateOfGrowth.jpg, id=82, 595.22375pt x 602.25pt>
-File: rateOfGrowth.jpg Graphic file (type jpg)
+]
+[7
 
-<use rateOfGrowth.jpg>
-Package pdftex.def Info: rateOfGrowth.jpg used on input line 111.
-(pdftex.def)             Requested size: 178.5685pt x 180.67639pt.
- [7
-
- <./rateOfGrowth.jpg>] [8
+] [8
 
 ] [9
 
 ]
-<fnVsTime.png, id=104, 1083.04625pt x 337.26pt>
-File: fnVsTime.png Graphic file (type png)
- <use fnVsTime.png>
-Package pdftex.def Info: fnVsTime.png used on input line 142.
-(pdftex.def)             Requested size: 379.07187pt x 118.04276pt.
+\openout4 = `2_DAndC_Merge_QuickSort.vrb'.
 
-Overfull \hbox (76.53206pt too wide) in paragraph at lines 142--142
- [][] 
+ (./2_DAndC_Merge_QuickSort.vrb) [10
+
+]
+<mergeSortRecursion.png, id=99, 862.22125pt x 514.92375pt>
+File: mergeSortRecursion.png Graphic file (type png)
+
+<use mergeSortRecursion.png>
+Package pdftex.def Info: mergeSortRecursion.png used on input line 142.
+(pdftex.def)             Requested size: 327.64748pt x 195.67305pt.
+
+Overfull \hbox (20.3576pt too wide) in paragraph at lines 142--142
+ [] 
  []
 
-[10
 
- <./fnVsTime.png>] [11
+Overfull \vbox (0.96326pt too high) detected at line 142
+ []
 
-]
-<realWorldFunctions.png, id=118, 446.66875pt x 339.2675pt>
-File: realWorldFunctions.png Graphic file (type png)
+[11
 
-<use realWorldFunctions.png>
-Package pdftex.def Info: realWorldFunctions.png used on input line 157.
-(pdftex.def)             Requested size: 178.66432pt x 135.70459pt.
- [12
+ <./mergeSortRecursion.png>]
+<mergeSortMerge.png, id=108, 858.20625pt x 522.95375pt>
+File: mergeSortMerge.png Graphic file (type png)
 
- <./realWorldFunctions.png>] [13
+<use mergeSortMerge.png>
+Package pdftex.def Info: mergeSortMerge.png used on input line 149.
+(pdftex.def)             Requested size: 308.95401pt x 188.2632pt.
 
-]
-File: realWorldFunctions.png Graphic file (type png)
+Overfull \hbox (1.66414pt too wide) in paragraph at lines 149--149
+ [] 
+ []
 
-<use realWorldFunctions.png>
-Package pdftex.def Info: realWorldFunctions.png used on input line 191.
-(pdftex.def)             Requested size: 178.66432pt x 135.70459pt.
+[12
 
-Overfull \vbox (19.46321pt too high) detected at line 191
+ <./mergeSortMerge.png>]
+<mergeListExample.png, id=116, 292.09125pt x 323.2075pt>
+File: mergeListExample.png Graphic file (type png)
+
+<use mergeListExample.png>
+Package pdftex.def Info: mergeListExample.png used on input line 156.
+(pdftex.def)             Requested size: 146.04526pt x 161.60335pt.
+ [13
+
+ <./mergeListExample.png>]
+<mergeStep1.png, id=125, 801.74532pt x 399.74344pt>
+File: mergeStep1.png Graphic file (type png)
+ <use mergeStep1.png>
+Package pdftex.def Info: mergeStep1.png used on input line 163.
+(pdftex.def)             Requested size: 320.69244pt x 159.89453pt.
+
+Overfull \hbox (13.40257pt too wide) in paragraph at lines 163--163
+ [] 
  []
 
 [14
 
-] <allThreeBoundingFunctions.png, id=138, 1038.88126pt x 286.06876pt>
-File: allThreeBoundingFunctions.png Graphic file (type png)
+ <./mergeStep1.png>] <mergeStep2.png, id=132, 801.74532pt x 398.99063pt>
+File: mergeStep2.png Graphic file (type png)
 
-<use allThreeBoundingFunctions.png>
-Package pdftex.def Info: allThreeBoundingFunctions.png used on input line 198.
-(pdftex.def)             Requested size: 332.44879pt x 91.54387pt.
+<use mergeStep2.png>
+Package pdftex.def Info: mergeStep2.png used on input line 172.
+(pdftex.def)             Requested size: 320.69244pt x 159.59341pt.
 
-Overfull \hbox (25.15892pt too wide) in paragraph at lines 198--198
+Overfull \hbox (13.40257pt too wide) in paragraph at lines 172--172
  [] 
  []
 
 [15
 
- <./allThreeBoundingFunctions.png>]
-<bigOh.png, id=146, 408.52625pt x 350.30875pt>
-File: bigOh.png Graphic file (type png)
- <use bigOh.png>
-Package pdftex.def Info: bigOh.png used on input line 207.
-(pdftex.def)             Requested size: 163.4076pt x 140.12102pt.
- [16
+ <./mergeStep2.png>] <mergeStep3.png, id=139, 801.74532pt x 402.00188pt>
+File: mergeStep3.png Graphic file (type png)
 
- <./bigOh.png>] [17
+<use mergeStep3.png>
+Package pdftex.def Info: mergeStep3.png used on input line 181.
+(pdftex.def)             Requested size: 320.69244pt x 160.7979pt.
 
-] [18
+Overfull \hbox (13.40257pt too wide) in paragraph at lines 181--181
+ [] 
+ []
 
-] [19
+[16
 
-] [20
+ <./mergeStep3.png>] <mergeStep4.png, id=146, 801.74532pt x 403.5075pt>
+File: mergeStep4.png Graphic file (type png)
 
-] [21
+<use mergeStep4.png>
+Package pdftex.def Info: mergeStep4.png used on input line 190.
+(pdftex.def)             Requested size: 320.69244pt x 161.40013pt.
 
-] [22
+Overfull \hbox (13.40257pt too wide) in paragraph at lines 190--190
+ [] 
+ []
+
+[17
+
+ <./mergeStep4.png>] <mergeStep5.png, id=154, 801.74532pt x 404.26031pt>
+File: mergeStep5.png Graphic file (type png)
+
+<use mergeStep5.png>
+Package pdftex.def Info: mergeStep5.png used on input line 199.
+(pdftex.def)             Requested size: 320.69244pt x 161.70125pt.
+
+Overfull \hbox (13.40257pt too wide) in paragraph at lines 199--199
+ [] 
+ []
+
+[18
+
+ <./mergeStep5.png>] <mergeStep6.png, id=161, 801.74532pt x 403.5075pt>
+File: mergeStep6.png Graphic file (type png)
+
+<use mergeStep6.png>
+Package pdftex.def Info: mergeStep6.png used on input line 208.
+(pdftex.def)             Requested size: 320.69244pt x 161.40013pt.
+
+Overfull \hbox (13.40257pt too wide) in paragraph at lines 208--208
+ [] 
+ []
+
+[19
+
+ <./mergeStep6.png>] <mergeStep7.png, id=169, 810.02625pt x 405.01312pt>
+File: mergeStep7.png Graphic file (type png)
+
+<use mergeStep7.png>
+Package pdftex.def Info: mergeStep7.png used on input line 217.
+(pdftex.def)             Requested size: 324.00475pt x 162.00237pt.
+
+Overfull \hbox (16.71487pt too wide) in paragraph at lines 217--217
+ [] 
+ []
+
+[20
+
+ <./mergeStep7.png>] <mergeStep8.png, id=176, 810.02625pt x 405.01312pt>
+File: mergeStep8.png Graphic file (type png)
+
+<use mergeStep8.png>
+Package pdftex.def Info: mergeStep8.png used on input line 226.
+(pdftex.def)             Requested size: 324.00475pt x 162.00237pt.
+
+Overfull \hbox (16.71487pt too wide) in paragraph at lines 226--226
+ [] 
+ []
+
+[21
+
+ <./mergeStep8.png>]
+\openout4 = `2_DAndC_Merge_QuickSort.vrb'.
+
+ (./2_DAndC_Merge_QuickSort.vrb) [22
 
 ] [23
 
 ] [24
 
-] [25
-
 ]
-<bigOmega.png, id=210, 440.64626pt x 356.33125pt>
-File: bigOmega.png Graphic file (type png)
- <use bigOmega.png>
-Package pdftex.def Info: bigOmega.png used on input line 328.
-(pdftex.def)             Requested size: 176.25537pt x 142.52997pt.
- [26
+<mergeSortRecursionTree1.png, id=203, 654.445pt x 310.15875pt>
+File: mergeSortRecursionTree1.png Graphic file (type png)
 
- <./bigOmega.png>] [27
+<use mergeSortRecursionTree1.png>
+Package pdftex.def Info: mergeSortRecursionTree1.png used on input line 281.
+(pdftex.def)             Requested size: 327.2217pt x 155.079pt.
 
-] <bigTheta.png, id=223, 440.64626pt x 370.38374pt>
-File: bigTheta.png Graphic file (type png)
-
-<use bigTheta.png>
-Package pdftex.def Info: bigTheta.png used on input line 358.
-(pdftex.def)             Requested size: 176.25537pt x 148.15086pt.
- [28
-
- <./bigTheta.png>] [29
-
-] [30
-
-] [31
-
-] [32
-
-] [33
-
-] [34
-
-]
-\openout4 = `1_asymptotics_recurrence_sorting.vrb'.
-
-
-(./1_asymptotics_recurrence_sorting.vrb) [35
-
-] [36
-
-] [37
-
-] [38
-
-] [39
-
-] [40
-
-]
-<recursionTree.png, id=306, 728.7225pt x 412.54124pt>
-File: recursionTree.png Graphic file (type png)
- <use recursionTree.png>
-Package pdftex.def Info: recursionTree.png used on input line 537.
-(pdftex.def)             Requested size: 291.48383pt x 165.01357pt.
-
-[41
-
- <./recursionTree.png>] [42
-
-] [43
-
-] [44
-
-] [45
-
-] [46
-
-] [47
-
-] [48
-
-] [49
-
-] [50
-
-]
-[51
-
-] [52
-
-] [53
-
-] [54
-
-] <bubbleSort.png, id=394, 341.275pt x 414.54875pt>
-File: bubbleSort.png Graphic file (type png)
-
-<use bubbleSort.png>
-Package pdftex.def Info: bubbleSort.png used on input line 709.
-(pdftex.def)             Requested size: 170.63707pt x 207.27386pt.
- [55
-
- <./bubbleSort.png>]
-\openout4 = `1_asymptotics_recurrence_sorting.vrb'.
-
-
-(./1_asymptotics_recurrence_sorting.vrb) [56
-
-] [57
-
-] [58
-
-]
-<selectionSort.png, id=423, 701.62125pt x 323.2075pt>
-File: selectionSort.png Graphic file (type png)
- <use selectionSort.png>
-Package pdftex.def Info: selectionSort.png used on input line 762.
-(pdftex.def)             Requested size: 336.77437pt x 155.13783pt.
-
-Overfull \hbox (29.4845pt too wide) in paragraph at lines 762--762
+Overfull \hbox (19.93182pt too wide) in paragraph at lines 281--281
  [] 
  []
 
-[59
+[25
 
- <./selectionSort.png>]
-\openout4 = `1_asymptotics_recurrence_sorting.vrb'.
+ <./mergeSortRecursionTree1.png>]
+<mergeSortRecursionTree2.png, id=212, 633.36626pt x 528.97626pt>
+File: mergeSortRecursionTree2.png Graphic file (type png)
 
- (./1_asymptotics_recurrence_sorting.vrb) [60
+<use mergeSortRecursionTree2.png>
+Package pdftex.def Info: mergeSortRecursionTree2.png used on input line 289.
+(pdftex.def)             Requested size: 253.34201pt x 211.58675pt.
 
-]
-[61
+Overfull \vbox (3.27695pt too high) detected at line 289
+ []
 
-] [62
+[26
 
-] <insertionSort.png, id=450, 235.88126pt x 313.17pt>
-File: insertionSort.png Graphic file (type png)
-
-<use insertionSort.png>
-Package pdftex.def Info: insertionSort.png used on input line 819.
-(pdftex.def)             Requested size: 117.94034pt x 156.58461pt.
- [63
-
- <./insertionSort.png>]
-\openout4 = `1_asymptotics_recurrence_sorting.vrb'.
-
-
-(./1_asymptotics_recurrence_sorting.vrb) [64
-
-] [65
-
-] [66
-
-] [67
-
-] [68
-
-] [69
-
-] [70
+ <./mergeSortRecursionTree2.png>] [27
 
 ]
 \tf@nav=\write6
-\openout6 = `1_asymptotics_recurrence_sorting.nav'.
+\openout6 = `2_DAndC_Merge_QuickSort.nav'.
 
 \tf@toc=\write7
-\openout7 = `1_asymptotics_recurrence_sorting.toc'.
+\openout7 = `2_DAndC_Merge_QuickSort.toc'.
 
 \tf@snm=\write8
-\openout8 = `1_asymptotics_recurrence_sorting.snm'.
+\openout8 = `2_DAndC_Merge_QuickSort.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 898.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 898.
-
-(./1_asymptotics_recurrence_sorting.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 898.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 898.
-Package rerunfilecheck Info: File `1_asymptotics_recurrence_sorting.out' has no
-t changed.
-(rerunfilecheck)             Checksum: 621B45A1BD56D07C5922EFBD32B85631;207.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 334.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 334.
+ (./2_DAndC_Merge_QuickSort.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 334.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 334.
+Package rerunfilecheck Info: File `2_DAndC_Merge_QuickSort.out' has not changed
+.
+(rerunfilecheck)             Checksum: 80765D44B4F6C2D01175AD8C02852F7E;149.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 898.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 334.
  ) 
 Here is how much of TeX's memory you used:
- 16111 strings out of 494985
- 298126 string characters out of 6180356
- 367571 words of memory out of 5000000
- 18769 multiletter control sequences out of 15000+600000
- 22345 words of font info for 84 fonts, out of 8000000 for 9000
+ 15922 strings out of 494985
+ 296063 string characters out of 6180356
+ 364531 words of memory out of 5000000
+ 18672 multiletter control sequences out of 15000+600000
+ 22639 words of font info for 85 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 49i,16n,57p,442b,682s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on 1_asymptotics_recurrence_sorting.pdf (70 pages, 669184 bytes)
-.
+ 49i,16n,55p,433b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmtt9.pfb>
+Output written on 2_DAndC_Merge_QuickSort.pdf (27 pages, 345302 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 474 compressed objects within 5 object streams
- 145 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

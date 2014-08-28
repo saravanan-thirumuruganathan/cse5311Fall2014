@@ -1,0 +1,15 @@
+\frametitle{Merging Two Sorted Lists}
+
+\tblue{Merge Pseudocode:}
+
+\begin{verbatim}
+Merge(A,B,C):
+    i = j = 1
+    for k = 1 to n:
+        if A[i] < B[j]:
+            C[k] = A[i]
+            i = i + 1
+        else: (A[i] > B[j])
+            C[k] = B[j]
+            j = j + 1
+\end{verbatim}

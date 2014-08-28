@@ -504,8 +504,8 @@ T(n)    &= T(n-1) + n \\
         &= n + n-1 + T(n-2) \\
         &= n + n-1 + n-2 + T(n-3) \\
         &= n + n-1 + n-2 + n-3 + \ldots + 4 + 3 + 2 + 1 \\
-        &= \frac{n(n-1)}{2} \\
-        &= 0.5n^2 - 0.5n \\
+        &= \frac{n(n+1)}{2} \\
+        &= 0.5n^2 + 0.5n \\
         &= O(n^2)
 \end{align*}
 \end{frame}
@@ -549,6 +549,348 @@ $T(n) = T(\frac{2n}{3}) + T(\frac{n}{3}) + cn$
     \item $\log_b a = \frac{\log_c a}{\log_c b}$
     \item $\log_b b = 1$ and $\log_b 1 = 0$
 \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Master Method}
+\begin{itemize}
+    \item A ``black box'' method to solve recurrences that occur from Divide and Conquer algorithms
+    \item Divide, Conquer and Combine steps 
+    \item $T(n) = aT(\frac{n}{b}) + f(n)$
+    \item Assumes that all sub-problems are of {\bf equal} size
+    \item $a$ - number of sub-problems (equivalently, \#recursive calls)
+    \item $b$ - the rate at which the problem shrinks
+    \item Note: $a$ and $b$ must be constants  (it cannot be for e.g. $\sqrt{n}$ )
+    \item $f(n)$ - complexity of the combine step 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Master Method}
+
+{\bf Master Theorem:}  Let $a \geq 1$, $b > 1$ and $d \geq 0$ be constants (for e.g. they cannot be $\sqrt{n}$).
+Let $T(n)$ be defined on the non-negative integers by recurrence as 
+                    $$T(n) = \hred{a} T(\frac{n}{\hred{b}}) + n^{\hred{d}}$$
+Then $T(n)$ has the following asymptotic bounds:
+\[
+ T(n) =
+  \begin{cases}
+   O(n^d \log n) & \text{if } a = b^d \\
+   O(n^d) & \text{if } a < b^d \\
+   O(n^{log_b a}) & \text{if } a > b^d \\
+  \end{cases}
+\]
+\end{frame}
+
+
+\begin{frame}{Master Method - Examples \footnote{From Tim Roughgarden's notes}}
+$T(n) = 2T(\frac{n}{2}) + n$
+\begin{itemize}
+\item $a=2$, $b=2$ and $d=1$ (as $n = n^1$)
+\item $b^d = 2^1 = 2 = a$ 
+\item By case 1, $T(n) = O(n^d \log n) = O(n \log n)$
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Master Method - Examples \footnote{From Tim Roughgarden's notes}}
+$T(n) = 2T(\frac{n}{2}) + n^2$
+\begin{itemize}
+\item $a=2$, $b=2$ and $d=2$ 
+\item $b^d = 2^2 = 4 > a$ 
+\item By case 2, $T(n) = O(n^d) = O(n^2)$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Master Method - Examples \footnote{From Tim Roughgarden's notes}}
+$T(n) = 4T(\frac{n}{2}) + n$
+\begin{itemize}
+\item $a=4$, $b=2$ and $d=1$ (as $n = n^1$)
+\item $b^d = 2^1 = 2 < a$ 
+\item By case 3, $T(n) = O(n^{\log_b a}) = O(n^{\log_2 4}) = O(n^2)$
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Quiz!\footnote{From Wikipedia}}
+Solve $T(n) = 8T(\frac{n}{2}) + 1000n^2$. Let's solve it step by step!
+\end{frame}
+
+\begin{frame}{Quiz!\footnote{From Wikipedia}}
+Solve $T(n) = 8T(\frac{n}{2}) + 1000n^2$
+\begin{itemize}
+\item $a=8$, $b=2$ and $d=2$
+\item $b^d = 2^2 < a$
+\item Falls in Case 3 of Master Theorem
+\item $O(n^{\log_b a}) = O(n^{\log_2 8}) = O(n^3)$
+\end{itemize}
+\end{frame}
+
+
+\section{Elementary Sorting Algorithms}
+\begin{frame}{Sorting Problem}
+\begin{itemize}
+\item {\bf Input:} A sequence of $n$ numbers $\langle a_1, a_2, \ldots, a_n \rangle$
+\item {\bf Output:} A permutation (reordering) $\langle a_1', a_2', \ldots,  a_n' \rangle$ of the input sequence 
+such that $a_1' \leq a_2' \leq \ldots \leq a_n'$
+\item {\bf Example:} $\langle 4, 2, 1, 3, 5\rangle$ to $\langle 1, 2, 3, 4, 5\rangle$
+\item Assume distinct values (doesn't affect correctness or analysis)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Applications of Sorting\footnote{From Slides of Kevin Wayne}}
+\begin{enumerate}
+\item Direct applications
+\begin{itemize}
+    \item Sorting a list of names in dictionary
+    \item Sorting search results based on Google's ranking algorithm
+\end{itemize}
+\item Problems made simpler after sorting
+\begin{itemize}
+    \item Finding median, frequency distribution
+    \item Finding duplicates
+    \item Binary search
+    \item Closest pair of points
+\end{itemize}
+\item Non-obvious applications
+\begin{itemize}
+    \item Data compression (e.g. Huffman encoding)
+    \item Computer Graphics (e.g Convex hulls)
+    \item Many many more !
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Sorting Algorithms}
+\begin{itemize}
+\item Comparison based sorting
+\begin{itemize}
+\item Time complexity measured in terms of comparisons
+\item Elementary algorithms: Bubble, Selection and Insertion sort
+\item Mergesort and Quicksort 
+\end{itemize}
+\item Non-comparison based sorting
+\begin{itemize}
+\item Bucket, Counting and Radix sort
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Facets of Sorting Algorithms}
+\begin{itemize}
+\item Best, Average and Worst case time complexity 
+\item Worst case space complexity
+\item {\bf In-Place:} Transforms the input data structure with only constant additional space
+\item {\bf Stability:} The relative order of items with same key values. 
+E.g. $\langle 100_1, 400, 100_2, 200\rangle \rightarrow \langle 100_1, 100_2, 200, 400 \rangle$
+\item {\bf Adaptive:} Can it leverage the ``sortedness'' of input?
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Bubble Sort}
+\begin{itemize}
+\item {\bf Basic Idea:}
+\begin{itemize}
+    \item Compare adjacent elements
+    \item Swap them if they are in wrong order
+    \item Repeat till entire array is sorted
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Bubble Sort\footnote{\url{http://www.cs.miami.edu/~ogihara/csc220/slides/Ch08.pdf}}}
+\begin{center}
+    \includegraphics[scale=0.5]{bubbleSort.png}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Bubble Sort}
+
+\tblue{Pseudocode:}
+\begin{verbatim}
+BubbleSort(A):
+    for i = 1 to A.length - 1
+        for j = A.length downto i+1 
+            if A[j] < A[j-1]
+                swap(A[j-1], A[j])
+\end{verbatim}
+
+\tblue{Loop Invariant:} First $i-1$ elements are in sorted order
+\vspace{1cm}
+
+\tblue{Better Implementation:} Count swaps within an iteration. Terminate if no swaps.
+\end{frame}
+
+
+
+\begin{frame}{Quiz!}
+
+\tblue{Bubble Sort Properties:}
+
+\begin{itemize}
+\item Best case time complexity:  $O(n)$
+\item Worst case time complexity: $O(n^2)$
+\item Adaptive: Yes
+\item In-Place: Yes
+\item Stability: Yes
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Selection Sort}
+\begin{itemize}
+\item {\bf Basic Idea:}
+\begin{itemize}
+    \item Find smallest element and exchange it with A[1]
+    \item Find second smallest element and exchange it with A[2]
+    \item Repeat process till entire array is sorted
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Selection Sort\footnote{\url{http://www.cs.miami.edu/~ogihara/csc220/slides/Ch08.pdf}}}
+\begin{center}
+    \includegraphics[scale=0.48]{selectionSort.png}
+\end{center}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{Selection Sort}
+
+\tblue{Pseudocode:}
+\begin{verbatim}
+SelectionSort(A):
+    for i = 1 to A.length 
+        k = i
+        for j = i+1 to A.length 
+            if A[j] < A[k]
+                k = j
+        swap(A[i], A[k])
+\end{verbatim}
+
+\tblue{Loop Invariant:} First $i-1$ elements are in sorted order
+\end{frame}
+
+
+
+\begin{frame}{Quiz!}
+
+\tblue{Selection Sort Properties:}
+
+\begin{itemize}
+\item Best case time complexity:  $O(n^2)$
+\item Worst case time complexity: $O(n^2)$
+\item Adaptive: No 
+\item In-Place: Yes
+\item Stability: No (but can be made to one with some effort) 
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}{Insertion Sort}
+\begin{itemize}
+\item Best of the elementary sorting algorithms 
+\item {\bf Basic Idea:}
+\begin{itemize}
+    \item Start with an empty sorted array
+    \item Pick an element and insert into the right place
+    \item Repeat till all elements are handled
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Insertion Sort\footnote{\url{http://www.cs.miami.edu/~ogihara/csc220/slides/Ch08.pdf}}}
+\begin{center}
+    \includegraphics[scale=0.5]{insertionSort.png}
+\end{center}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{Insertion Sort}
+
+\tblue{Pseudocode:}
+\begin{verbatim}
+InsertionSort(A):
+    for i = 2 to A.length
+        key = A[i]
+        j = i - 1
+        while j > 0 and A[j] > key
+            A[j+1] = A[j]
+            j = j - 1
+        A[j+1] = key
+\end{verbatim}
+
+\tblue{Loop Invariant:} At start of i-th iteration, subarray A[1..i-1] consists of elements originally in A[1..i-1] but in sorted order
+\end{frame}
+
+
+\begin{frame}{Quiz!}
+
+\tblue{Insertion Sort Properties:}
+
+\begin{itemize}
+\item Best case time complexity:  $O(n)$
+\item Worst case time complexity: $O(n^2)$
+\item Adaptive: Yes
+\item In-Place: Yes
+\item Stability: Yes
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Quiz!}
+
+Suppose you have an array with identical elements. Which sort would take the least time?
+\end{frame}
+
+
+\begin{frame}{Quiz!}
+
+Suppose you have an array with identical elements. Which sort would take the least time?
+\begin{itemize}
+\item Insertion sort
+\item Bubble sort
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Quiz!}
+
+Suppose you have an array that is $k$-sorted - i.e. each element is at most $k$ away from its target position.
+For example, $\langle 1 , 3, 0, 2 \rangle$ is a $2-$sorted array.
+\end{frame}
+
+
+\begin{frame}{Quiz!}
+
+Suppose you have an array that is $k$-sorted - i.e. each element is at most $k$ away from its target position.
+For example, $\langle 1 , 3, 0, 2 \rangle$ is a $2-$sorted array.
+\begin{itemize}
+\item Insertion sort
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Summary}
+
+\tblue{Major Topics:}
+\begin{itemize}
+\item Asymptotics,  $O, \Omega, \Theta$, Recurrences, Master method
+\item Sorting, facets of Sorting, elementary Sorting algorithms
 \end{itemize}
 \end{frame}
 

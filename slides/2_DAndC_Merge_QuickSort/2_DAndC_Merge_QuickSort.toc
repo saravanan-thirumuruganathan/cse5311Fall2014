@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Outline}{2}{0}{1}
+\beamer@sectionintoc {2}{Divide and Conquer Paradigm}{4}{0}{2}
+\beamer@sectionintoc {3}{Merge Sort}{8}{0}{3}
