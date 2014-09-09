@@ -1,15 +1,16 @@
-\frametitle{Merging Two Sorted Lists}
-
-\tblue{Merge Pseudocode:}
+\frametitle{Randomized Quicksort}
+\begin{verbatim}
+Randomized-Partition(A, p, r):
+    i = Random(p,r)
+    Exchange A[r] with A[i]
+    return Partition(A, p, r)
+\end{verbatim}
 
 \begin{verbatim}
-Merge(A,B,C):
-    i = j = 1
-    for k = 1 to n:
-        if A[i] < B[j]:
-            C[k] = A[i]
-            i = i + 1
-        else: (A[i] > B[j])
-            C[k] = B[j]
-            j = j + 1
+Randomized-QuickSort(A, p, r):
+    if p < r:
+        q = Randomized-Partition(A, p, r)
+        Randomized-QuickSort(A, p, q-1)
+        Randomized-QuickSort(A, q+1, r)
 \end{verbatim}
+

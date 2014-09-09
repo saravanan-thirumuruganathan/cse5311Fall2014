@@ -113,9 +113,12 @@ $$ T(n) = a T(\frac{n}{b}) + D(n) + C(n)$$
 
 \tblue{High Level Idea :}
 \begin{itemize}
-\item Divide the array into two {\bf equal} partitions - left and right (ignore edge cases for now)
-\item Sort left partition recursively
-\item Sort right partition recursively
+\item Divide the array into two {\bf equal} partitions - $L$ and $R$ 
+\begin{itemize}
+    \item If not divisible by 1, $L$ has $\lfloor \frac{n}{2} \rfloor$ elements and $R$ has $\lceil \frac{n}{2} \rceil$
+\end{itemize}
+\item Sort left partition $L$ recursively
+\item Sort right partition $R$ recursively
 \item Merge the two sorted partitions into the output array
 \end{itemize}
 \end{frame}
@@ -300,35 +303,270 @@ Merge(A,B,C):
 \end{itemize}
 \end{frame}
 
-%\begin{frame}{QuickSort}
-%\begin{center}
-%    \includegraphics[scale=0.4]{quickSortHighLevelExample.png}
-%\end{center}
-%\end{frame}
+\begin{frame}{Quicksort}
+\begin{itemize}
+\item Quicksort is a {\em very} popular and elegant sorting algorithm
+\item Invented by Tony Hoare
+\begin{itemize}
+    \item Also invented the concept of NULL (he called it a Billion dollar mistake! - why?)
+    \item ``There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.''
+\end{itemize}
+\end{itemize}
+\end{frame}
 
-%\begin{frame}{GiG}
-%\begin{itemize}
-%\item GiG
-%\end{itemize}
-%\end{frame}
+\begin{frame}{Quicksort}
+\begin{itemize}
+\item Fastest of the fast sorting algorithms and lot (and lots) of ways to tune it.
+\item Default sorting algorithm in most languages
+\item Simple but innovative use of D\&C
+\item On average it takes $\Theta(n \log n)$ but in worst case might require $O(n^2)$
+\begin{itemize}
+    \item Occurs rarely in practice {\bf if} coded properly
+\end{itemize}
+\end{itemize}
+\end{frame}
 
 
-%\begin{frame}{Sorting in the Real World}
-%\begin{itemize}
-%\item Sorting is a fundamental problem with intense ongoing research
-%\item No single best algorithm - Merge, Quick, Heap, Insertion sort all excel in some scenarions
-%\item Most programming languages implement sorting via tuned QuickSort (e.g. Java 6 or below) or 
-%a combination of Merge Sort and Insertion sort (Python, Java 7, Perl etc).
-%\end{itemize}
-%\end{frame}
 
-%\begin{frame}{Summary}
+\begin{frame}{Quicksort}
+\begin{itemize}
+\item Quicksort is a D\&C algorithm and uses a different style than Merge sort
+\item It does more work in Divide phase and almost no work in Combine phase
+\begin{itemize}
+\item   One of the very few algorithms with this property
+\end{itemize}
+\end{itemize}
+\end{frame}
 
-%\tblue{Major Topics:}
-%\begin{itemize}
-%\item TBD
-%\end{itemize}
-%\end{frame}
+\begin{frame}{Partitioning Choices\footnote{From \url{http://www.cs.bu.edu/fac/gkollios/cs113/Slides/quicksort.ppt}}}
+\begin{itemize}
+\item Sorting by D\&C - Divide to two sub-arrays, sort each and merge
+\item Different partitioning ideas leads to different sorting algorithms
+\item Given an array $A$ with $n$ elements, how to split to two sub-arrays $L$ and $R$ 
+\begin{itemize}
+    \item $L$ has first $n-1$ elements and $R$ has last element 
+    \item $R$ has largest element of $A$ and $L$ has rest of $n-1$ elements
+    \item $L$ has the first $\lfloor \frac{n}{2} \rfloor$ elements and $R$ has the rest
+    \item Chose a pivot $p$, $L$ has elements less than $p$ and $R$ has elements greater than $p$
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Partitioning Choices}
+\begin{itemize}
+\item D\&C is not a silver bullet!
+\item Different partitioning ideas leads to different sorting algorithms
+\begin{itemize}
+    \item {\bf Insertion Sort} $O(n^2)$: $L$ has first $n-1$ elements and $R$ has last element 
+    \item {\bf Bubble Sort} $O(n^2)$: $R$ has largest element of $A$ and $L$ has rest of $n-1$ elements
+    \item {\bf Merge Sort} $O(n \log n)$: $L$ has the first $\lfloor \frac{n}{2} \rfloor$ elements and $R$ has the rest
+    \item {\bf Quick Sort} $O(n \log n)$ (average case): Chose a pivot $p$, $L$ has elements less than $p$ and $R$ has elements greater than $p$
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Quicksort}
+
+\tblue{Pseudocode:}
+\begin{verbatim}
+QuickSort(A, p, r):
+    if p < r:
+        q = Partition(A, p, r)
+        QuickSort(A, p, q-1)
+        QuickSort(A, q+1, r)
+\end{verbatim}
+\end{frame}
+
+
+
+\begin{frame}{QuickSort}
+\begin{center}
+    \includegraphics[scale=0.4]{quickSortHighLevelExample.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Quicksort Design Objectives}
+\begin{itemize}
+\item Choose a good pivot
+\item Do the partitioning - efficiently and in-place
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Partition Subroutine}
+\begin{itemize}
+\item Given a pivot, partition $A$ to two sub-arrays $L$ and $R$. 
+\item All elements less then pivot are in $L$ 
+\item All elements greater than pivot are in $R$
+\item Return the new index of the pivot after the rearrangement
+\item Note: Elements in $L$ and $R$ need not be sorted {\em during} partition (just $\leq$ pivot and $\geq$ pivot respectively)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Partition Subroutine}
+\begin{center}
+    \includegraphics[scale=0.4]{partitionSubroutineMeta.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]{Partition Subroutine}
+
+{\bf Note:} CLRS version of Partition subroutine. Assumes last element as pivot. 
+To use this subroutine for other pivot picking strategies, swap pivot element with last element.
+
+\begin{verbatim}
+Partition(A, p, r):
+    x = A[r] // x is the pivot
+    i = p - 1
+    for j = p to r-1
+        if A[j] <= x 
+            i = i + 1
+            exchange A[i] with A[j]
+    exchange A[i+1] with A[r]
+    return i+1
+\end{verbatim}
+\end{frame}
+
+
+
+\begin{frame}{Partition Example 1\footnote{\url{https://www.cs.rochester.edu/~gildea/csc282/slides/C07-quicksort.pdf}}}
+\begin{center}
+    \includegraphics[scale=0.34]{partitionExample1.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Partition Example 2\footnote{\url{https://www.cs.rochester.edu/~gildea/csc282/slides/C07-quicksort.pdf}}}
+\begin{center}
+    \includegraphics[scale=0.3]{partitionExample2.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Partition Example 2\footnote{\url{https://www.cs.rochester.edu/~gildea/csc282/slides/C07-quicksort.pdf}}}
+\begin{center}
+    \includegraphics[scale=0.36]{partitionExample3.png}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}{Partition Subroutine}
+\begin{itemize}
+\item Time Complexity: $O(n)$ - why?
+\item Correctness: Why does it work?
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Quicksort: Best Case Scenario}
+\begin{center}
+    \includegraphics[scale=0.4]{quickSortBestCase.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Quicksort: Worst Case Scenario}
+\begin{center}
+    \includegraphics[scale=0.4]{quickSortWorstCase.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Quicksort: Analysis}
+Recurrence Relation for Quicksort:
+\begin{itemize}
+    \item Best Case: $T(n) = 2T(\frac{n}{2}) + n$ 
+    \begin{itemize}
+        \item Same as Merge sort: $\Theta(n \log n)$
+    \end{itemize}
+    \item Worst Case: $T(n) = T(n-1) + n$ 
+    \begin{itemize}
+        \item Same as Bubble sort: $O(n^2)$
+    \end{itemize}
+    \item Average Case: $T(n) = \sum_{p=1}^{n} \frac{1}{n} \left( T(p-1) + T(n-p) \right) + n$
+    \begin{itemize}
+        \item Analysis is very tricky, but returns $O(n \log n)$
+        \item Intuition: Even an uneven split is okay (as long as it is between 25:75 to 75:25)
+        \item When looking at all possible arrays of size $n$, we expect (on average) such a split to happen half the time 
+    \end{itemize}
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Quicksort: Average Case Scenario}
+\begin{center}
+    \includegraphics[scale=0.4]{quickSortAverageCase.png}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}{Strategies to Pick Pivot}
+\begin{itemize}
+\item Pick first, middle or last element as pivot
+\item Pick median-of-3 as pivot (i.e. median of first, middle and last element)
+\item {\bf Bad News:} All of these strategies work well in practice, but has worst case time complexity of $O(n^2)$ 
+\item Pick the median as pivot
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Randomized Quicksort}
+\begin{verbatim}
+Randomized-Partition(A, p, r):
+    i = Random(p,r)
+    Exchange A[r] with A[i]
+    return Partition(A, p, r)
+\end{verbatim}
+
+\begin{verbatim}
+Randomized-QuickSort(A, p, r):
+    if p < r:
+        q = Randomized-Partition(A, p, r)
+        Randomized-QuickSort(A, p, q-1)
+        Randomized-QuickSort(A, q+1, r)
+\end{verbatim}
+
+\end{frame}
+
+
+
+\begin{frame}{Randomized Quicksort}
+\begin{itemize}
+\item Adversarial analysis
+\item It is easy to construct a worst case input for every deterministic pivot picking strategy 
+\item Harder to do for randomized strategy
+\item Idea: Pick a pivot randomly or shuffle data and use a deterministic strategy
+\item {\em Expected} time complexity is $O(n \log n)$
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Sorting in the Real World}
+\begin{itemize}
+\item Sorting is a fundamental problem with intense ongoing research
+\item No single best algorithm - Merge, Quick, Heap, Insertion sort all excel in some scenarions
+\item Most programming languages implement sorting via tuned QuickSort (e.g. Java 6 or below) or 
+a combination of Merge Sort and Insertion sort (Python, Java 7, Perl etc).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Summary}
+
+\tblue{Major Concepts:}
+\begin{itemize}
+\item D\&C - Divide, Conquer and Combine
+\item Merge and Quick sort
+\item Randomization as a strategy
+\end{itemize}
+\end{frame}
 
 
 \end{document}

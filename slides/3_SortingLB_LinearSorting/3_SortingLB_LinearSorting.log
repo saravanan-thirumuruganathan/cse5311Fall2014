@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdf
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**2_DAndC_Merge_QuickSort.tex
-(./2_DAndC_Merge_QuickSort.tex
+**3_SortingLB_LinearSorting.tex
+(./3_SortingLB_LinearSorting.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texmf/tex/latex/beamer/base/beamer.cls
@@ -676,8 +676,8 @@ Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
 (/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemeorchid.sty
 Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)) (./2_DAndC_Merge_QuickSort.aux)
-\openout1 = `2_DAndC_Merge_QuickSort.aux'.
+)) (./3_SortingLB_LinearSorting.aux)
+\openout1 = `3_SortingLB_LinearSorting.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
@@ -772,9 +772,9 @@ LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
 LaTeX Info: Redefining \nameref on input line 22.
 
-(./2_DAndC_Merge_QuickSort.out) (./2_DAndC_Merge_QuickSort.out)
+(./3_SortingLB_LinearSorting.out) (./3_SortingLB_LinearSorting.out)
 \@outlinefile=\write5
-\openout5 = `2_DAndC_Merge_QuickSort.out'.
+\openout5 = `3_SortingLB_LinearSorting.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 22.
@@ -845,7 +845,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 LaTeX Info: Redefining \includegraphics on input line 22.
 
-(./2_DAndC_Merge_QuickSort.nav)
+(./3_SortingLB_LinearSorting.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 26.
@@ -856,13 +856,13 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 49.
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -881,193 +881,102 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [9
 
+] [10
+
+] <sortingAsPermutation.png, id=105, 405.01312pt x 459.21562pt>
+File: sortingAsPermutation.png Graphic file (type png)
+
+<use sortingAsPermutation.png>
+Package pdftex.def Info: sortingAsPermutation.png used on input line 134.
+(pdftex.def)             Requested size: 121.50487pt x 137.76575pt.
+ [11
+
+ <./sortingAsPermutation.png>]
+<sortingAsPermutation2.png, id=112, 787.44188pt x 426.09187pt>
+File: sortingAsPermutation2.png Graphic file (type png)
+
+<use sortingAsPermutation2.png>
+Package pdftex.def Info: sortingAsPermutation2.png used on input line 142.
+(pdftex.def)             Requested size: 236.23438pt x 127.82854pt.
+ [12
+
+ <./sortingAsPermutation2.png>] [13
+
 ]
-\openout4 = `2_DAndC_Merge_QuickSort.vrb'.
-
- (./2_DAndC_Merge_QuickSort.vrb) [10
-
-]
-<mergeSortRecursion.png, id=103, 862.22125pt x 514.92375pt>
-File: mergeSortRecursion.png Graphic file (type png)
-
-<use mergeSortRecursion.png>
-Package pdftex.def Info: mergeSortRecursion.png used on input line 145.
-(pdftex.def)             Requested size: 327.64748pt x 195.67305pt.
-
-Overfull \hbox (20.3576pt too wide) in paragraph at lines 145--145
- [] 
- []
-
-
-Overfull \vbox (0.96326pt too high) detected at line 145
- []
-
-[11
-
- <./mergeSortRecursion.png>]
-<mergeSortMerge.png, id=112, 858.20625pt x 522.95375pt>
-File: mergeSortMerge.png Graphic file (type png)
-
-<use mergeSortMerge.png>
-Package pdftex.def Info: mergeSortMerge.png used on input line 152.
-(pdftex.def)             Requested size: 308.95401pt x 188.2632pt.
-
-Overfull \hbox (1.66414pt too wide) in paragraph at lines 152--152
- [] 
- []
-
-[12
-
- <./mergeSortMerge.png>]
-<mergeListExample.png, id=120, 292.09125pt x 323.2075pt>
-File: mergeListExample.png Graphic file (type png)
-
-<use mergeListExample.png>
-Package pdftex.def Info: mergeListExample.png used on input line 159.
-(pdftex.def)             Requested size: 146.04526pt x 161.60335pt.
- [13
-
- <./mergeListExample.png>]
-<mergeStep1.png, id=129, 801.74532pt x 399.74344pt>
-File: mergeStep1.png Graphic file (type png)
- <use mergeStep1.png>
-Package pdftex.def Info: mergeStep1.png used on input line 166.
-(pdftex.def)             Requested size: 320.69244pt x 159.89453pt.
-
-Overfull \hbox (13.40257pt too wide) in paragraph at lines 166--166
- [] 
- []
-
 [14
 
- <./mergeStep1.png>] <mergeStep2.png, id=136, 801.74532pt x 398.99063pt>
-File: mergeStep2.png Graphic file (type png)
+] <sortingDTree2Elems.png, id=132, 300.12125pt x 276.03125pt>
+File: sortingDTree2Elems.png Graphic file (type png)
 
-<use mergeStep2.png>
-Package pdftex.def Info: mergeStep2.png used on input line 175.
-(pdftex.def)             Requested size: 320.69244pt x 159.59341pt.
+<use sortingDTree2Elems.png>
+Package pdftex.def Info: sortingDTree2Elems.png used on input line 169.
+(pdftex.def)             Requested size: 150.06026pt x 138.01527pt.
+ [15
 
-Overfull \hbox (13.40257pt too wide) in paragraph at lines 175--175
- [] 
- []
+ <./sortingDTree2Elems.png>]
+<sortingDTree3Elems.png, id=139, 623.32875pt x 319.1925pt>
+File: sortingDTree3Elems.png Graphic file (type png)
 
-[15
+<use sortingDTree3Elems.png>
+Package pdftex.def Info: sortingDTree3Elems.png used on input line 175.
+(pdftex.def)             Requested size: 311.6636pt x 159.59586pt.
 
- <./mergeStep2.png>] <mergeStep3.png, id=143, 801.74532pt x 402.00188pt>
-File: mergeStep3.png Graphic file (type png)
-
-<use mergeStep3.png>
-Package pdftex.def Info: mergeStep3.png used on input line 184.
-(pdftex.def)             Requested size: 320.69244pt x 160.7979pt.
-
-Overfull \hbox (13.40257pt too wide) in paragraph at lines 184--184
+Overfull \hbox (4.37373pt too wide) in paragraph at lines 175--175
  [] 
  []
 
 [16
 
- <./mergeStep3.png>] <mergeStep4.png, id=150, 801.74532pt x 403.5075pt>
-File: mergeStep4.png Graphic file (type png)
+ <./sortingDTree3Elems.png>]
+<sortingDTree3ElemsCLRS.png, id=146, 786.94pt x 370.38374pt>
+File: sortingDTree3ElemsCLRS.png Graphic file (type png)
 
-<use mergeStep4.png>
-Package pdftex.def Info: mergeStep4.png used on input line 193.
-(pdftex.def)             Requested size: 320.69244pt x 161.40013pt.
+<use sortingDTree3ElemsCLRS.png>
+Package pdftex.def Info: sortingDTree3ElemsCLRS.png used on input line 182.
+(pdftex.def)             Requested size: 283.29819pt x 133.33804pt.
+ [17
 
-Overfull \hbox (13.40257pt too wide) in paragraph at lines 193--193
- [] 
- []
+ <./sortingDTree3ElemsCLRS.png>]
+File: sortingDTree3ElemsCLRS.png Graphic file (type png)
 
-[17
+<use sortingDTree3ElemsCLRS.png>
+Package pdftex.def Info: sortingDTree3ElemsCLRS.png used on input line 190.
+(pdftex.def)             Requested size: 283.29819pt x 133.33804pt.
+ [18
 
- <./mergeStep4.png>] <mergeStep5.png, id=158, 801.74532pt x 404.26031pt>
-File: mergeStep5.png Graphic file (type png)
+] [19
 
-<use mergeStep5.png>
-Package pdftex.def Info: mergeStep5.png used on input line 202.
-(pdftex.def)             Requested size: 320.69244pt x 161.70125pt.
+] [20
 
-Overfull \hbox (13.40257pt too wide) in paragraph at lines 202--202
- [] 
- []
-
-[18
-
- <./mergeStep5.png>] <mergeStep6.png, id=165, 801.74532pt x 403.5075pt>
-File: mergeStep6.png Graphic file (type png)
-
-<use mergeStep6.png>
-Package pdftex.def Info: mergeStep6.png used on input line 211.
-(pdftex.def)             Requested size: 320.69244pt x 161.40013pt.
-
-Overfull \hbox (13.40257pt too wide) in paragraph at lines 211--211
- [] 
- []
-
-[19
-
- <./mergeStep6.png>] <mergeStep7.png, id=173, 810.02625pt x 405.01312pt>
-File: mergeStep7.png Graphic file (type png)
-
-<use mergeStep7.png>
-Package pdftex.def Info: mergeStep7.png used on input line 220.
-(pdftex.def)             Requested size: 324.00475pt x 162.00237pt.
-
-Overfull \hbox (16.71487pt too wide) in paragraph at lines 220--220
- [] 
- []
-
-[20
-
- <./mergeStep7.png>] <mergeStep8.png, id=180, 810.02625pt x 405.01312pt>
-File: mergeStep8.png Graphic file (type png)
-
-<use mergeStep8.png>
-Package pdftex.def Info: mergeStep8.png used on input line 229.
-(pdftex.def)             Requested size: 324.00475pt x 162.00237pt.
-
-Overfull \hbox (16.71487pt too wide) in paragraph at lines 229--229
- [] 
+]
+Overfull \vbox (3.52908pt too high) detected at line 231
  []
 
 [21
 
- <./mergeStep8.png>]
-\openout4 = `2_DAndC_Merge_QuickSort.vrb'.
-
- (./2_DAndC_Merge_QuickSort.vrb) [22
+] [22
 
 ] [23
 
 ] [24
 
+] [25
+
 ]
-<mergeSortRecursionTree1.png, id=205, 654.445pt x 310.15875pt>
-File: mergeSortRecursionTree1.png Graphic file (type png)
+<countingSortPseudoCode.png, id=205, 779.91376pt x 424.58624pt>
+File: countingSortPseudoCode.png Graphic file (type png)
 
-<use mergeSortRecursionTree1.png>
-Package pdftex.def Info: mergeSortRecursionTree1.png used on input line 284.
-(pdftex.def)             Requested size: 327.2217pt x 155.079pt.
+<use countingSortPseudoCode.png>
+Package pdftex.def Info: countingSortPseudoCode.png used on input line 279.
+(pdftex.def)             Requested size: 311.95998pt x 169.83148pt.
 
-Overfull \hbox (19.93182pt too wide) in paragraph at lines 284--284
+Overfull \hbox (4.6701pt too wide) in paragraph at lines 279--279
  [] 
- []
-
-[25
-
- <./mergeSortRecursionTree1.png>]
-<mergeSortRecursionTree2.png, id=214, 633.36626pt x 528.97626pt>
-File: mergeSortRecursionTree2.png Graphic file (type png)
-
-<use mergeSortRecursionTree2.png>
-Package pdftex.def Info: mergeSortRecursionTree2.png used on input line 292.
-(pdftex.def)             Requested size: 253.34201pt x 211.58675pt.
-
-Overfull \vbox (3.27695pt too high) detected at line 292
  []
 
 [26
 
- <./mergeSortRecursionTree2.png>] [27
+ <./countingSortPseudoCode.png>] [27
 
 ] [28
 
@@ -1080,165 +989,93 @@ Overfull \vbox (3.27695pt too high) detected at line 292
 ] [32
 
 ]
-\openout4 = `2_DAndC_Merge_QuickSort.vrb'.
+\openout4 = `3_SortingLB_LinearSorting.vrb'.
 
 
-(./2_DAndC_Merge_QuickSort.vrb) [33
+(./3_SortingLB_LinearSorting.vrb) [33
 
 ]
-<quickSortHighLevelExample.png, id=265, 429.605pt x 501.875pt>
-File: quickSortHighLevelExample.png Graphic file (type png)
+<radixSortEg1.png, id=263, 810.02625pt x 467.7475pt>
+File: radixSortEg1.png Graphic file (type png)
+ <use radixSortEg1.png>
+Package pdftex.def Info: radixSortEg1.png used on input line 358.
+(pdftex.def)             Requested size: 324.00475pt x 187.09567pt.
 
-<use quickSortHighLevelExample.png>
-Package pdftex.def Info: quickSortHighLevelExample.png used on input line 387.
-(pdftex.def)             Requested size: 171.83894pt x 200.74643pt.
- [34
-
- <./quickSortHighLevelExample.png>]
-[35
-
-] [36
-
-] <partitionSubroutineMeta.png, id=284, 801.74532pt x 241.65282pt>
-File: partitionSubroutineMeta.png Graphic file (type png)
-
-<use partitionSubroutineMeta.png>
-Package pdftex.def Info: partitionSubroutineMeta.png used on input line 413.
-(pdftex.def)             Requested size: 320.69244pt x 96.65941pt.
-
-Overfull \hbox (13.40257pt too wide) in paragraph at lines 413--413
+Overfull \hbox (16.71487pt too wide) in paragraph at lines 358--358
  [] 
  []
 
-[37
+[34
 
- <./partitionSubroutineMeta.png>]
-\openout4 = `2_DAndC_Merge_QuickSort.vrb'.
+ <./radixSortEg1.png>] [35
 
- (./2_DAndC_Merge_QuickSort.vrb) [38
+] [36
 
-]
-<partitionExample1.png, id=299, 649.42625pt x 561.09625pt>
-File: partitionExample1.png Graphic file (type png)
-
-<use partitionExample1.png>
-Package pdftex.def Info: partitionExample1.png used on input line 440.
-(pdftex.def)             Requested size: 220.802pt x 190.7702pt.
- [39
-
- <./partitionExample1.png>]
-<partitionExample2.png, id=308, 599.23875pt x 631.35875pt>
-File: partitionExample2.png Graphic file (type png)
-
-<use partitionExample2.png>
-Package pdftex.def Info: partitionExample2.png used on input line 447.
-(pdftex.def)             Requested size: 179.77301pt x 189.40909pt.
- [40
-
- <./partitionExample2.png>]
-<partitionExample3.png, id=317, 677.53125pt x 517.935pt>
-File: partitionExample3.png Graphic file (type png)
-
-<use partitionExample3.png>
-Package pdftex.def Info: partitionExample3.png used on input line 454.
-(pdftex.def)             Requested size: 243.91106pt x 186.45645pt.
- [41
-
- <./partitionExample3.png>] [42
+] [37
 
 ]
-<quickSortBestCase.png, id=332, 626.34pt x 259.97125pt>
-File: quickSortBestCase.png Graphic file (type png)
+<msdRadixSortEg.png, id=296, 811.03pt x 442.65375pt>
+File: msdRadixSortEg.png Graphic file (type png)
+ <use msdRadixSortEg.png>
+Package pdftex.def Info: msdRadixSortEg.png used on input line 397.
+(pdftex.def)             Requested size: 283.86475pt x 154.93112pt.
 
-<use quickSortBestCase.png>
-Package pdftex.def Info: quickSortBestCase.png used on input line 470.
-(pdftex.def)             Requested size: 250.53156pt x 103.98665pt.
- [43
+[38
 
- <./quickSortBestCase.png>]
-<quickSortWorstCase.png, id=340, 605.26125pt x 357.335pt>
-File: quickSortWorstCase.png Graphic file (type png)
+ <./msdRadixSortEg.png>] [39
 
-<use quickSortWorstCase.png>
-Package pdftex.def Info: quickSortWorstCase.png used on input line 477.
-(pdftex.def)             Requested size: 242.1002pt x 142.93146pt.
- [44
-
- <./quickSortWorstCase.png>] [45
-
-]
-<quickSortAverageCase.png, id=354, 561.09625pt x 390.45876pt>
-File: quickSortAverageCase.png Graphic file (type png)
-
-<use quickSortAverageCase.png>
-Package pdftex.def Info: quickSortAverageCase.png used on input line 506.
-(pdftex.def)             Requested size: 224.43452pt x 156.18073pt.
- [46
-
- <./quickSortAverageCase.png>] [47
-
-]
-\openout4 = `2_DAndC_Merge_QuickSort.vrb'.
-
-
-(./2_DAndC_Merge_QuickSort.vrb) [48
-
-] [49
-
-] [50
-
-] [51
+] [40
 
 ]
 \tf@nav=\write6
-\openout6 = `2_DAndC_Merge_QuickSort.nav'.
+\openout6 = `3_SortingLB_LinearSorting.nav'.
 
 \tf@toc=\write7
-\openout7 = `2_DAndC_Merge_QuickSort.toc'.
+\openout7 = `3_SortingLB_LinearSorting.toc'.
 
 \tf@snm=\write8
-\openout8 = `2_DAndC_Merge_QuickSort.snm'.
+\openout8 = `3_SortingLB_LinearSorting.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 572.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 572.
-
-(./2_DAndC_Merge_QuickSort.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 572.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 572.
-Package rerunfilecheck Info: File `2_DAndC_Merge_QuickSort.out' has not changed
-.
-(rerunfilecheck)             Checksum: 80765D44B4F6C2D01175AD8C02852F7E;149.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
+ (./3_SortingLB_LinearSorting.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
+Package rerunfilecheck Info: File `3_SortingLB_LinearSorting.out' has not chang
+ed.
+(rerunfilecheck)             Checksum: 933F59FBD321230369C645AA473B7DE4;177.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 572.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 421.
  ) 
 Here is how much of TeX's memory you used:
- 16079 strings out of 494985
- 298620 string characters out of 6180356
- 365531 words of memory out of 5000000
- 18767 multiletter control sequences out of 15000+600000
+ 15953 strings out of 494985
+ 296334 string characters out of 6180356
+ 365554 words of memory out of 5000000
+ 18684 multiletter control sequences out of 15000+600000
  22639 words of font info for 85 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 49i,16n,57p,433b,681s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,16n,57p,435b,681s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mtt9.pfb>
-Output written on 2_DAndC_Merge_QuickSort.pdf (51 pages, 559980 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on 3_SortingLB_LinearSorting.pdf (40 pages, 420873 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 358 compressed objects within 4 object streams
- 106 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 383 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
