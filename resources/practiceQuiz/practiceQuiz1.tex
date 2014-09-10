@@ -1,0 +1,237 @@
+\documentclass[addpoints,12pt]{exam}
+\usepackage{color}
+\usepackage{amsmath}
+
+\begin{document}
+\title{Quiz 1 Practice Questions}
+\author{}
+\date{}
+\maketitle
+
+\newcommand{\hint}[1]{\\{\bf Hint:} {\em {#1}}}
+
+
+
+\fullwidth{\Large \textbf{Multiple Choice Questions}}
+
+
+\begin{questions}
+\qformat{[M\thequestion]}
+\question
+What is the recurrence relation for Merge Sort?
+\begin{choices}
+\choice $T(n) = T(n-1) + 1$
+\choice $T(n) = T(n-1) + n$
+\choice $T(n) = T(n/2) + n$
+\choice $T(n) = 2T(n/2) + 1$
+\choice None of the above 
+\end{choices}
+
+
+
+\question
+What is the solution to the recurrence $T(n) = T(n-1) + 1$
+\begin{choices}
+\choice $O(n)$
+\choice $O(n^2)$
+\choice $O(n^3)$
+\choice $O(2^n)$
+\choice None of the above 
+\end{choices}
+
+
+
+\question
+What is the lower bound for sorting algorithms based on comparison?
+\begin{choices}
+\choice $\Omega(n \log n)$
+\choice $\Theta(n \log n)$
+\choice $\Omega(n^2)$
+\choice $\Theta(n^2)$
+\choice None of the above 
+\end{choices}
+
+
+
+\question
+Suppose you always pick median as the pivot in the QuickSort. What is the recurrence relation for this variant?
+\begin{choices}
+\choice $T(n) = T(n-1) + 1$
+\choice $T(n) = T(n-1) + n$
+\choice $T(n) = T(n/2) + n$
+\choice $T(n) = 2T(n/2) + 1$
+\choice None of the above 
+\end{choices}
+
+
+
+\question
+What is the time complexity of Radix sort? Suppose that the array has $n$ elements with $d$ digits each. Also each digit can take values between $1$ and $k$
+\begin{choices}
+\choice $O(n+k)$
+\choice $O(n+k+d)$ 
+\choice $O(n(k+d))$
+\choice $O(d(n+k))$
+\choice None of the above 
+\end{choices}
+\end{questions}
+
+
+
+
+\begin{center}
+{\Large \textbf{Algorithmic Questions}}
+\end{center}
+
+
+\fullwidth{\Large \textbf{Topic : General}}
+\begin{questions}
+\qformat{[G\thequestion]}
+\question
+You are given 9 identical looking balls and are told that one of them weighs a bit less than the rest of 
+the eight balls. The only operation you are allowed is to compare a set of balls against another set of 
+balls. Determine the lighter ball using 3 comparisons. Generalize your answer to more that 9 balls if 
+possible.
+
+\question
+You are given 12 balls, and are told that one of them is of a different weight from the rest - 
+i.e., you don't know if it is heavier or lighter. Determine this ball using 4 comparisons.
+\end{questions}
+
+
+\fullwidth{\Large \textbf{Topic : Asymptotics}}
+
+\begin{questions}
+\qformat{[A\thequestion]}
+
+\question
+Solve the following recurrence relations:
+\begin{choices}
+\choice $T(n) = 2T(n/3) + n^2$ 
+\choice $T(n) = 2T(n-1)$
+\choice $T(n) = T(n/2) + 1$
+\choice $T(n) = 4T(n/2) + n$
+\end{choices}
+
+\question
+ Compare the following functions in terms of orders. In each case, say whether 
+$f(n) = O(g(n))$, $f(n) = \Theta(f(n))$ or $f(n) = \Omega(f(n))$
+\begin{choices}
+    \choice $f(n) = \sqrt{n}$ and $g(n) = (\log n)^5$
+    \choice $f(n) = n^2 \log n $ and $g(n) = n (\log n)^2$
+    \choice $f(n) = \log n$ and $g(n) = (\log n)^2$
+    \choice $f(n) = n \, 2^n$ and $g(n) = 3^n$
+\end{choices}
+
+\end{questions}
+
+\fullwidth{\Large \textbf{Topic : Order Statistics}}
+\begin{questions}
+\qformat{[OS\thequestion]}
+\question
+The majority of a set of numbers is defined as a number that repeats at least $\frac{n}{2}$ times in the set. 
+Design a linear time algorithm to find the majority, {\bf if} one exists.
+
+\question
+Show exactly why if we grouped elements into groups of 3 each, the median finding algorithm that 
+we discussed in class will not work in linear time. What would be the running time of the algorithm in 
+this case?
+
+\question
+Which is better in the median-finding algorithm, grouping into groups of 5, or into groups of 7? 
+Explain your answer.
+
+\question
+Let $X$ and $Y$ be two arrays of $n$ numbers each, both already sorted. Give a $O(\log n)$ algorithm to 
+compute the median of $X \cup Y$.
+
+
+\end{questions}
+
+
+
+\fullwidth{\Large \textbf{Topic : Sorting}}
+Which sorting algorithm would you use for the following cases?
+\begin{questions}
+\qformat{[S\thequestion]}
+
+\question
+The array is almost sorted.
+
+\question
+The array is sorted in reverse order.
+
+\question
+Sorting UTA student ids (1000nnnnnn).
+
+\question
+Sorting mp3 files in your player based on the name. 
+\hint{Note: This is a case where you want to minimize number of swaps - each file is, say 5MB. Then doing unnecessary swapping
+will degrade the SSD of your drive.}
+
+\question
+Your array is too huge to hold in memory.
+
+\question
+You are given an array that was randomly shuffled. 
+
+\question
+The size of your array is close to the size of your RAM.
+
+\question
+Sorting cheques in a bank based on the cheque id.
+\hint{Note that most customers use cheques in the order given in the cheque book.}
+
+\end{questions}
+
+
+\fullwidth{\Large \textbf{Topic : Trees}}
+\begin{questions}
+\qformat{[G\thequestion]}
+\question
+Suppose you are given a completely balanced binary search tree (a completely balanced tree 
+means that each path from root to leaf is exactly the same). What is the time required to find the median
+of the elements of such a tree ?
+
+\question
+Suppose you are given a completely balanced binary search tree (a completely balanced tree 
+means that each path from root to leaf is exactly the same). What is the time required to find the max 
+of the elements of such a tree ?
+
+\question
+Suppose some one gave you a binary tree and claimed that it is a BST. 
+Design and analyze an efficient algorithm to verify if it is indeed the case.
+
+\question
+Given a BST $T$ and two integers $a$ and $b$, print all elements in $T$ between $a$ and $b$.
+
+\question
+Suppose you are given two trees $T_1$ and $T_2$. Design an efficient algorithm to determine if they contain the same elements.
+
+\question
+Design an algorithm to convert a {\em sorted} array to a {\em balanced} binary tree.
+
+\end{questions}
+
+\fullwidth{\Large \textbf{Topic : Potpourri}}
+\begin{questions}
+\qformat{[P\thequestion]}
+
+\question
+The input is a set $S$ containing $n$ numbers, and a number $x$
+\begin{parts}
+\part
+Design an algorithm to determine whether there are two elements of $S$ whose sum is exactly $x$. 
+The algorithm should run in $O(n \log n)$ time.
+\part
+Suppose now that the set $S$ is given in a sorted order. Design an algorithm to solve the above problem in time $O(n)$.
+\end{parts}
+
+\question
+Suppose you are given a sorted array $A$. Design an efficient algorithm to find if an index $i$ exists such that $A[i]=i$.
+\end{questions}
+
+
+
+\end{document}
+
