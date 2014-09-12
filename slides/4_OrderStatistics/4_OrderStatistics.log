@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  11 SEP 2014 13:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  12 SEP 2014 10:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1005,42 +1005,218 @@ Package pdftex.def Info: tournamentMethod.png used on input line 3.
 
 ] [32
 
+] [33
+
 ]
-<quickSelectCase1.png, id=243, 648.92438pt x 277.78781pt>
+<quickSelectCase1.png, id=249, 648.92438pt x 341.02406pt>
 File: quickSelectCase1.png Graphic file (type png)
 
 <use quickSelectCase1.png>
-Package pdftex.def Info: quickSelectCase1.png used on input line 282.
-(pdftex.def)             Requested size: 259.56516pt x 111.11314pt.
- [33
+Package pdftex.def Info: quickSelectCase1.png used on input line 290.
+(pdftex.def)             Requested size: 259.56516pt x 136.4072pt.
+ [34
 
  <./quickSelectCase1.png>]
-<quickSelectCase2.png, id=250, 648.92438pt x 277.78781pt>
+<quickSelectCase2.png, id=256, 766.36313pt x 366.61969pt>
 File: quickSelectCase2.png Graphic file (type png)
 
 <use quickSelectCase2.png>
-Package pdftex.def Info: quickSelectCase2.png used on input line 290.
-(pdftex.def)             Requested size: 259.56516pt x 111.11314pt.
- [34
+Package pdftex.def Info: quickSelectCase2.png used on input line 298.
+(pdftex.def)             Requested size: 306.53983pt x 146.64526pt.
+ [35
 
  <./quickSelectCase2.png>]
-<quickSelectCase3.png, id=257, 648.92438pt x 277.78781pt>
+<quickSelectCase3.png, id=263, 718.18312pt x 389.20406pt>
 File: quickSelectCase3.png Graphic file (type png)
 
 <use quickSelectCase3.png>
-Package pdftex.def Info: quickSelectCase3.png used on input line 298.
-(pdftex.def)             Requested size: 259.56516pt x 111.11314pt.
- [35
+Package pdftex.def Info: quickSelectCase3.png used on input line 306.
+(pdftex.def)             Requested size: 287.26816pt x 155.67886pt.
+ [36
 
  <./quickSelectCase3.png>]
 \openout4 = `4_OrderStatistics.vrb'.
 
 
-(./4_OrderStatistics.vrb) [36
+(./4_OrderStatistics.vrb) [37
 
-] [37
+]
+<quickSelectSummary.png, id=277, 234.8775pt x 111.41624pt>
+File: quickSelectSummary.png Graphic file (type png)
 
-] [38
+<use quickSelectSummary.png>
+Package pdftex.def Info: quickSelectSummary.png used on input line 329.
+(pdftex.def)             Requested size: 164.41312pt x 77.99083pt.
+ [38
+
+ <./quickSelectSummary.png>] [39
+
+] [40
+
+] [41
+
+]
+[42
+
+] [43
+
+] [44
+
+] [45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
+]
+<medianOfMedian1.png, id=356, 607.26875pt x 251.94125pt>
+File: medianOfMedian1.png Graphic file (type png)
+
+<use medianOfMedian1.png>
+Package pdftex.def Info: medianOfMedian1.png used on input line 411.
+(pdftex.def)             Requested size: 242.9032pt x 100.7747pt.
+ [50
+
+ <./medianOfMedian1.png>]
+<medianOfMedian2.png, id=366, 611.28375pt x 282.05376pt>
+File: medianOfMedian2.png Graphic file (type png)
+
+<use medianOfMedian2.png>
+Package pdftex.def Info: medianOfMedian2.png used on input line 421.
+(pdftex.def)             Requested size: 244.50917pt x 112.81949pt.
+ [51
+
+ <./medianOfMedian2.png>]
+<medianOfMedian3.png, id=375, 600.2425pt x 263.98625pt>
+File: medianOfMedian3.png Graphic file (type png)
+
+<use medianOfMedian3.png>
+Package pdftex.def Info: medianOfMedian3.png used on input line 434.
+(pdftex.def)             Requested size: 240.09274pt x 105.59262pt.
+ [52
+
+ <./medianOfMedian3.png>]
+<medianOfMedian4.png, id=384, 601.24625pt x 265.99374pt>
+File: medianOfMedian4.png Graphic file (type png)
+
+<use medianOfMedian4.png>
+Package pdftex.def Info: medianOfMedian4.png used on input line 447.
+(pdftex.def)             Requested size: 240.49423pt x 106.3956pt.
+ [53
+
+ <./medianOfMedian4.png>]
+<medianOfMedian5.png, id=393, 612.2875pt x 279.0425pt>
+File: medianOfMedian5.png Graphic file (type png)
+
+<use medianOfMedian5.png>
+Package pdftex.def Info: medianOfMedian5.png used on input line 461.
+(pdftex.def)             Requested size: 244.91066pt x 111.615pt.
+ [54
+
+ <./medianOfMedian5.png>]
+File: medianOfMedian5.png Graphic file (type png)
+
+<use medianOfMedian5.png>
+Package pdftex.def Info: medianOfMedian5.png used on input line 461.
+(pdftex.def)             Requested size: 244.91066pt x 111.615pt.
+ [55
+
+]
+<medianOfMedian6.png, id=412, 619.31375pt x 270.00874pt>
+File: medianOfMedian6.png Graphic file (type png)
+
+<use medianOfMedian6.png>
+Package pdftex.def Info: medianOfMedian6.png used on input line 478.
+(pdftex.def)             Requested size: 247.72112pt x 108.00157pt.
+ [56
+
+ <./medianOfMedian6.png>]
+File: medianOfMedian6.png Graphic file (type png)
+
+<use medianOfMedian6.png>
+Package pdftex.def Info: medianOfMedian6.png used on input line 478.
+(pdftex.def)             Requested size: 247.72112pt x 108.00157pt.
+ [57
+
+]
+<medianOfMedianWiki.png, id=430, 993.7125pt x 318.18875pt>
+File: medianOfMedianWiki.png Graphic file (type png)
+
+<use medianOfMedianWiki.png>
+Package pdftex.def Info: medianOfMedianWiki.png used on input line 491.
+(pdftex.def)             Requested size: 317.99449pt x 101.82246pt.
+
+Overfull \hbox (10.70462pt too wide) in paragraph at lines 491--491
+ [] 
+ []
+
+[58
+
+ <./medianOfMedianWiki.png>]
+<medianOfMedian7.png, id=438, 585.18625pt x 251.94125pt>
+File: medianOfMedian7.png Graphic file (type png)
+
+<use medianOfMedian7.png>
+Package pdftex.def Info: medianOfMedian7.png used on input line 508.
+(pdftex.def)             Requested size: 234.07034pt x 100.7747pt.
+ [59
+
+ <./medianOfMedian7.png>]
+File: medianOfMedian7.png Graphic file (type png)
+
+<use medianOfMedian7.png>
+Package pdftex.def Info: medianOfMedian7.png used on input line 508.
+(pdftex.def)             Requested size: 234.07034pt x 100.7747pt.
+ [60
+
+] [61
+
+] [62
+
+] [63
+
+] [64
+
+] [65
+
+] [66
+
+] [67
+
+] [68
+
+] [69
+
+]
+[70
+
+] [71
+
+] [72
+
+] [73
+
+] [74
+
+]
+<findingMajorityVisualization.png, id=543, 721.19438pt x 409.53pt>
+File: findingMajorityVisualization.png Graphic file (type png)
+
+<use findingMajorityVisualization.png>
+Package pdftex.def Info: findingMajorityVisualization.png used on input line 60
+7.
+(pdftex.def)             Requested size: 288.47264pt x 163.80908pt.
+ [75
+
+ <./findingMajorityVisualization.png>] [76
+
+] [77
+
+] [78
 
 ]
 \tf@nav=\write6
@@ -1052,11 +1228,11 @@ Package pdftex.def Info: quickSelectCase3.png used on input line 298.
 \tf@snm=\write8
 \openout8 = `4_OrderStatistics.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 652.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 652.
  (./4_OrderStatistics.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 652.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 652.
 Package rerunfilecheck Info: File `4_OrderStatistics.out' has not changed.
 (rerunfilecheck)             Checksum: 9C984B310B69544481840319B674D846;93.
 
@@ -1064,32 +1240,34 @@ Package rerunfilecheck Info: File `4_OrderStatistics.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 652.
  ) 
 Here is how much of TeX's memory you used:
- 15943 strings out of 494985
- 296734 string characters out of 6180356
- 363426 words of memory out of 5000000
- 18649 multiletter control sequences out of 15000+600000
- 21160 words of font info for 79 fonts, out of 8000000 for 9000
+ 16149 strings out of 494985
+ 299905 string characters out of 6180356
+ 372426 words of memory out of 5000000
+ 18764 multiletter control sequences out of 15000+600000
+ 22933 words of font info for 86 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 49i,16n,58p,427b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-tt12.pfb>
-Output written on 4_OrderStatistics.pdf (38 pages, 274373 bytes).
+ 49i,16n,58p,427b,682s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on 4_OrderStatistics.pdf (78 pages, 951520 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
- 273 compressed objects within 3 object streams
- 79 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 656 PDF objects out of 1000 (max. 8388607)
+ 528 compressed objects within 6 object streams
+ 159 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
