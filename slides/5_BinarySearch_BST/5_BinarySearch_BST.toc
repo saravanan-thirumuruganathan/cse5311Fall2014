@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Outline}{2}{0}{1}
+\beamer@sectionintoc {2}{Search Problem}{4}{0}{2}
+\beamer@sectionintoc {3}{Representing Dynamic Sets}{16}{0}{3}
+\beamer@sectionintoc {4}{Trees}{22}{0}{4}
+\beamer@sectionintoc {5}{BSTs}{28}{0}{5}
+\beamer@sectionintoc {6}{Summary}{29}{0}{6}

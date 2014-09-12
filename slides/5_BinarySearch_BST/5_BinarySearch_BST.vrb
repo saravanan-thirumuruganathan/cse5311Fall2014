@@ -1,0 +1,14 @@
+\frametitle{Binary Search}
+\begin{verbatim}
+BinarySearch(A, e, low, high):
+    if low > high
+        return Not found
+    else
+        mid = (low + high) / 2
+        if e == A[mid]
+            return mid
+        else if e < A[mid]
+            return BinarySearch(A, e, low, mid - 1)
+        else
+            return BinarySearch(A, e, mid+1, high)
+\end{verbatim}
