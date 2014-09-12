@@ -306,7 +306,7 @@ h   &= \Omega(n \lg n)
 \end{frame}
 
 
-\begin{frame}{Count Sort - Results\footnote{\url{http://www.inf.ed.ac.uk/teaching/courses/ads/Lects/lecture8.pdf}}}
+\begin{frame}{Counting Sort - Results\footnote{\url{http://www.inf.ed.ac.uk/teaching/courses/ads/Lects/lecture8.pdf}}}
 \begin{itemize}
 \item Interesting Result 1:
 \begin{itemize}
@@ -316,9 +316,23 @@ h   &= \Omega(n \lg n)
 \item Interesting Result 2:
 \begin{itemize}
     \item For any {\em constant} $k$, we can sort $n$ integers in the range $\{1, \ldots, n^k\}$ in $O(n)$ time
-    \item Details soon!
+    \item Hint: Combine Counting sort with Radix sort
 \end{itemize}
 \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Bucket Sort\footnote{\url{http://www.dcs.gla.ac.uk/~pat/52233/slides/RadixSort1x1.pdf}}}
+\begin{center}
+    \includegraphics[scale=0.4]{bucketSortEg1.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Bucket Sort\footnote{\url{http://www.dcs.gla.ac.uk/~pat/52233/slides/RadixSort1x1.pdf}}}
+\begin{center}
+    \includegraphics[scale=0.4]{bucketSortEg2.png}
+\end{center}
 \end{frame}
 
 
@@ -335,12 +349,28 @@ h   &= \Omega(n \lg n)
 \end{itemize}
 \end{frame}
 
+
+\begin{frame}{Radix Sort - MSD Issues}
+\begin{center}
+    \includegraphics[scale=0.4]{msdRadixSortErr.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Radix Sort - LSD Idea}
+\begin{center}
+    \includegraphics[scale=0.4]{lsdRadixSortEg.png}
+\end{center}
+\end{frame}
+
+
 \begin{frame}{Radix Sort}
 \begin{itemize}
     \item LSD Radix Sort
     \item MSD Radix Sort
 \end{itemize}
 \end{frame}
+
 
 \begin{frame}[fragile]{LSD Radix Sort - PseudoCode}
 \begin{verbatim}
@@ -357,18 +387,6 @@ Radix-Sort(A, d)
 \end{center}
 \end{frame}
 
-\begin{frame}{Digression - Bucket Sort}
-\begin{itemize}
-\item See URL: \url{http://www.dcs.gla.ac.uk/~pat/52233/slides/RadixSort1x1.pdf} 
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}{LSD Radix Sort - Bucket Sort Perspective}
-\begin{itemize}
-   \item See URL: \url{http://www.cs.umanitoba.ca/~chrisib/teaching/comp2140/notes/003e_radixSort.pdf} 
-\end{itemize}
-\end{frame}
 
 \begin{frame}{LSD Radix Sort - Why it works\footnote{\url{http://www.cs.princeton.edu/~rs/AlgsDS07/18RadixSort.pdf}}}
 \begin{itemize}
@@ -385,6 +403,11 @@ Radix-Sort(A, d)
 \end{itemize}
 \end{frame}
 
+\begin{frame}{LSD Radix Sort - Bucket Sort Perspective}
+\begin{itemize}
+   \item See URL: \url{http://www.cs.umanitoba.ca/~chrisib/teaching/comp2140/notes/003e_radixSort.pdf} 
+\end{itemize}
+\end{frame}
 
 \begin{frame}{MSD Radix Sort\footnote{\url{http://www.cs.princeton.edu/~rs/AlgsDS07/18RadixSort.pdf}}}
 \begin{itemize}

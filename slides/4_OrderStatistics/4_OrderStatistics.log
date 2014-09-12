@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  11 SEP 2014 00:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  11 SEP 2014 13:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**3_SortingLB_LinearSorting.tex
-(./3_SortingLB_LinearSorting.tex
+**4_OrderStatistics.tex
+(./4_OrderStatistics.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texmf/tex/latex/beamer/base/beamer.cls
@@ -676,8 +676,8 @@ Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
 (/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemeorchid.sty
 Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)) (./3_SortingLB_LinearSorting.aux)
-\openout1 = `3_SortingLB_LinearSorting.aux'.
+)) (./4_OrderStatistics.aux)
+\openout1 = `4_OrderStatistics.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
@@ -772,9 +772,9 @@ LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
 LaTeX Info: Redefining \nameref on input line 22.
 
-(./3_SortingLB_LinearSorting.out) (./3_SortingLB_LinearSorting.out)
+(./4_OrderStatistics.out) (./4_OrderStatistics.out)
 \@outlinefile=\write5
-\openout5 = `3_SortingLB_LinearSorting.out'.
+\openout5 = `4_OrderStatistics.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 22.
@@ -844,271 +844,252 @@ tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \includegraphics on input line 22.
-
-(./3_SortingLB_LinearSorting.nav)
+ (./4_OrderStatistics.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 26.
 
 [1
 
-{/home/neo/.texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-]
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 52.
-LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+{/home/neo/.texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for U+msa on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3
+) [2
+
+]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 53.
+ [3
 
 ] [4
 
 ] [5
 
-] [6
-
 ]
-[7
+[6
+
+] [7
 
 ] [8
 
-] [9
+]
+\openout4 = `4_OrderStatistics.vrb'.
 
-] [10
+ (./4_OrderStatistics.vrb) [9
 
-] <sortingAsPermutation.png, id=105, 405.01312pt x 459.21562pt>
-File: sortingAsPermutation.png Graphic file (type png)
-
-<use sortingAsPermutation.png>
-Package pdftex.def Info: sortingAsPermutation.png used on input line 134.
-(pdftex.def)             Requested size: 121.50487pt x 137.76575pt.
- [11
-
- <./sortingAsPermutation.png>]
-<sortingAsPermutation2.png, id=112, 787.44188pt x 426.09187pt>
-File: sortingAsPermutation2.png Graphic file (type png)
-
-<use sortingAsPermutation2.png>
-Package pdftex.def Info: sortingAsPermutation2.png used on input line 142.
-(pdftex.def)             Requested size: 236.23438pt x 127.82854pt.
- [12
-
- <./sortingAsPermutation2.png>] [13
+] (./4_OrderStatistics.vrb) [10
 
 ]
-[14
+(./4_OrderStatistics.vrb) [11
 
-] <sortingDTree2Elems.png, id=132, 300.12125pt x 276.03125pt>
-File: sortingDTree2Elems.png Graphic file (type png)
+] (./4_OrderStatistics.vrb) [12
 
-<use sortingDTree2Elems.png>
-Package pdftex.def Info: sortingDTree2Elems.png used on input line 169.
-(pdftex.def)             Requested size: 150.06026pt x 138.01527pt.
+]
+\openout4 = `4_OrderStatistics.vrb'.
+
+
+(./4_OrderStatistics.vrb) [13
+
+]
+<recursiveMaximum.png, id=121, 720.44156pt x 411.03563pt>
+File: recursiveMaximum.png Graphic file (type png)
+
+<use recursiveMaximum.png>
+Package pdftex.def Info: recursiveMaximum.png used on input line 160.
+(pdftex.def)             Requested size: 216.13412pt x 123.31163pt.
+ [14
+
+ <./recursiveMaximum.png>]
+File: recursiveMaximum.png Graphic file (type png)
+
+<use recursiveMaximum.png>
+Package pdftex.def Info: recursiveMaximum.png used on input line 160.
+(pdftex.def)             Requested size: 216.13412pt x 123.31163pt.
  [15
 
- <./sortingDTree2Elems.png>]
-<sortingDTree3Elems.png, id=139, 623.32875pt x 319.1925pt>
-File: sortingDTree3Elems.png Graphic file (type png)
-
-<use sortingDTree3Elems.png>
-Package pdftex.def Info: sortingDTree3Elems.png used on input line 175.
-(pdftex.def)             Requested size: 311.6636pt x 159.59586pt.
-
-Overfull \hbox (4.37373pt too wide) in paragraph at lines 175--175
- [] 
- []
-
-[16
-
- <./sortingDTree3Elems.png>]
-<sortingDTree3ElemsCLRS.png, id=146, 786.94pt x 370.38374pt>
-File: sortingDTree3ElemsCLRS.png Graphic file (type png)
-
-<use sortingDTree3ElemsCLRS.png>
-Package pdftex.def Info: sortingDTree3ElemsCLRS.png used on input line 182.
-(pdftex.def)             Requested size: 283.29819pt x 133.33804pt.
- [17
-
- <./sortingDTree3ElemsCLRS.png>]
-File: sortingDTree3ElemsCLRS.png Graphic file (type png)
-
-<use sortingDTree3ElemsCLRS.png>
-Package pdftex.def Info: sortingDTree3ElemsCLRS.png used on input line 190.
-(pdftex.def)             Requested size: 283.29819pt x 133.33804pt.
- [18
-
-] [19
-
-] [20
+]
+File: recursiveMaximum.png Graphic file (type png)
+ <use recursiveMaximum.png>
+Package pdftex.def Info: recursiveMaximum.png used on input line 160.
+(pdftex.def)             Requested size: 216.13412pt x 123.31163pt.
+ [16
 
 ]
-Overfull \vbox (3.52908pt too high) detected at line 231
+\openout4 = `4_OrderStatistics.vrb'.
+
+
+(./4_OrderStatistics.vrb) [17
+
+] (./4_OrderStatistics.vrb) [18
+
+]
+(./4_OrderStatistics.vrb) [19
+
+] (./4_OrderStatistics.vrb) [20
+
+]
+<simMinMaxEg1.png, id=166, 813.0375pt x 209.28188pt>
+File: simMinMaxEg1.png Graphic file (type png)
+ <use simMinMaxEg1.png>
+Package pdftex.def Info: simMinMaxEg1.png used on input line 187.
+(pdftex.def)             Requested size: 325.20924pt x 83.71126pt.
+
+Overfull \hbox (17.91937pt too wide) in paragraph at lines 187--187
+ [] 
  []
 
 [21
 
-] [22
+ <./simMinMaxEg1.png>]
+<simMinMaxEg2.png, id=173, 798.73407pt x 456.95718pt>
+File: simMinMaxEg2.png Graphic file (type png)
+ <use simMinMaxEg2.png>
+Package pdftex.def Info: simMinMaxEg2.png used on input line 194.
+(pdftex.def)             Requested size: 319.48798pt x 182.77963pt.
 
-] [23
+Overfull \hbox (12.1981pt too wide) in paragraph at lines 194--194
+ [] 
+ []
+
+[22
+
+ <./simMinMaxEg2.png>] [23
 
 ] [24
 
-] [25
+]
+\openout4 = `4_OrderStatistics.vrb'.
+
+ (./4_OrderStatistics.vrb) [25
 
 ]
-<countingSortPseudoCode.png, id=205, 779.91376pt x 424.58624pt>
-File: countingSortPseudoCode.png Graphic file (type png)
+(./4_OrderStatistics.vrb) [26
 
-<use countingSortPseudoCode.png>
-Package pdftex.def Info: countingSortPseudoCode.png used on input line 279.
-(pdftex.def)             Requested size: 311.95998pt x 169.83148pt.
-
-Overfull \hbox (4.6701pt too wide) in paragraph at lines 279--279
- [] 
- []
-
-[26
-
- <./countingSortPseudoCode.png>] [27
-
-] [28
-
-] [29
-
-] [30
+] (./4_OrderStatistics.vrb) [27
 
 ]
-<bucketSortEg1.png, id=242, 477.785pt x 502.87875pt>
-File: bucketSortEg1.png Graphic file (type png)
- <use bucketSortEg1.png>
-Package pdftex.def Info: bucketSortEg1.png used on input line 329.
-(pdftex.def)             Requested size: 191.11061pt x 201.14793pt.
+\openout4 = `4_OrderStatistics.vrb'.
 
-[31
 
- <./bucketSortEg1.png>] <bucketSortEg2.png, id=251, 471.7625pt x 501.875pt>
-File: bucketSortEg2.png Graphic file (type png)
+(./4_OrderStatistics.vrb) [28
 
-<use bucketSortEg2.png>
-Package pdftex.def Info: bucketSortEg2.png used on input line 336.
-(pdftex.def)             Requested size: 188.70164pt x 200.74643pt.
- [32
-
- <./bucketSortEg2.png>] [33
+] (./4_OrderStatistics.vrb) [29
 
 ]
-<msdRadixSortErr.png, id=267, 560.0925pt x 313.17pt>
-File: msdRadixSortErr.png Graphic file (type png)
- <use msdRadixSortErr.png>
-Package pdftex.def Info: msdRadixSortErr.png used on input line 357.
-(pdftex.def)             Requested size: 224.03302pt x 125.26576pt.
+\openout4 = `4_OrderStatistics.vrb'.
 
-[34
 
- <./msdRadixSortErr.png>]
-<lsdRadixSortEg.png, id=274, 560.0925pt x 310.15875pt>
-File: lsdRadixSortEg.png Graphic file (type png)
+(./4_OrderStatistics.vrb
+<tournamentMethod.png, id=223, 720.44156pt x 411.03563pt>
+File: tournamentMethod.png Graphic file (type png)
 
-<use lsdRadixSortEg.png>
-Package pdftex.def Info: lsdRadixSortEg.png used on input line 364.
-(pdftex.def)             Requested size: 224.03302pt x 124.0613pt.
+<use tournamentMethod.png>
+Package pdftex.def Info: tournamentMethod.png used on input line 3.
+(pdftex.def)             Requested size: 288.17151pt x 164.41133pt.
+) [30
+
+ <./tournamentMethod.png>]
+(./4_OrderStatistics.vrb
+File: tournamentMethod.png Graphic file (type png)
+ <use tournamentMethod.png>
+Package pdftex.def Info: tournamentMethod.png used on input line 3.
+(pdftex.def)             Requested size: 288.17151pt x 164.41133pt.
+) [31
+
+] [32
+
+]
+<quickSelectCase1.png, id=243, 648.92438pt x 277.78781pt>
+File: quickSelectCase1.png Graphic file (type png)
+
+<use quickSelectCase1.png>
+Package pdftex.def Info: quickSelectCase1.png used on input line 282.
+(pdftex.def)             Requested size: 259.56516pt x 111.11314pt.
+ [33
+
+ <./quickSelectCase1.png>]
+<quickSelectCase2.png, id=250, 648.92438pt x 277.78781pt>
+File: quickSelectCase2.png Graphic file (type png)
+
+<use quickSelectCase2.png>
+Package pdftex.def Info: quickSelectCase2.png used on input line 290.
+(pdftex.def)             Requested size: 259.56516pt x 111.11314pt.
+ [34
+
+ <./quickSelectCase2.png>]
+<quickSelectCase3.png, id=257, 648.92438pt x 277.78781pt>
+File: quickSelectCase3.png Graphic file (type png)
+
+<use quickSelectCase3.png>
+Package pdftex.def Info: quickSelectCase3.png used on input line 298.
+(pdftex.def)             Requested size: 259.56516pt x 111.11314pt.
  [35
 
- <./lsdRadixSortEg.png>] [36
-
-]
-\openout4 = `3_SortingLB_LinearSorting.vrb'.
+ <./quickSelectCase3.png>]
+\openout4 = `4_OrderStatistics.vrb'.
 
 
-(./3_SortingLB_LinearSorting.vrb) [37
+(./4_OrderStatistics.vrb) [36
 
-]
-<radixSortEg1.png, id=295, 810.02625pt x 467.7475pt>
-File: radixSortEg1.png Graphic file (type png)
- <use radixSortEg1.png>
-Package pdftex.def Info: radixSortEg1.png used on input line 388.
-(pdftex.def)             Requested size: 324.00475pt x 187.09567pt.
+] [37
 
-Overfull \hbox (16.71487pt too wide) in paragraph at lines 388--388
- [] 
- []
-
-[38
-
- <./radixSortEg1.png>] [39
-
-] [40
-
-]
-<msdRadixSortEg.png, id=318, 811.03pt x 442.65375pt>
-File: msdRadixSortEg.png Graphic file (type png)
- <use msdRadixSortEg.png>
-Package pdftex.def Info: msdRadixSortEg.png used on input line 420.
-(pdftex.def)             Requested size: 283.86475pt x 154.93112pt.
-
-[41
-
- <./msdRadixSortEg.png>] [42
-
-] [43
+] [38
 
 ]
 \tf@nav=\write6
-\openout6 = `3_SortingLB_LinearSorting.nav'.
+\openout6 = `4_OrderStatistics.nav'.
 
 \tf@toc=\write7
-\openout7 = `3_SortingLB_LinearSorting.toc'.
+\openout7 = `4_OrderStatistics.toc'.
 
 \tf@snm=\write8
-\openout8 = `3_SortingLB_LinearSorting.snm'.
+\openout8 = `4_OrderStatistics.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 444.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 444.
- (./3_SortingLB_LinearSorting.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 444.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 444.
-Package rerunfilecheck Info: File `3_SortingLB_LinearSorting.out' has not chang
-ed.
-(rerunfilecheck)             Checksum: 933F59FBD321230369C645AA473B7DE4;177.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
+ (./4_OrderStatistics.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
+Package rerunfilecheck Info: File `4_OrderStatistics.out' has not changed.
+(rerunfilecheck)             Checksum: 9C984B310B69544481840319B674D846;93.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 444.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
- 15985 strings out of 494985
- 296871 string characters out of 6180356
- 365552 words of memory out of 5000000
- 18706 multiletter control sequences out of 15000+600000
- 22639 words of font info for 85 fonts, out of 8000000 for 9000
+ 15943 strings out of 494985
+ 296734 string characters out of 6180356
+ 363426 words of memory out of 5000000
+ 18649 multiletter control sequences out of 15000+600000
+ 21160 words of font info for 79 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 49i,16n,57p,435b,681s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on 3_SortingLB_LinearSorting.pdf (43 pages, 495881 bytes).
+ 49i,16n,58p,427b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt12.pfb>
+Output written on 4_OrderStatistics.pdf (38 pages, 274373 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 90 named destinations out of 1000 (max. 500000)
- 139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 344 PDF objects out of 1000 (max. 8388607)
+ 273 compressed objects within 3 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
