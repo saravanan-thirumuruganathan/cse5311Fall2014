@@ -1,0 +1,590 @@
+%GiG
+\documentclass{beamer} 
+\usetheme{Copenhagen}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{hyperref}
+
+
+\definecolor{azure}{rgb}{0.0, 0.5, 1.0}
+%\newcommand{\tblue}[1]{\textcolor{blue}{#1}}
+\newcommand{\tblue}[1]{{\Large {\textcolor{azure}{#1}}}}
+\newcommand{\hred}[1]{{\textcolor{red}{#1}}}
+\newcommand{\furl}[1]{{\footnote{\url{#1}}}}
+
+\title[Saravanan Thirumuruganathan] 
+{Lecture 6: Binary Search Trees (BST)}
+
+\author[CSE 5311] 
+{Instructor: Saravanan Thirumuruganathan}
+
+\date[] 
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%\begin{frame}{Outline}
+%  \tableofcontents
+%  % You might wish to add the option [pausesections]
+%\end{frame}
+
+\section{Outline}
+
+\begin{frame}
+\frametitle {Outline}
+\begin{enumerate}
+\item Data Structures for representing Dynamic Sets
+\begin{itemize}
+    \item Binary Search Trees (BSTs)
+    \item Balanced Binary Trees - Red Black Trees (RBTs)
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{In-Class Quizzes}
+\begin{itemize}
+\item {\Large {\bf URL:}} {\LARGE \bf \url{http://m.socrative.com/}} 
+\item {\Large {\bf Room Name:} {\LARGE \bf 4f2bb99e}}
+\end{itemize}
+\end{frame}
+
+\section{General}
+
+\begin{frame}{Data Structures}
+
+\tblue{Key Things to Know for Data Structures}
+\begin{itemize}
+    \item Motivation
+    \item Distinctive Property
+    \item Major operations
+    \item Representation
+    \item Algorithms for major operations
+    \item Applications
+\end{itemize}
+\end{frame}
+
+\section{Trees}
+
+\begin{frame}{Trees}
+
+\tblue{Non-Linear Data Structures:}
+\begin{itemize}
+\item Very common and useful category of data structures
+\item Most popular one is {\bf hierarchical}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Trees - Applications\footnote{\url{http://interactivepython.org/runestone/static/pythonds/Trees/trees.html}}}
+\tblue{Family Tree:}
+\begin{center}
+    \includegraphics[scale=0.44]{treesEg2.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Trees - Applications\footnote{\url{http://interactivepython.org/runestone/static/pythonds/Trees/trees.html}}}
+
+\tblue{Taxonomy Tree:}
+\begin{center}
+    \includegraphics[scale=0.4]{treesEg1.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Trees - Applications\footnote{\url{http://interactivepython.org/runestone/static/pythonds/Trees/trees.html}}}
+
+\tblue{Directory Tree:}
+\begin{center}
+    \includegraphics[scale=0.5]{treesEg3.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Trees - Applications\footnote{\url{http://interactivepython.org/runestone/static/pythonds/Trees/trees.html}}}
+
+\tblue{HTML DOM (Parse) Tree:}
+\begin{center}
+    \includegraphics[scale=0.75]{treesEg4.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Tree - Terminology}
+
+\begin{columns}
+    \column{0.5\textwidth}
+            \begin{itemize}
+            \item Node
+            \item Edge
+            \item Root
+            \item Children 
+            \item Parent 
+            \item Sibling
+            \item Subtree
+            \item Leaf/External node
+            \item Internal node
+            \item Level (node) 
+            \item Height (tree)
+            \item Arity
+            \end{itemize}
+    \column{0.5\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.3]{treeTerminology.png}
+        \end{center}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Tree - Abstract Representation\footnote{\url{http://interactivepython.org/runestone/static/pythonds/Trees/trees.html}}}
+\begin{center}
+    \includegraphics[scale=0.7]{treedef1.png}
+\end{center}
+\end{frame}
+
+
+\section{BSTs}
+
+\begin{frame}{Motivation}
+    \begin{itemize}
+        \item Store dynamic set efficiently
+        \item Use good ideas from ordered list (OL) and ordered doubly linked list (ODLL)
+        \item Use hierarchical storage to avoid pitfalls of OL and ODLL
+        \item First attempt at hierarchical data structure that {\bf tries} to implement all 7 operations efficiently
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Binary Trees}
+    \begin{itemize}
+        \item Each node has at most $2$ children
+        \item Commonly referred to as {\em left} and {\em right} child
+        \item The descendants of {\em left} child constitute {\em left} subtree
+        \item The descendants of {\em right} child constitute {\em right} subtree
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{BST Property}
+    \begin{itemize}
+        \item For every node $x$, the keys of left subtree $\leq key(x)$
+        \item For every node $x$, the keys of right subtree $\geq key(x)$
+    \end{itemize}
+    \begin{center}
+        \includegraphics[scale=0.4]{bstProperty.png}\footnote{\url{http://www.cs.princeton.edu/~rs/AlgsDS07/08BinarySearchTrees.pdf}}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST Examples\footnote{\url{http://en.wikipedia.org/wiki/Binary_search_tree}}}
+    \begin{center}
+        \includegraphics[scale=0.4]{bstExample.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST Height\footnote{\url{https://engineering.purdue.edu/~ee608/handouts/lec10.pdf}}}
+    \begin{itemize}
+        \item There exists multiple possible BSTs to store same set of elements
+        \item Minimum and Maximum Height: \pause $\lg n$ and $n$
+        \item Best and worst case analysis (or specify analysis wrt height)
+    \end{itemize}
+    \begin{center}
+        \includegraphics[scale=0.28]{bstMinMaxExamples.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Representation - I} 
+    \begin{itemize}
+        \item {\bf key:} Stores key information that is used to compare two nodes
+        \item {\bf value:} Stores satellite/auxillary information
+        \item {\bf parent:} Pointer to parent node. parent(root) = NULL
+        \item {\bf left:} Pointer to left child if it exists. Else NULL
+        \item {\bf right:} Pointer to right child if it exists. Else NULL
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Representation - I\furl{CLRS Fig 10.9}}
+    \begin{center}
+        \includegraphics[scale=0.4]{bstRepresentation1.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Representation - II}
+    \begin{center}
+        \includegraphics[scale=0.36]{bstRepresentation2.png}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Major Operations}
+    \begin{itemize}
+        \item Search
+        \item Insert
+        \item Minimum/Maximum
+        \item Successor/Predecessor
+        \item Deletion
+        \item \hred{Traversals}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{BST: Search}
+
+\tblue{Search:} $4$
+    \begin{center}
+        \includegraphics[scale=0.7]{bstSearch.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST: Search}
+    \begin{center}
+        \includegraphics[scale=0.5]{bstSearch2.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{BST: Search}
+    \begin{verbatim}
+Tree-Search(x, k):
+    if x == NULL or k == x.key
+        return x
+    if k < x.key
+        return Tree-Search(x.left, k)
+    else
+        return Tree-Search(x.right, k)
+    \end{verbatim}
+    \begin{itemize}
+        \item {\bf Analysis:} \pause $O(h)$
+        \item {\bf Best Case:} $\lg n$ and {\bf Worst Case:} $O(n)$
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{BST: Insert}
+
+\tblue{Insert:} $13$
+    \begin{center}
+        \includegraphics[scale=0.5]{bstInsert.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST: Insert}
+
+\tblue{Insert:} $13$
+    \begin{center}
+        \includegraphics[scale=0.5]{bstInsert2.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{BST: }
+    \begin{itemize}
+        \item {\bf Analysis:} \pause $O(h)$ 
+        \item {\bf Best Case:} $\lg n$ and {\bf Worst Case:} $O(n)$
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{BST: Minimum}
+
+    \begin{center}
+        \includegraphics[scale=0.6]{bstMinimum.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST: Minimum}
+
+    \begin{center}
+        \includegraphics[scale=0.5]{bstMinimum2.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{BST: Minimum}
+\begin{verbatim}
+Tree-Minimum(x)
+    while x.left is not NULL
+        x = x.left
+    return x
+\end{verbatim}
+    \begin{itemize}
+        \item {\bf Analysis:} $O(h)$ 
+        \item {\bf Best Case:} $\lg n$ and {\bf Worst Case:} $O(n)$
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{BST: Maximum}
+
+    \begin{center}
+        \includegraphics[scale=0.6]{bstMaximum.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST: Maximum}
+
+    \begin{center}
+        \includegraphics[scale=0.6]{bstMaximum2.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{BST: Maximum}
+\begin{verbatim}
+Tree-Maximum(x)
+    while x.right is not NULL
+        x = x.right
+    return x
+\end{verbatim}
+    \begin{itemize}
+        \item {\bf Analysis:} $O(h)$
+        \item {\bf Best Case:} $\lg n$ and {\bf Worst Case:} $O(n)$
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{BST: Successor}
+
+\tblue{Successor:} $15$
+    \begin{center}
+        \includegraphics[scale=0.7]{bstSearch.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST: Successor}
+
+\tblue{Successor:} $15$
+    \begin{center}
+        \includegraphics[scale=0.5]{bstSuccessor2.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}{BST: Successor}
+
+\tblue{Successor:} $13$
+    \begin{center}
+        \includegraphics[scale=0.7]{bstSearch.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST: Successor}
+
+\tblue{Successor:} $13$
+    \begin{center}
+        \includegraphics[scale=0.5]{bstSuccessor4.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST: Successor}
+
+    \begin{center}
+        \includegraphics[scale=0.5]{bstSuccessor8.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]{BST: }
+\begin{verbatim}
+Tree-Successor(x):
+    if x.right is not NULL
+        return Tree-Minimum(x.right)
+    y = x.parent
+    while y is not NULL and x == y.right
+        x = y
+        y = y.parent
+    return y
+\end{verbatim}
+    \begin{itemize}
+        \item BST Property allowed us to find successor {\bf without} comparing keys
+        \item {\bf Analysis:} $O(h)$ 
+        \item {\bf Best Case:} $\lg n$ and {\bf Worst Case:} $O(n)$
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{BST: Predecessor}
+
+\tblue{Predecessor:} $6$
+    \begin{center}
+        \includegraphics[scale=0.5]{bstSearch.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST: Predecessor}
+
+\tblue{Predecessor:} $6$
+    \begin{center}
+        \includegraphics[scale=0.5]{bstPredecessor2.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}{BST: Predecessor}
+
+\tblue{Predecessor:} $17$
+    \begin{center}
+        \includegraphics[scale=0.7]{bstSearch.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST: Predecessor}
+
+\tblue{Predecessor:} $17$
+    \begin{center}
+        \includegraphics[scale=0.5]{bstPredecessor4.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]{BST: }
+\begin{verbatim}
+Tree-Predecessor(x):
+    if x.left is not NULL
+        return Tree-Maximum(x.left)
+    y = x.parent
+    while y is not NULL and x == y.left
+        x = y
+        y = y.parent
+    return y
+\end{verbatim}
+    \begin{itemize}
+        \item BST Property allowed us to find predecessor {\bf without} comparing keys
+        \item {\bf Analysis:} $O(h)$ 
+        \item {\bf Best Case:} $\lg n$ and {\bf Worst Case:} $O(n)$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{BST: Deletion}
+
+    Trickiest Operation! Suppose we want to delete node $z$
+    \begin{enumerate}
+        \item $z$ has no children: Replace $z$ with NULL
+        \item $z$ has one children $c$: Promote $c$ to $z$'s place
+        \item $z$ has two children: 
+        \begin{enumerate}
+            \item[(a)] Let $z$'s successor be $y$
+            \item[(b)] $y$ is either a leaf or has {\bf only} right child
+            \item[(c)] Promote $y$ to $z$'s place
+            \item[(d)] Fix $y$'s loss via Cases 1 or 2
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}{BST: Deletion Case I\furl{https://www.cs.rochester.edu/u/gildea/csc282/slides/C12-bst.pdf}}
+    \begin{center}
+        \includegraphics[scale=0.6]{bstDelCase1.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST: Deletion Case II\furl{https://www.cs.rochester.edu/u/gildea/csc282/slides/C12-bst.pdf}}
+    \begin{center}
+        \includegraphics[scale=0.6]{bstDelCase2.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{BST: Deletion Case III\furl{https://www.cs.rochester.edu/u/gildea/csc282/slides/C12-bst.pdf}}
+    \begin{center}
+        \includegraphics[scale=0.6]{bstDelCase3.png}
+    \end{center}
+\end{frame}
+
+
+
+
+\begin{frame}{BST: Traversal}
+    \begin{itemize}
+        \item {\bf Traversal:} Visit all nodes in a tree
+        \item Many possible traversal strategies
+        \item Three are most popular:  Pre-Order, In-Order, Post-Order
+    \end{itemize}
+    \begin{center}
+        \includegraphics[scale=0.5]{bstTraversals.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]{BST: Traversals}
+\begin{verbatim}
+In-Order-Walk(x):
+    if x == NULL
+        return
+    In-Order-Walk(x.left)
+    Print x.key
+    In-Order-Walk(x.right)
+\end{verbatim}
+    \begin{itemize}
+        \item {\bf Analysis:} \pause $O(n)$
+        \item Holds true for all three traversals
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{BST: Traversal}
+    \begin{center}
+        \includegraphics[scale=0.4]{bstTraversalEg.png}
+    \end{center}
+    \begin{itemize}
+        \item {\bf In-Order:} \pause $2, 3, 4, 5, 6, 7, 8 , 9, 11, 12, 15, 19, 20$.
+        \item {\bf Pre-Order:} \pause $7, 4, 2, 3, 6, 5, 12, 9, 8, 11, 19, 15, 20$.
+        \item {\bf Pre-Order:} \pause $3, 2, 5, 6, 4, 8, 11, 9, 15, 20, 19, 12, 7$.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{BST: Traversals}
+    \begin{itemize}
+        \item Notice anything special about In-Order traversal? \pause
+        \begin{itemize}
+            \item Returns items in sorted order!
+        \end{itemize}
+        \item Successor/Predecessor can be expressed in terms on In-Order traversal
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Application: Tree-Sort}
+
+    \tblue{Tree-Sort:}
+    \begin{itemize}
+        \item Construct a BST out of elements
+        \item Do In-Order traversal
+    \end{itemize}
+
+    \tblue{Analysis:}
+    \begin{itemize}
+        \item {\bf Best Case:} \pause $n \times \lg n + n$ = $O(n \lg n)$
+        \item {\bf Worst Case:} \pause $n \times n + n$ = $O(n^2)$
+    \end{itemize}
+\end{frame}
+
+
+\section{Summary}
+\begin{frame}{Summary}
+
+\tblue{Major Concepts:}
+\begin{itemize}
+\item Binary Search Trees
+\item Red-Black Trees
+\end{itemize}
+\end{frame}
+
+
+\end{document}
+

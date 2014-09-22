@@ -12,7 +12,7 @@
 \newcommand{\hred}[1]{{\textcolor{red}{#1}}}
 
 \title[Saravanan Thirumuruganathan] 
-{Lecture 5: Binary Search, Binary Search Trees (BST)}
+{Lecture 5: Binary Search, Introduction to Data Structures for Dynamic Sets}
 
 \author[CSE 5311] 
 {Instructor: Saravanan Thirumuruganathan}
@@ -38,9 +38,8 @@
 \item Search problem - Linear and Binary Search
 \item Data Structures for representing Dynamic Sets
 \begin{itemize}
-    \item Unsorted list
-    \item Sorted list
-    \item Binary Search Trees (BSTs)
+    \item Linear
+    \item Non-Linear/Hierarchical 
 \end{itemize}
 \end{enumerate}
 \end{frame}
@@ -181,6 +180,24 @@ BinarySearch(A, e, low, high):
 \end{center}
 \end{frame}
 
+
+\begin{frame}{Data Structures}
+
+\tblue{Key Points:}
+\begin{itemize}
+\item What is the objective? 
+\begin{itemize}
+    \item Store the input data
+    \item Help make an algorithm faster (by storing intermediate data)
+    \item Transform input to make queries faster
+\end{itemize}
+\item Is there a specific property/constraint to satisfy?
+\item List of operations to support
+\item List of most important operations
+\end{itemize}
+\end{frame}
+
+
 \begin{frame}{Dynamic Sets}
 \begin{itemize}
 \item {\bf Set:}  A set is a collection of distinct objects
@@ -232,85 +249,128 @@ BinarySearch(A, e, low, high):
 
 \tblue{Linear Data Structures:}
 \begin{itemize}
-\item Stacks
-\item Queues
-\item Linked Lists
+\item Unordered List 
+\item Ordered List 
+\item (Doubly) Linked Lists
+\item (Doubly) Sorted Linked Lists
 \end{itemize}
 \end{frame}
 
 
-
-\section{Trees}
-
-\begin{frame}{Trees}
-
-\tblue{Non-Linear Data Structures:}
+\begin{frame}{Unordered List}
+\begin{center}
+    \includegraphics[scale=0.4]{list.png}
+\end{center}
 \begin{itemize}
-\item Very common and useful category of data structures
-\item Most popular one is {\bf hierarchical}
+    \item Search
+    \item Insert
+    \item Delete
+    \item Minimum/Maximum
+    \item Successor/Predecessor
 \end{itemize}
 \end{frame}
 
 
-
-\begin{frame}{Trees - Applications\footnote{\url{http://interactivepython.org/runestone/static/pythonds/Trees/trees.html}}}
-\tblue{Family Tree:}
+\begin{frame}{Unordered List}
 \begin{center}
-    \includegraphics[scale=0.44]{treesEg2.png}
+    \includegraphics[scale=0.4]{list.png}
 \end{center}
-\end{frame}
-
-
-\begin{frame}{Trees - Applications\footnote{\url{http://interactivepython.org/runestone/static/pythonds/Trees/trees.html}}}
-
-\tblue{Taxonomy Tree:}
-\begin{center}
-    \includegraphics[scale=0.4]{treesEg1.png}
-\end{center}
-\end{frame}
-
-
-\begin{frame}{Trees - Applications\footnote{\url{http://interactivepython.org/runestone/static/pythonds/Trees/trees.html}}}
-
-\tblue{Directory Tree:}
-\begin{center}
-    \includegraphics[scale=0.5]{treesEg3.png}
-\end{center}
-\end{frame}
-
-
-\begin{frame}{Trees - Applications\footnote{\url{http://interactivepython.org/runestone/static/pythonds/Trees/trees.html}}}
-
-\tblue{HTML DOM (Parse) Tree:}
-\begin{center}
-    \includegraphics[scale=0.75]{treesEg4.png}
-\end{center}
-\end{frame}
-
-
-\begin{frame}{Tree - Abstract Representation\footnote{\url{http://interactivepython.org/runestone/static/pythonds/Trees/trees.html}}}
-\begin{center}
-    \includegraphics[scale=0.7]{treedef1.png}
-\end{center}
-\end{frame}
-
-\section{BSTs}
-
-\begin{frame}{Tree - Terminology}
 \begin{itemize}
-\item Node
-\item Edge
-\item Root
-\item Children 
-\item Parent 
-\item Sibling
-\item Subtree
-\item Leaf node (or external node)
-\item Internal node
-\item Level of a node (level(root) = 0)
-\item Height of tree
+    \item Search : $O(n)$
+    \item Insert : $O(1)$ 
+    \item Delete: $O(n)$
+    \item Minimum/Maximum $O(n)$
+    \item Successor/Predecessor: $O(n)$
 \end{itemize}
 \end{frame}
+
+
+
+\begin{frame}{Ordered List}
+\begin{center}
+    \includegraphics[scale=0.4]{orderedList.png}
+\end{center}
+\begin{itemize}
+    \item Search
+    \item Insert
+    \item Delete
+    \item Minimum/Maximum
+    \item Successor/Predecessor
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Ordered List}
+\begin{center}
+    \includegraphics[scale=0.4]{orderedList.png}
+\end{center}
+\begin{itemize}
+    \item Search : $O(\lg n)$
+    \item Insert: $O(n)$
+    \item Delete: $O(n)$
+    \item Minimum/Maximum $O(1)$
+    \item Successor/Predecessor: $O(\lg n)$
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Unordered Doubly Linked List}
+\begin{center}
+    \includegraphics[scale=0.4]{linkedList.png}
+\end{center}
+\begin{itemize}
+    \item Search
+    \item Insert
+    \item Delete
+    \item Minimum/Maximum
+    \item Successor/Predecessor
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Unordered Doubly Linked List}
+\begin{center}
+    \includegraphics[scale=0.4]{linkedList.png}
+\end{center}
+\begin{itemize}
+    \item Search : $O(n)$
+    \item Insert: $O(1)$
+    \item Delete: $O(n)$
+    \item Minimum/Maximum $O(n)$
+    \item Successor/Predecessor: $O(n)$
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Ordered Doubly Linked List}
+\begin{center}
+    \includegraphics[scale=0.4]{orderedLinkedList.png}
+\end{center}
+\begin{itemize}
+    \item Search
+    \item Insert
+    \item Delete
+    \item Minimum/Maximum
+    \item Successor/Predecessor
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Ordered Doubly Linked List}
+\begin{center}
+    \includegraphics[scale=0.4]{orderedLinkedList.png}
+\end{center}
+\begin{itemize}
+    \item Search : $O(n)$
+    \item Insert: $O(n)$
+    \item Delete: $O(n)$
+    \item Minimum/Maximum $O(n)$
+    \item Successor/Predecessor: $O(n)$
+\end{itemize}
+\end{frame}
+
 
 
 \section{Summary}
@@ -321,7 +381,6 @@ BinarySearch(A, e, low, high):
 \item Search Problem
 \item Linear and Binary Search algorithms
 \item Data Structures for Dynamic Sets
-\item BSTs
 \end{itemize}
 \end{frame}
 

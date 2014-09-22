@@ -1,0 +1,13 @@
+\frametitle{BST: Traversals}
+\begin{verbatim}
+In-Order-Walk(x):
+    if x == NULL
+        return
+    In-Order-Walk(x.left)
+    Print x.key
+    In-Order-Walk(x.right)
+\end{verbatim}
+    \begin{itemize}
+        \item {\bf Analysis:} \pause $O(n)$
+        \item Holds true for all three traversals
+    \end{itemize}
