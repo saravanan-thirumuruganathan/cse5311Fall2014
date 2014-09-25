@@ -11,11 +11,12 @@
 \definecolor{azure}{rgb}{0.0, 0.5, 1.0}
 %\newcommand{\tblue}[1]{\textcolor{blue}{#1}}
 \newcommand{\tblue}[1]{{\Large {\textcolor{azure}{#1}}}}
+\newcommand{\thblue}[1]{{\Huge {\textcolor{azure}{#1}}}}
 \newcommand{\hred}[1]{{\textcolor{red}{#1}}}
 \newcommand{\furl}[1]{{\footnote{\url{#1}}}}
 
 \title[Saravanan Thirumuruganathan] 
-{Lecture 6: Binary Search Trees (BST)}
+{Lecture 6: Binary Search Trees (BST) and Red-Black Trees (RBTs)} 
 
 \author[CSE 5311] 
 {Instructor: Saravanan Thirumuruganathan}
@@ -41,6 +42,7 @@
 \item Data Structures for representing Dynamic Sets
 \begin{itemize}
     \item Binary Search Trees (BSTs)
+    \item Balanced Search Trees
     \item Balanced Binary Trees - Red Black Trees (RBTs)
 \end{itemize}
 \end{enumerate}
@@ -62,6 +64,7 @@
     \item Motivation
     \item Distinctive Property
     \item Major operations
+    \item Key Helper Routines
     \item Representation
     \item Algorithms for major operations
     \item Applications
@@ -236,6 +239,17 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Key Helper Routines}
+    \begin{itemize}
+        \item Successor/Predecessor
+        \item Traversals
+        \item Case by Case Analysis:
+        \begin{itemize}
+            \item Analysis by number of children : $0, 1, 2$
+            \item Analysis by type of children: {\em left}, {\em right}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
 
 \begin{frame}{BST: Search}
 
@@ -506,6 +520,13 @@ Tree-Predecessor(x):
 \end{frame}
 
 
+\begin{frame}{Digression}
+    \begin{itemize}
+        \item Perfectly fine if you cannot do deletion by memory
+        \item Things will become hairier in RBT
+        \item As long as you remember the key ideas and operations, you will be fine
+    \end{itemize}
+\end{frame}
 
 
 \begin{frame}{BST: Traversal}
@@ -569,11 +590,166 @@ In-Order-Walk(x):
 
     \tblue{Analysis:}
     \begin{itemize}
+        \item {\bf Time Complexity:} Time Complexity for Constructing Tree + Time Complexity for In-Order traversal
         \item {\bf Best Case:} \pause $n \times \lg n + n$ = $O(n \lg n)$
         \item {\bf Worst Case:} \pause $n \times n + n$ = $O(n^2)$
     \end{itemize}
 \end{frame}
 
+
+\section{Balanced Binary Trees}
+
+\begin{frame}{Balanced Binary Trees}
+    \begin{itemize}
+        \item Time complexity of BST operations depends on height
+        \item Can vary between $O(\lg n)$ to $O(n)$
+        \item BST operations do not take any special care to keep tree balanced
+        \item If we can do the balancing efficiently, then all operations become faster
+        \item Self-balancing - Do not run balancing algorithms periodically
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Notion of Balance}
+    \begin{itemize}
+        \item Maintaining perfectly balanced trees is very hard and expensive
+        \item So we resort to BSTs that are {\bf approximately} balanced
+        \item Need to define notion of balance
+        \item Ideas? \pause
+        \begin{itemize}
+            \item Informally, ensure the longest path in tree is not ``too'' long
+            \item Many ways of formally specifying it
+            \item Eg: $|$height(left subtree) $-$ height(right subtree)$|$ $\leq 1$ 
+        \end{itemize}
+        \item When can balance be broken? \pause Insertion, Deletion
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Balanced Search Trees}
+    \begin{itemize}
+        \item Red-Black trees
+        \item AVL trees
+        \item $2-3$ and $2-3-4$ trees
+        \item B-trees and other variants
+        \item Treaps
+        \item Skip trees
+        \item Splay trees
+        \item and many many more
+    \end{itemize}
+\end{frame}
+
+\section{Red-Black Trees}
+\begin{frame}{Red-Black Trees}
+    \begin{center}
+        \thblue{Red-Black Trees}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{RBT: Motivation}
+    \begin{itemize}
+        \item Most important self-balancing BST
+        \item Invented by Guibas-Sedgewick
+        \item Simplifies/Unifies various balanced tree algorithms
+        \item Became popular due to its simplicity in implementation
+        \item Stores additional information about color of node ($1$ bit)
+        \item All operations are logarithmic!
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{RBT Property}
+    \begin{itemize}
+        \item Every node is either red or black
+        \item Root and leaves are black
+        \item If node is red, then its parent is black
+        \item All {\em simple} paths from any node $v$ to a descendent leaf have same number of black nodes. Aka {\em black-height($v$)}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{RBT Example}
+    \begin{center}
+        \includegraphics[scale=0.4]{rbtEg1.png}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{RBT Example}
+    \begin{center}
+        \includegraphics[scale=0.4]{rbtEg2.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Major Operations}
+    \begin{itemize}
+        \item Search
+        \item Insert
+        \item Minimum/Maximum
+        \item Successor/Predecessor
+        \item Deletion
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Key Helper Routines}
+    \begin{itemize}
+        \item Rotations - Right and Left
+        \item Case by Case Analysis:
+        \begin{itemize}
+            \item Analysis by number of type of children and siblings
+            \item Analysis by color of children
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{RBT Theorem}
+    \begin{theorem}[RBT Theorem]
+        A red-black tree with $n$ keys has height 
+            $$h \leq 2 \lg (n+1)$$
+    \end{theorem}
+    \begin{corollary}
+        Operations Search, Min, Max, Successor, Predecessor all run in $O(\lg n)$ time  
+        on a Red-Black tree with $n$ nodes.
+    \end{corollary}
+\end{frame}
+
+
+\begin{frame}{RBT - Modifying Operations}
+    \begin{itemize}
+        \item Insert and Delete need to be more complex
+        \item They cause ``changes'' to tree
+        \begin{itemize}
+            \item Change of color
+            \item Change of tree structure via ``rotations''
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Rotations}
+    \begin{center}
+        \includegraphics[scale=0.4]{rotationsEg.png}
+    \end{center}
+    \begin{itemize}
+        \item Rotation can be done in $O(1)$ time. 
+        \item Rotations maintain in-order ordering of keys: 
+            $a \in \alpha, b \in \beta, c \in \gamma \Rightarrow a \leq A \leq b \leq B \leq c$
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Insertion in RBT}
+    \begin{itemize}
+        \item Insert $x$ in tree
+        \item Color $x$ red
+        \item Only red-black property $3$ can be violated
+        \item Move violation up the tree by {\bf recoloring} until it can be fixed with {\bf rotations} and {\bf recoloring}.
+    \end{itemize}
+\end{frame}
 
 \section{Summary}
 \begin{frame}{Summary}
@@ -581,6 +757,7 @@ In-Order-Walk(x):
 \tblue{Major Concepts:}
 \begin{itemize}
 \item Binary Search Trees
+\item Concept of Self-Balancing
 \item Red-Black Trees
 \end{itemize}
 \end{frame}
