@@ -1,0 +1,9 @@
+\frametitle{HeapSort}
+\begin{verbatim}
+    HeapSort(A):
+        Build-Max-Heap(A)
+        for i = A.length down to 2
+            Exchange A[1] with A[i]
+            A.heapSize = A.heapSize - 1
+            Max-Heapify(A, 1)
+    \end{verbatim}

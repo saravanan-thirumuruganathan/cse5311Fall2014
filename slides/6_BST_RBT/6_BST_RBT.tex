@@ -669,7 +669,7 @@ In-Order-Walk(x):
 \end{frame}
 
 
-\begin{frame}{RBT Example}
+\begin{frame}{RBT Example\footnote{MIT OCW 6-046j}}
     \begin{center}
         \includegraphics[scale=0.4]{rbtEg1.png}
     \end{center}
@@ -677,10 +677,20 @@ In-Order-Walk(x):
 
 
 
-\begin{frame}{RBT Example}
+\begin{frame}{RBT Example\footnote{MIT OCW 6-046j}}
     \begin{center}
         \includegraphics[scale=0.4]{rbtEg2.png}
     \end{center}
+\end{frame}
+
+\begin{frame}{RBT Property: Implications}
+    \begin{itemize}
+        \item If a {\bf red} node has any children, then it must have {\bf two} children and both must be {\bf black}
+        \item If a {\bf black} node has {\bf only one} child, it has to be {\bf red}
+        \item No root to leaf path has two consecutive red nodes
+        \item No root to leaf path is more than twice as long as any other
+        \item The rules {\bf bound} the imbalance in the tree
+    \end{itemize}
 \end{frame}
 
 
@@ -699,7 +709,7 @@ In-Order-Walk(x):
         \item Rotations - Right and Left
         \item Case by Case Analysis:
         \begin{itemize}
-            \item Analysis by number of type of children and siblings
+            \item Analysis by type of children, siblings and uncle (sibling of parent)
             \item Analysis by color of children
         \end{itemize}
     \end{itemize}
@@ -720,17 +730,17 @@ In-Order-Walk(x):
 
 \begin{frame}{RBT - Modifying Operations}
     \begin{itemize}
-        \item Insert and Delete need to be more complex
+        \item Insert and Delete need to be more complex so as to balance the tree
         \item They cause ``changes'' to tree
         \begin{itemize}
-            \item Change of color
+            \item Change of color (recoloring)
             \item Change of tree structure via ``rotations''
         \end{itemize}
     \end{itemize}
 \end{frame}
 
 
-\begin{frame}{Rotations}
+\begin{frame}{Rotations\footnote{MIT OCW 6-046j}}
     \begin{center}
         \includegraphics[scale=0.4]{rotationsEg.png}
     \end{center}
@@ -742,12 +752,89 @@ In-Order-Walk(x):
 \end{frame}
 
 
-\begin{frame}{Insertion in RBT}
+\begin{frame}{RBT Insertion }
     \begin{itemize}
-        \item Insert $x$ in tree
-        \item Color $x$ red
+        \item Insert $z$ in tree (based on BST property)
+        \item Color $z$ red
         \item Only red-black property $3$ can be violated
-        \item Move violation up the tree by {\bf recoloring} until it can be fixed with {\bf rotations} and {\bf recoloring}.
+        \item Fix violations by rotations and recoloring
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{RBT : Insertion\footnote{\url{http://web.cse.ohio-state.edu/~lai/2331/0.Red-Black\%20Trees.pdf}}}
+    \begin{itemize}
+        \item Case I: The parent and ``uncle'' of $z$ are both red
+        \begin{itemize}
+            \item Color parent and uncle of $z$ as black
+            \item Color grandparent of $z$ as red
+            \item Recurse of grandparent of $z$
+        \end{itemize}
+    \end{itemize}
+    \begin{center}
+        \includegraphics[scale=0.4]{rbtInsertEg1.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{RBT : Insertion\footnote{\url{http://web.cse.ohio-state.edu/~lai/2331/0.Red-Black\%20Trees.pdf}}}
+    \begin{itemize}
+        \item Case II: The parent of $z$ is red, the uncle of $z$ is black, $z$'s parent is a left child , $z$ is a right child
+        \begin{itemize}
+            \item Left rotate on $z$'s parent
+            \item Make $z$'s left child the new $z$
+            \item Solve this scenario by using by Case III
+        \end{itemize}
+    \end{itemize}
+    \begin{center}
+        \includegraphics[scale=0.4]{rbtInsertEg2.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{RBT : Insertion\footnote{\url{http://web.cse.ohio-state.edu/~lai/2331/0.Red-Black\%20Trees.pdf}}}
+    \begin{itemize}
+        \item Case III: The parent of $z$ is Red and the uncle is black, $z$ is a left child, and its parent is a left child
+        \begin{itemize}
+            \item Right rotate on grandparent of $z$
+            \item Switch colors of $z$'s parent and $z$'s sibling
+            \item Done!
+        \end{itemize}
+    \end{itemize}
+    \begin{center}
+        \includegraphics[scale=0.38]{rbtInsertEg3.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{RBT : Insertion\footnote{\url{http://web.cse.ohio-state.edu/~lai/2331/0.Red-Black\%20Trees.pdf}}}
+    \begin{itemize}
+        \item Case II': Symmetric to Case II
+    \end{itemize}
+    \begin{center}
+        \includegraphics[scale=0.4]{rbtInsertEg4.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{RBT : Insertion\footnote{\url{http://web.cse.ohio-state.edu/~lai/2331/0.Red-Black\%20Trees.pdf}}}
+    \begin{itemize}
+        \item Case III': Symmetric to Case III
+    \end{itemize}
+    \begin{center}
+        \includegraphics[scale=0.4]{rbtInsertEg5.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}{RBT : Insertion Sorted Elements}
+    \begin{itemize}
+        \item Refer \url{https://www.cs.utexas.edu/~scottm/cs314/handouts/slides/Topic23RedBlackTrees.pdf} for a step-by-step example of how RBT handles insertion in sorted order
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{RBT: Deletion}
+    \begin{itemize}
+        \item Similarly complicated 
+        \item Refer to CLRS book for full details
     \end{itemize}
 \end{frame}
 
