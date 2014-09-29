@@ -754,20 +754,20 @@ In-Order-Walk(x):
 
 \begin{frame}{RBT Insertion }
     \begin{itemize}
-        \item Insert $z$ in tree (based on BST property)
-        \item Color $z$ red
+        \item Insert $x$ in tree (based on BST property)
+        \item Color $x$ red
         \item Only red-black property $3$ can be violated
         \item Fix violations by rotations and recoloring
     \end{itemize}
 \end{frame}
 
-\begin{frame}{RBT : Insertion\footnote{\url{http://web.cse.ohio-state.edu/~lai/2331/0.Red-Black\%20Trees.pdf}}}
+\begin{frame}{RBT : Insertion\footnote{MIT OCW 6.046j}}
     \begin{itemize}
-        \item Case I: The parent and ``uncle'' of $z$ are both red
+        \item Case I: The parent and ``uncle'' of $x$ are both red
         \begin{itemize}
-            \item Color parent and uncle of $z$ as black
-            \item Color grandparent of $z$ as red
-            \item Recurse of grandparent of $z$
+            \item Color parent and uncle of $x$ as black
+            \item Color grandparent of $x$ as red
+            \item Recurse of grandparent of $x$
         \end{itemize}
     \end{itemize}
     \begin{center}
@@ -776,12 +776,12 @@ In-Order-Walk(x):
 \end{frame}
 
 
-\begin{frame}{RBT : Insertion\footnote{\url{http://web.cse.ohio-state.edu/~lai/2331/0.Red-Black\%20Trees.pdf}}}
+\begin{frame}{RBT : Insertion\footnote{MIT OCW 6.046j}}
     \begin{itemize}
-        \item Case II: The parent of $z$ is red, the uncle of $z$ is black, $z$'s parent is a left child , $z$ is a right child
+        \item Case II: The parent of $x$ is red, the uncle of $x$ is black, $x$'s parent is a left child , $x$ is a right child
         \begin{itemize}
-            \item Left rotate on $z$'s parent
-            \item Make $z$'s left child the new $z$
+            \item Left rotate on $x$'s parent
+            \item Make $x$'s left child the new $x$
             \item Solve this scenario by using by Case III
         \end{itemize}
     \end{itemize}
@@ -791,12 +791,12 @@ In-Order-Walk(x):
 \end{frame}
 
 
-\begin{frame}{RBT : Insertion\footnote{\url{http://web.cse.ohio-state.edu/~lai/2331/0.Red-Black\%20Trees.pdf}}}
+\begin{frame}{RBT : Insertion\footnote{MIT OCW 6.046j}}
     \begin{itemize}
-        \item Case III: The parent of $z$ is Red and the uncle is black, $z$ is a left child, and its parent is a left child
+        \item Case III: The parent of $x$ is Red and the uncle is black, $x$ is a left child, and its parent is a left child
         \begin{itemize}
-            \item Right rotate on grandparent of $z$
-            \item Switch colors of $z$'s parent and $z$'s sibling
+            \item Right rotate on grandparent of $x$
+            \item Switch colors of $x$'s parent and $x$'s sibling
             \item Done!
         \end{itemize}
     \end{itemize}
@@ -806,24 +806,6 @@ In-Order-Walk(x):
 \end{frame}
 
 
-\begin{frame}{RBT : Insertion\footnote{\url{http://web.cse.ohio-state.edu/~lai/2331/0.Red-Black\%20Trees.pdf}}}
-    \begin{itemize}
-        \item Case II': Symmetric to Case II
-    \end{itemize}
-    \begin{center}
-        \includegraphics[scale=0.4]{rbtInsertEg4.png}
-    \end{center}
-\end{frame}
-
-
-\begin{frame}{RBT : Insertion\footnote{\url{http://web.cse.ohio-state.edu/~lai/2331/0.Red-Black\%20Trees.pdf}}}
-    \begin{itemize}
-        \item Case III': Symmetric to Case III
-    \end{itemize}
-    \begin{center}
-        \includegraphics[scale=0.4]{rbtInsertEg5.png}
-    \end{center}
-\end{frame}
 
 \begin{frame}{RBT : Insertion Sorted Elements}
     \begin{itemize}

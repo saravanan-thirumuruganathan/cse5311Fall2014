@@ -2,6 +2,6 @@
 \beamer@sectionintoc {1}{Outline}{2}{0}{1}
 \beamer@sectionintoc {2}{General}{4}{0}{2}
 \beamer@sectionintoc {3}{Binary Heap}{5}{0}{3}
-\beamer@sectionintoc {4}{Heapsort}{48}{0}{4}
-\beamer@sectionintoc {5}{Union-Find}{48}{0}{5}
-\beamer@sectionintoc {6}{Summary}{48}{0}{6}
+\beamer@sectionintoc {4}{Heapsort}{60}{0}{4}
+\beamer@sectionintoc {5}{Union-Find}{76}{0}{5}
+\beamer@sectionintoc {6}{Summary}{89}{0}{6}

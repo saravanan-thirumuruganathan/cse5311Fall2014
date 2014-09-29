@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  25 SEP 2014 13:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  26 SEP 2014 00:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -892,231 +892,447 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [15
 
+] [16
+
 ]
-<completeTreeEg.png, id=146, 544.0325pt x 282.05376pt>
+<completeTreeEg.png, id=152, 544.0325pt x 282.05376pt>
 File: completeTreeEg.png Graphic file (type png)
 
 <use completeTreeEg.png>
-Package pdftex.def Info: completeTreeEg.png used on input line 161.
+Package pdftex.def Info: completeTreeEg.png used on input line 170.
 (pdftex.def)             Requested size: 217.60915pt x 112.81949pt.
- [16
+ [17
 
- <./completeTreeEg.png>] [17
+ <./completeTreeEg.png>] [18
 
 ]
-<maxHeapEg.png, id=163, 497.86pt x 370.38374pt>
+<maxHeapEg.png, id=169, 497.86pt x 370.38374pt>
 File: maxHeapEg.png Graphic file (type png)
  <use maxHeapEg.png>
-Package pdftex.def Info: maxHeapEg.png used on input line 181.
+Package pdftex.def Info: maxHeapEg.png used on input line 190.
 (pdftex.def)             Requested size: 199.14047pt x 148.15086pt.
- [18
+ [19
 
- <./maxHeapEg.png>] <heapOrNot.png, id=170, 803.0pt x 416.55624pt>
+ <./maxHeapEg.png>] <heapOrNot.png, id=177, 803.0pt x 416.55624pt>
 File: heapOrNot.png Graphic file (type png)
  <use heapOrNot.png>
-Package pdftex.def Info: heapOrNot.png used on input line 188.
+Package pdftex.def Info: heapOrNot.png used on input line 197.
 (pdftex.def)             Requested size: 321.1943pt x 166.61954pt.
 
-Overfull \hbox (13.90443pt too wide) in paragraph at lines 188--188
+Overfull \hbox (13.90443pt too wide) in paragraph at lines 197--197
  [] 
  []
 
-[19
+[20
 
- <./heapOrNot.png>] [20
-
-] [21
+ <./heapOrNot.png>] [21
 
 ] [22
 
+] [23
+
 ]
-<maxHeapRepr.png, id=199, 670.505pt x 251.94125pt>
+<maxHeapRepr.png, id=205, 670.505pt x 251.94125pt>
 File: maxHeapRepr.png Graphic file (type png)
  <use maxHeapRepr.png>
-Package pdftex.def Info: maxHeapRepr.png used on input line 222.
+Package pdftex.def Info: maxHeapRepr.png used on input line 231.
 (pdftex.def)             Requested size: 268.19725pt x 100.7747pt.
 
-[23
+[24
 
- <./maxHeapRepr.png>] [24
+ <./maxHeapRepr.png>] [25
 
 ]
-<maxHeapify1.png, id=212, 378.41376pt x 263.98625pt>
+<maxHeapify1.png, id=219, 378.41376pt x 263.98625pt>
 File: maxHeapify1.png Graphic file (type png)
  <use maxHeapify1.png>
-Package pdftex.def Info: maxHeapify1.png used on input line 241.
+Package pdftex.def Info: maxHeapify1.png used on input line 251.
 (pdftex.def)             Requested size: 227.05pt x 158.39296pt.
 
-[25
+[26
 
- <./maxHeapify1.png>] <maxHeapify2.png, id=220, 385.44pt x 262.9825pt>
+ <./maxHeapify1.png>] <maxHeapify2.png, id=226, 385.44pt x 262.9825pt>
 File: maxHeapify2.png Graphic file (type png)
 
 <use maxHeapify2.png>
-Package pdftex.def Info: maxHeapify2.png used on input line 248.
+Package pdftex.def Info: maxHeapify2.png used on input line 258.
 (pdftex.def)             Requested size: 231.26578pt x 157.7907pt.
- [26
+ [27
 
  <./maxHeapify2.png>]
-<maxHeapify3.png, id=227, 358.33875pt x 247.92625pt>
+<maxHeapify3.png, id=233, 358.33875pt x 247.92625pt>
 File: maxHeapify3.png Graphic file (type png)
  <use maxHeapify3.png>
-Package pdftex.def Info: maxHeapify3.png used on input line 255.
+Package pdftex.def Info: maxHeapify3.png used on input line 265.
 (pdftex.def)             Requested size: 215.0049pt x 148.7569pt.
 
-[27
+[28
 
- <./maxHeapify3.png>] [28
+ <./maxHeapify3.png>] [29
 
 ]
-<buildMaxHeap1.png, id=240, 368.37625pt x 297.11pt>
+<buildMaxHeap1.png, id=246, 368.37625pt x 297.11pt>
 File: buildMaxHeap1.png Graphic file (type png)
  <use buildMaxHeap1.png>
-Package pdftex.def Info: buildMaxHeap1.png used on input line 277.
+Package pdftex.def Info: buildMaxHeap1.png used on input line 287.
 (pdftex.def)             Requested size: 184.18767pt x 148.55463pt.
-
-[29
-
- <./buildMaxHeap1.png>]
-<buildMaxHeap2.png, id=247, 344.28625pt x 244.915pt>
-File: buildMaxHeap2.png Graphic file (type png)
- <use buildMaxHeap2.png>
-Package pdftex.def Info: buildMaxHeap2.png used on input line 284.
-(pdftex.def)             Requested size: 172.1427pt x 122.45718pt.
 
 [30
 
- <./buildMaxHeap2.png>] <buildMaxHeap3.png, id=254, 353.32pt x 237.88875pt>
+ <./buildMaxHeap1.png>]
+<buildMaxHeap2.png, id=253, 344.28625pt x 244.915pt>
+File: buildMaxHeap2.png Graphic file (type png)
+ <use buildMaxHeap2.png>
+Package pdftex.def Info: buildMaxHeap2.png used on input line 294.
+(pdftex.def)             Requested size: 172.1427pt x 122.45718pt.
+
+[31
+
+ <./buildMaxHeap2.png>] <buildMaxHeap3.png, id=261, 353.32pt x 237.88875pt>
 File: buildMaxHeap3.png Graphic file (type png)
 
 <use buildMaxHeap3.png>
-Package pdftex.def Info: buildMaxHeap3.png used on input line 291.
+Package pdftex.def Info: buildMaxHeap3.png used on input line 301.
 (pdftex.def)             Requested size: 176.65956pt x 118.94408pt.
- [31
+ [32
 
  <./buildMaxHeap3.png>]
-<buildMaxHeap4.png, id=262, 360.34625pt x 241.90375pt>
+<buildMaxHeap4.png, id=268, 360.34625pt x 241.90375pt>
 File: buildMaxHeap4.png Graphic file (type png)
  <use buildMaxHeap4.png>
-Package pdftex.def Info: buildMaxHeap4.png used on input line 298.
+Package pdftex.def Info: buildMaxHeap4.png used on input line 308.
 (pdftex.def)             Requested size: 180.17268pt x 120.95157pt.
-
-[32
-
- <./buildMaxHeap4.png>]
-<buildMaxHeap5.png, id=269, 342.27875pt x 254.9525pt>
-File: buildMaxHeap5.png Graphic file (type png)
- <use buildMaxHeap5.png>
-Package pdftex.def Info: buildMaxHeap5.png used on input line 305.
-(pdftex.def)             Requested size: 171.13895pt x 127.47592pt.
 
 [33
 
- <./buildMaxHeap5.png>] <buildMaxHeap6.png, id=276, 337.26pt x 246.9225pt>
+ <./buildMaxHeap4.png>]
+<buildMaxHeap5.png, id=275, 342.27875pt x 254.9525pt>
+File: buildMaxHeap5.png Graphic file (type png)
+ <use buildMaxHeap5.png>
+Package pdftex.def Info: buildMaxHeap5.png used on input line 315.
+(pdftex.def)             Requested size: 171.13895pt x 127.47592pt.
+
+[34
+
+ <./buildMaxHeap5.png>] <buildMaxHeap6.png, id=282, 337.26pt x 246.9225pt>
 File: buildMaxHeap6.png Graphic file (type png)
 
 <use buildMaxHeap6.png>
-Package pdftex.def Info: buildMaxHeap6.png used on input line 312.
+Package pdftex.def Info: buildMaxHeap6.png used on input line 322.
 (pdftex.def)             Requested size: 168.62958pt x 123.46094pt.
- [34
+ [35
 
  <./buildMaxHeap6.png>]
-\openout4 = `7_Heap_UnionFind.vrb'.
-
- (./7_Heap_UnionFind.vrb)
-[35
-
-] <heapSort1.png, id=290, 248.93pt x 175.65625pt>
-File: heapSort1.png Graphic file (type png)
- <use heapSort1.png>
-Package pdftex.def Info: heapSort1.png used on input line 331.
-(pdftex.def)             Requested size: 124.46469pt x 87.8279pt.
+<heapInsert1.png, id=289, 490.08093pt x 392.96812pt>
+File: heapInsert1.png Graphic file (type png)
+ <use heapInsert1.png>
+Package pdftex.def Info: heapInsert1.png used on input line 328.
+(pdftex.def)             Requested size: 245.03987pt x 196.48357pt.
 
 [36
 
- <./heapSort1.png>] <heapSort2.png, id=298, 238.8925pt x 169.63374pt>
-File: heapSort2.png Graphic file (type png)
+ <./heapInsert1.png>] <heapInsert2.png, id=297, 490.08093pt x 392.96812pt>
+File: heapInsert2.png Graphic file (type png)
 
-<use heapSort2.png>
-Package pdftex.def Info: heapSort2.png used on input line 338.
-(pdftex.def)             Requested size: 119.44595pt x 84.81665pt.
+<use heapInsert2.png>
+Package pdftex.def Info: heapInsert2.png used on input line 335.
+(pdftex.def)             Requested size: 245.03987pt x 196.48357pt.
  [37
 
- <./heapSort2.png>]
-<heapSort3.png, id=306, 247.92625pt x 165.61874pt>
-File: heapSort3.png Graphic file (type png)
- <use heapSort3.png>
-Package pdftex.def Info: heapSort3.png used on input line 345.
-(pdftex.def)             Requested size: 123.96281pt x 82.80916pt.
- [38
+ <./heapInsert2.png>]
+<heapInsert3.png, id=305, 490.08093pt x 395.22656pt>
+File: heapInsert3.png Graphic file (type png)
+ <use heapInsert3.png>
+Package pdftex.def Info: heapInsert3.png used on input line 342.
+(pdftex.def)             Requested size: 245.03987pt x 197.6128pt.
 
- <./heapSort3.png>] <heapSort4.png, id=313, 254.9525pt x 177.66376pt>
-File: heapSort4.png Graphic file (type png)
+[38
 
-<use heapSort4.png>
-Package pdftex.def Info: heapSort4.png used on input line 352.
-(pdftex.def)             Requested size: 127.47592pt x 88.83165pt.
+ <./heapInsert3.png>] <heapInsert4.png, id=312, 490.08093pt x 395.22656pt>
+File: heapInsert4.png Graphic file (type png)
+
+<use heapInsert4.png>
+Package pdftex.def Info: heapInsert4.png used on input line 349.
+(pdftex.def)             Requested size: 245.03987pt x 197.6128pt.
  [39
 
- <./heapSort4.png>]
-<heapSort5.png, id=320, 257.96375pt x 162.6075pt>
-File: heapSort5.png Graphic file (type png)
- <use heapSort5.png>
-Package pdftex.def Info: heapSort5.png used on input line 359.
-(pdftex.def)             Requested size: 128.98155pt x 81.30354pt.
- [40
+ <./heapInsert4.png>]
+<heapInsert5.png, id=319, 490.08093pt x 395.97937pt>
+File: heapInsert5.png Graphic file (type png)
+ <use heapInsert5.png>
+Package pdftex.def Info: heapInsert5.png used on input line 356.
+(pdftex.def)             Requested size: 245.03987pt x 197.9892pt.
 
- <./heapSort5.png>] <heapSort6.png, id=327, 248.93pt x 179.67125pt>
-File: heapSort6.png Graphic file (type png)
+[40
 
-<use heapSort6.png>
-Package pdftex.def Info: heapSort6.png used on input line 366.
-(pdftex.def)             Requested size: 124.46469pt x 89.83539pt.
- [41
+ <./heapInsert5.png>] [41
 
- <./heapSort6.png>]
-<heapSort7.png, id=334, 265.99374pt x 152.57pt>
-File: heapSort7.png Graphic file (type png)
- <use heapSort7.png>
-Package pdftex.def Info: heapSort7.png used on input line 373.
-(pdftex.def)             Requested size: 132.99654pt x 76.2848pt.
- [42
+] [42
 
- <./heapSort7.png>] <heapSort8.png, id=341, 259.97125pt x 168.63pt>
-File: heapSort8.png Graphic file (type png)
+] [43
 
-<use heapSort8.png>
-Package pdftex.def Info: heapSort8.png used on input line 380.
-(pdftex.def)             Requested size: 129.9853pt x 84.31479pt.
- [43
+] [44
 
- <./heapSort8.png>]
-<heapSort9.png, id=349, 269.005pt x 162.6075pt>
-File: heapSort9.png Graphic file (type png)
- <use heapSort9.png>
-Package pdftex.def Info: heapSort9.png used on input line 387.
-(pdftex.def)             Requested size: 134.50217pt x 81.30354pt.
- [44
+]
+<heapDelete1.png, id=351, 490.08093pt x 395.22656pt>
+File: heapDelete1.png Graphic file (type png)
+ <use heapDelete1.png>
+Package pdftex.def Info: heapDelete1.png used on input line 384.
+(pdftex.def)             Requested size: 245.03987pt x 197.6128pt.
 
- <./heapSort9.png>] <heapSort10.png, id=356, 229.85875pt x 182.6825pt>
-File: heapSort10.png Graphic file (type png)
+[45
 
-<use heapSort10.png>
-Package pdftex.def Info: heapSort10.png used on input line 394.
-(pdftex.def)             Requested size: 114.92908pt x 91.34102pt.
- [45
+ <./heapDelete1.png>] <heapDelete2.png, id=358, 490.08093pt x 395.22656pt>
+File: heapDelete2.png Graphic file (type png)
 
- <./heapSort10.png>]
-<heapSort11.png, id=363, 346.29375pt x 90.3375pt>
-File: heapSort11.png Graphic file (type png)
- <use heapSort11.png>
-Package pdftex.def Info: heapSort11.png used on input line 401.
-(pdftex.def)             Requested size: 173.14644pt x 45.16862pt.
+<use heapDelete2.png>
+Package pdftex.def Info: heapDelete2.png used on input line 391.
+(pdftex.def)             Requested size: 245.03987pt x 197.6128pt.
  [46
 
- <./heapSort11.png>] [47
+ <./heapDelete2.png>]
+<heapDelete3.png, id=365, 490.08093pt x 393.72093pt>
+File: heapDelete3.png Graphic file (type png)
+ <use heapDelete3.png>
+Package pdftex.def Info: heapDelete3.png used on input line 398.
+(pdftex.def)             Requested size: 245.03987pt x 196.85999pt.
 
-] [48
+[47
+
+ <./heapDelete3.png>] <heapDelete4.png, id=372, 490.08093pt x 393.72093pt>
+File: heapDelete4.png Graphic file (type png)
+
+<use heapDelete4.png>
+Package pdftex.def Info: heapDelete4.png used on input line 406.
+(pdftex.def)             Requested size: 245.03987pt x 196.85999pt.
+ [48
+
+ <./heapDelete4.png>]
+<heapDelete5.png, id=379, 490.08093pt x 393.72093pt>
+File: heapDelete5.png Graphic file (type png)
+ <use heapDelete5.png>
+Package pdftex.def Info: heapDelete5.png used on input line 414.
+(pdftex.def)             Requested size: 245.03987pt x 196.85999pt.
+
+[49
+
+ <./heapDelete5.png>] <heapDelete6.png, id=387, 490.08093pt x 393.72093pt>
+File: heapDelete6.png Graphic file (type png)
+
+<use heapDelete6.png>
+Package pdftex.def Info: heapDelete6.png used on input line 422.
+(pdftex.def)             Requested size: 245.03987pt x 196.85999pt.
+ [50
+
+ <./heapDelete6.png>] [51
+
+] [52
+
+] [53
+
+]
+<heapIncreaseKey1.png, id=412, 347.2975pt x 256.96pt>
+File: heapIncreaseKey1.png Graphic file (type png)
+
+<use heapIncreaseKey1.png>
+Package pdftex.def Info: heapIncreaseKey1.png used on input line 447.
+(pdftex.def)             Requested size: 173.64832pt x 128.47968pt.
+ [54
+
+ <./heapIncreaseKey1.png>]
+<heapIncreaseKey2.png, id=419, 386.44376pt x 237.88875pt>
+File: heapIncreaseKey2.png Graphic file (type png)
+
+<use heapIncreaseKey2.png>
+Package pdftex.def Info: heapIncreaseKey2.png used on input line 454.
+(pdftex.def)             Requested size: 193.2214pt x 118.94408pt.
+ [55
+
+ <./heapIncreaseKey2.png>]
+<heapIncreaseKey3.png, id=427, 356.33125pt x 240.9pt>
+File: heapIncreaseKey3.png Graphic file (type png)
+
+<use heapIncreaseKey3.png>
+Package pdftex.def Info: heapIncreaseKey3.png used on input line 461.
+(pdftex.def)             Requested size: 178.16518pt x 120.44969pt.
+ [56
+
+ <./heapIncreaseKey3.png>]
+<heapIncreaseKey4.png, id=435, 350.30875pt x 242.9075pt>
+File: heapIncreaseKey4.png Graphic file (type png)
+
+<use heapIncreaseKey4.png>
+Package pdftex.def Info: heapIncreaseKey4.png used on input line 467.
+(pdftex.def)             Requested size: 175.15395pt x 121.45345pt.
+ [57
+
+ <./heapIncreaseKey4.png>] [58
+
+] [59
+
+]
+\openout4 = `7_Heap_UnionFind.vrb'.
+
+
+(./7_Heap_UnionFind.vrb) [60
+
+] <heapSort1.png, id=461, 248.93pt x 175.65625pt>
+File: heapSort1.png Graphic file (type png)
+
+<use heapSort1.png>
+Package pdftex.def Info: heapSort1.png used on input line 496.
+(pdftex.def)             Requested size: 174.2498pt x 122.95853pt.
+ [61
+
+ <./heapSort1.png>]
+<heapSort2.png, id=469, 238.8925pt x 169.63374pt>
+File: heapSort2.png Graphic file (type png)
+ <use heapSort2.png>
+Package pdftex.def Info: heapSort2.png used on input line 503.
+(pdftex.def)             Requested size: 167.2236pt x 118.7428pt.
+ [62
+
+ <./heapSort2.png>] <heapSort3.png, id=476, 247.92625pt x 165.61874pt>
+File: heapSort3.png Graphic file (type png)
+
+<use heapSort3.png>
+Package pdftex.def Info: heapSort3.png used on input line 510.
+(pdftex.def)             Requested size: 173.54718pt x 115.93231pt.
+ [63
+
+ <./heapSort3.png>]
+<heapSort4.png, id=483, 254.9525pt x 177.66376pt>
+File: heapSort4.png Graphic file (type png)
+ <use heapSort4.png>
+Package pdftex.def Info: heapSort4.png used on input line 517.
+(pdftex.def)             Requested size: 178.46552pt x 124.36377pt.
+ [64
+
+ <./heapSort4.png>] <heapSort5.png, id=490, 257.96375pt x 162.6075pt>
+File: heapSort5.png Graphic file (type png)
+
+<use heapSort5.png>
+Package pdftex.def Info: heapSort5.png used on input line 524.
+(pdftex.def)             Requested size: 180.57338pt x 113.82446pt.
+ [65
+
+ <./heapSort5.png>]
+<heapSort6.png, id=497, 248.93pt x 179.67125pt>
+File: heapSort6.png Graphic file (type png)
+ <use heapSort6.png>
+Package pdftex.def Info: heapSort6.png used on input line 531.
+(pdftex.def)             Requested size: 174.2498pt x 125.769pt.
+ [66
+
+ <./heapSort6.png>] <heapSort7.png, id=504, 265.99374pt x 152.57pt>
+File: heapSort7.png Graphic file (type png)
+
+<use heapSort7.png>
+Package pdftex.def Info: heapSort7.png used on input line 538.
+(pdftex.def)             Requested size: 186.19434pt x 106.79826pt.
+ [67
+
+ <./heapSort7.png>]
+<heapSort8.png, id=512, 259.97125pt x 168.63pt>
+File: heapSort8.png Graphic file (type png)
+ <use heapSort8.png>
+Package pdftex.def Info: heapSort8.png used on input line 545.
+(pdftex.def)             Requested size: 181.97862pt x 118.04018pt.
+ [68
+
+ <./heapSort8.png>] <heapSort9.png, id=519, 269.005pt x 162.6075pt>
+File: heapSort9.png Graphic file (type png)
+
+<use heapSort9.png>
+Package pdftex.def Info: heapSort9.png used on input line 552.
+(pdftex.def)             Requested size: 188.3022pt x 113.82446pt.
+ [69
+
+ <./heapSort9.png>]
+<heapSort10.png, id=526, 229.85875pt x 182.6825pt>
+File: heapSort10.png Graphic file (type png)
+ <use heapSort10.png>
+Package pdftex.def Info: heapSort10.png used on input line 559.
+(pdftex.def)             Requested size: 160.90001pt x 127.87686pt.
+
+[70
+
+ <./heapSort10.png>] <heapSort11.png, id=533, 346.29375pt x 90.3375pt>
+File: heapSort11.png Graphic file (type png)
+
+<use heapSort11.png>
+Package pdftex.def Info: heapSort11.png used on input line 566.
+(pdftex.def)             Requested size: 242.40396pt x 63.23581pt.
+ [71
+
+ <./heapSort11.png>] [72
+
+] [73
+
+] [74
+
+] [75
+
+] [76
+
+] [77
+
+]
+<disjointSetEg.png, id=578, 454.69875pt x 397.485pt>
+File: disjointSetEg.png Graphic file (type png)
+ <use disjointSetEg.png>
+Package pdftex.def Info: disjointSetEg.png used on input line 613.
+(pdftex.def)             Requested size: 227.34882pt x 198.742pt.
+
+[78
+
+ <./disjointSetEg.png>] [79
+
+] [80
+
+] [81
+
+]
+<unionFindArray1.png, id=607, 645.91313pt x 99.37125pt>
+File: unionFindArray1.png Graphic file (type png)
+
+<use unionFindArray1.png>
+Package pdftex.def Info: unionFindArray1.png used on input line 669.
+(pdftex.def)             Requested size: 258.36067pt x 39.74779pt.
+
+<unionFindArray2.png, id=608, 645.16031pt x 99.37125pt>
+File: unionFindArray2.png Graphic file (type png)
+
+<use unionFindArray2.png>
+Package pdftex.def Info: unionFindArray2.png used on input line 669.
+(pdftex.def)             Requested size: 258.05954pt x 39.74779pt.
+ [82
+
+ <./unionFindArray1.png> <./unionFindArray2.png>]
+[83
+
+] [84
+
+] [85
+
+] <unionFindLinkedList.png, id=634, 838.13126pt x 370.38374pt>
+File: unionFindLinkedList.png Graphic file (type png)
+
+<use unionFindLinkedList.png>
+Package pdftex.def Info: unionFindLinkedList.png used on input line 693.
+(pdftex.def)             Requested size: 335.24657pt x 148.15086pt.
+
+Overfull \hbox (27.9567pt too wide) in paragraph at lines 693--693
+ [] 
+ []
+
+[86
+
+ <./unionFindLinkedList.png>] [87
+
+] [88
+
+] [89
 
 ]
 \tf@nav=\write6
@@ -1128,11 +1344,11 @@ Package pdftex.def Info: heapSort11.png used on input line 401.
 \tf@snm=\write8
 \openout8 = `7_Heap_UnionFind.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 426.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 426.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 721.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 721.
  (./7_Heap_UnionFind.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 426.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 426.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 721.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 721.
 Package rerunfilecheck Info: File `7_Heap_UnionFind.out' has not changed.
 (rerunfilecheck)             Checksum: 33BA85AB0758BA0F9DCCC823025DAFA2;260.
 
@@ -1140,16 +1356,16 @@ Package rerunfilecheck Info: File `7_Heap_UnionFind.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 426.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 721.
  ) 
 Here is how much of TeX's memory you used:
- 16103 strings out of 494985
- 298678 string characters out of 6180356
- 366487 words of memory out of 5000000
- 18799 multiletter control sequences out of 15000+600000
+ 16348 strings out of 494985
+ 302045 string characters out of 6180356
+ 366486 words of memory out of 5000000
+ 18943 multiletter control sequences out of 15000+600000
  22945 words of font info for 86 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 49i,16n,58p,426b,655s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,16n,58p,426b,681s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
@@ -1162,10 +1378,10 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt9.pfb>
-Output written on 7_Heap_UnionFind.pdf (48 pages, 459576 bytes).
+Output written on 7_Heap_UnionFind.pdf (89 pages, 851834 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 348 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
- 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 741 PDF objects out of 1000 (max. 8388607)
+ 580 compressed objects within 6 object streams
+ 185 named destinations out of 1000 (max. 500000)
+ 318 words of extra memory for PDF output out of 10000 (max. 10000000)
 

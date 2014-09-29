@@ -39,7 +39,7 @@
 \begin{frame}
 \frametitle {Outline}
 \begin{enumerate}
-\item Data Structures for representing Dynamic Sets
+\item Data Structures to speed up algorithms 
 \begin{itemize}
     \item Binary Heap
     \begin{itemize}
@@ -74,6 +74,15 @@
 \end{frame}
 
 \section{Binary Heap}
+
+\begin{frame}{Data Structures for Algorithmic Speedup}
+    \begin{itemize}
+        \item BST and RBT are two examples of data structures to represent dynamic set
+        \item Today's topic, Heap and Union-Find, can also be used to represent dynamic set
+        \item However, these are used more often to speed up algorithms
+    \end{itemize}
+\end{frame}
+
 \begin{frame}{}
     \begin{center}
         \thblue{Binary Heap}
@@ -229,6 +238,7 @@
         \item Invocation: Max-Heapify($A,i$)
         \item Assume: Left($i$) and Right($i$) are valid max-heaps
         \item $A[i]$ might violate max-heap property
+        \item Bubble-Down the violation
         \item {\bf Analysis:} $O(\lg n)$
     \end{itemize}
 \end{frame}
@@ -265,7 +275,7 @@
             \item A.heapSize = A.length
             \item for $i = \lfloor A.length / 2 \rfloor$ down to $1$ \\ \qquad Max-Heapify($A,i$)
         \end{itemize}
-        \item {\bf Analysis:} $O(n)$
+        \item {\bf Analysis:} $O(n)$ (See book for details)
     \end{itemize}
 \end{frame}
 
@@ -311,7 +321,162 @@
     \end{center}
 \end{frame}
 
+\begin{frame}{Heap : Insert}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapInsert1.png}
+    \end{center}
+\end{frame}
 
+
+\begin{frame}{Heap : Insert}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapInsert2.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Heap : Insert}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapInsert3.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Heap : Insert}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapInsert4.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Heap : Insert}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapInsert5.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Heap : Insert}
+    \begin{itemize}
+        \item Insert element at first available slot (no completeness property violation!)
+        \item Fix heap property violations by bubbling up the vilolation till it is fixed
+        \item Complexity: \pause $O(\lg n)$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Heap : FindMax}
+    \begin{itemize}
+        \item Look at the root element
+        \item Time complexity: $O(1)$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Heap : DeleteMax}
+    \begin{itemize}
+        \item Delete the maximum element (root)
+        \item Fix the heap
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Heap : DeleteMax}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapDelete1.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Heap : DeleteMax}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapDelete2.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Heap : DeleteMax}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapDelete3.png}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Heap : DeleteMax}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapDelete4.png}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Heap : DeleteMax}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapDelete5.png}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Heap : DeleteMax}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapDelete6.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Heap : DeleteMax}
+    \begin{itemize}
+        \item Remove root
+        \item Replace root with last element (does not affect Completeness property)
+        \item Fix heap violations by bubbling it down till it is fixed
+        \item Complexity: \pause $O(\lg n)$
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Heap : IncreaseKey}
+    \begin{itemize}
+        \item Given a node, increase its priority to a new, higher value
+        \item Fix heap property violations 
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Heap : IncreaseKey\footnote{CLRS Fig 6.5}}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapIncreaseKey1.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Heap : IncreaseKey\footnote{CLRS Fig 6.5}}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapIncreaseKey2.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Heap : IncreaseKey\footnote{CLRS Fig 6.5}}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapIncreaseKey3.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Heap : IncreaseKey\footnote{CLRS Fig 6.5}}
+    \begin{center}
+        \includegraphics[scale=0.5]{heapIncreaseKey4.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Heap : IncreaseKey}
+    \begin{itemize}
+        \item Update element 
+        \item Fix heap violations by bubbling it up till it is fixed
+        \item Complexity: \pause $O(\lg n)$
+    \end{itemize}
+\end{frame}
+
+
+\section{Heapsort}
 \begin{frame}[fragile]{HeapSort}
     \begin{verbatim}
     HeapSort(A):
@@ -326,80 +491,224 @@
 
 \begin{frame}{Heap Sort: Example\footnote{CLRS Fig 6.4}}
     \begin{center}
-        \includegraphics[scale=0.5]{heapSort1.png}
+        \includegraphics[scale=0.7]{heapSort1.png}
     \end{center}
 \end{frame}
 
 
 \begin{frame}{Heap Sort: Example\footnote{CLRS Fig 6.4}}
     \begin{center}
-        \includegraphics[scale=0.5]{heapSort2.png}
+        \includegraphics[scale=0.7]{heapSort2.png}
     \end{center}
 \end{frame}
 
 
 \begin{frame}{Heap Sort: Example\footnote{CLRS Fig 6.4}}
     \begin{center}
-        \includegraphics[scale=0.5]{heapSort3.png}
+        \includegraphics[scale=0.7]{heapSort3.png}
     \end{center}
 \end{frame}
 
 
 \begin{frame}{Heap Sort: Example\footnote{CLRS Fig 6.4}}
     \begin{center}
-        \includegraphics[scale=0.5]{heapSort4.png}
+        \includegraphics[scale=0.7]{heapSort4.png}
     \end{center}
 \end{frame}
 
 
 \begin{frame}{Heap Sort: Example\footnote{CLRS Fig 6.4}}
     \begin{center}
-        \includegraphics[scale=0.5]{heapSort5.png}
+        \includegraphics[scale=0.7]{heapSort5.png}
     \end{center}
 \end{frame}
 
 
 \begin{frame}{Heap Sort: Example\footnote{CLRS Fig 6.4}}
     \begin{center}
-        \includegraphics[scale=0.5]{heapSort6.png}
+        \includegraphics[scale=0.7]{heapSort6.png}
     \end{center}
 \end{frame}
 
 
 \begin{frame}{Heap Sort: Example\footnote{CLRS Fig 6.4}}
     \begin{center}
-        \includegraphics[scale=0.5]{heapSort7.png}
+        \includegraphics[scale=0.7]{heapSort7.png}
     \end{center}
 \end{frame}
 
 
 \begin{frame}{Heap Sort: Example\footnote{CLRS Fig 6.4}}
     \begin{center}
-        \includegraphics[scale=0.5]{heapSort8.png}
+        \includegraphics[scale=0.7]{heapSort8.png}
     \end{center}
 \end{frame}
 
 
 \begin{frame}{Heap Sort: Example\footnote{CLRS Fig 6.4}}
     \begin{center}
-        \includegraphics[scale=0.5]{heapSort9.png}
+        \includegraphics[scale=0.7]{heapSort9.png}
     \end{center}
 \end{frame}
 
 
 \begin{frame}{Heap Sort: Example\footnote{CLRS Fig 6.4}}
     \begin{center}
-        \includegraphics[scale=0.5]{heapSort10.png}
+        \includegraphics[scale=0.7]{heapSort10.png}
     \end{center}
 \end{frame}
 
 
 \begin{frame}{Heap Sort: Example\footnote{CLRS Fig 6.4}}
     \begin{center}
-        \includegraphics[scale=0.5]{heapSort11.png}
+        \includegraphics[scale=0.7]{heapSort11.png}
     \end{center}
 \end{frame}
 
+
+\begin{frame}{HeapSort: Analysis}
+    \begin{itemize}
+        \item Operations: 
+        \begin{itemize}
+            \item Build-Max-Heap: \pause $O(n)$
+            \item $n$ Max-Heapify: \pause $n \times \lg n = O(n \lg n)$
+            \item Complexity: $O(n) + O(n \lg n) = O(n \lg n)$
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{HeapSort}
+    \begin{itemize}
+        \item Very efficient in practice - often competitive with QuickSort
+        \item In-Place but not stable (why?)
+        \item Requires constant extra space
+        \item Best, average and worst case complexity is $O(n \lg n)$ (unlike Quicksort)
+    \end{itemize}
+\end{frame}
+
+\section{Union-Find}
+
+\begin{frame}{Data Structures for Disjoint Sets}
+    \begin{center}
+        \thblue{Data Structures for Disjoint Sets}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Disjoint Sets ADT}
+    \begin{itemize}
+        \item Objective: Represent and manipulate disjoint sets (sets that do not overlap)
+        \item Required Operations
+        \begin{itemize}
+            \item MakeSet($x$): Create a new set $\{x\}$ with single element $x$
+            \item Find($x$): Find the set containing $x$
+            \item Union($x,y$): Merge sets containing $x$ and $y$
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Disjoint Sets: Example\footnote{\url{https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf}}}
+    \begin{center}
+        \includegraphics[scale=0.5]{disjointSetEg.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Disjoint Sets: Applications\footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/18-disjoint-union-find.pdf}}}
+    \begin{itemize}
+        \item Network connectivity: are two computers connected? 
+        \item Compilers: are two variables aliases?
+        \item Image segmentation: are both pixels in same segment?
+        \item Chip design: are two transistors connected to each other?
+        \item Maze design
+        \item Speeding up Kruskal's MST algorithm
+        \item Many many more
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Disjoint Sets: Naming}
+    \begin{itemize}
+        \item Represent each disjoint set by a unique name
+        \item For convenience, the name is one of its elements
+        \item This element is called the {\bf leader} of the set
+        \item Find($x$) returns the leader of set containing $x$
+        \item Typically, Union takes leaders as input. For eg, Union($a,b$). If not easily fixable by Union(Find($a$), Find($b$)) 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Data Structures for Disjoint Sets}
+
+    {\bf Objective:} 
+    \begin{itemize}
+        \item Design an efficient data structure to represent DS ADT 
+        \item Assume that there are $N$ elements - represented by $1, \ldots, N$
+        \item $M$ operations (any mixture of union and find)
+    \end{itemize}
+    {\bf Candidate Representations:}
+    \begin{itemize}
+        \item Array based
+        \item Linked List based
+        \item Tree based
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Disjoint Sets Implementation: Arrays}
+
+        {\bf Idea:} 
+        \begin{itemize}
+            \item Maintain an array $A$ with $N$ elements
+            \item $A[i]$ stores the leader for set containing element $i$
+        \end{itemize}
+
+        {\bf Find:} Find($3$)=$4$, Find($6$)=$8$ 
+        \begin{center}
+            \includegraphics[scale=0.4]{unionFindArray1.png}
+        \end{center}
+        {\bf Union:} Union($4,8$)
+        \begin{center}
+            \includegraphics[scale=0.4]{unionFindArray2.png}
+        \end{center}
+\end{frame}
+
+\begin{frame}{Disjoint Sets Implementation: Arrays}
+
+    {\bf Analysis:}
+    \begin{itemize}
+        \item Find: \pause $O(1)$
+        \item Union: \pause $O(N)$
+        \item Complexity for $M$ operations: $O(MN)$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Disjoint Sets Implementation: Linked List\footnote{CLRS Fig 21.2}}
+
+        {\bf Idea:} 
+        \begin{itemize}
+            \item Represent each set as a linked list
+            \item Set first element of each linked list as the leader
+        \end{itemize}
+
+        \begin{center}
+            \includegraphics[scale=0.4]{unionFindLinkedList.png}
+        \end{center}
+
+\end{frame}
+
+\begin{frame}{Disjoint Sets Implementation: Linked List}
+
+    {\bf Analysis:}
+    \begin{itemize}
+        \item Find: \pause $O(1)$
+        \item Union: \pause $O(N)$
+        \item Complexity for $M$ operations: $O(MN)$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Disjoint Sets Implementation: Tree}
+    \begin{itemize}
+        \item Also called as Union-Find data structure
+        \item Idea: Represent each set as a tree
+        \item Allow each node to have arbitrary number of children
+    \end{itemize}
+\end{frame}
 
 \begin{frame}{}
     \begin{itemize}
@@ -407,9 +716,6 @@
     \end{itemize}
 \end{frame}
 
-
-\section{Heapsort}
-\section{Union-Find}
 \section{Summary}
 
 \begin{frame}{Summary}
@@ -418,6 +724,7 @@
 \begin{itemize}
 \item Binary Heap
 \item Heapsort
+\item Disjoint set data structures
 \item Union-Find
 \end{itemize}
 \end{frame}

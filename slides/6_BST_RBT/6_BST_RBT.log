@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  25 SEP 2014 01:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  25 SEP 2014 20:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1381,71 +1381,53 @@ Overfull \hbox (30.36565pt too wide) in paragraph at lines 752--752
  <./rotationsEg.png>] [81
 
 ]
-<rbtInsertEg1.png, id=627, 557.08125pt x 215.80624pt>
+<rbtInsertEg1.png, id=627, 876.27374pt x 326.21875pt>
 File: rbtInsertEg1.png Graphic file (type png)
  <use rbtInsertEg1.png>
 Package pdftex.def Info: rbtInsertEg1.png used on input line 776.
-(pdftex.def)             Requested size: 222.82855pt x 86.32095pt.
+(pdftex.def)             Requested size: 350.50328pt x 130.48518pt.
+
+Overfull \hbox (43.21341pt too wide) in paragraph at lines 776--776
+ [] 
+ []
 
 [82
 
- <./rbtInsertEg1.png>] <rbtInsertEg2.png, id=636, 791.95876pt x 254.9525pt>
+ <./rbtInsertEg1.png>]
+<rbtInsertEg2.png, id=634, 830.10126pt x 390.45876pt>
 File: rbtInsertEg2.png Graphic file (type png)
-
-<use rbtInsertEg2.png>
+ <use rbtInsertEg2.png>
 Package pdftex.def Info: rbtInsertEg2.png used on input line 791.
-(pdftex.def)             Requested size: 316.7779pt x 101.97919pt.
+(pdftex.def)             Requested size: 332.03462pt x 156.18073pt.
 
-Overfull \hbox (9.48802pt too wide) in paragraph at lines 791--791
+Overfull \hbox (24.74475pt too wide) in paragraph at lines 791--791
  [] 
+ []
+
+
+Overfull \vbox (23.97093pt too high) detected at line 791
  []
 
 [83
 
- <./rbtInsertEg2.png>] <rbtInsertEg3.png, id=645, 854.19125pt x 260.975pt>
+ <./rbtInsertEg2.png>]
+<rbtInsertEg3.png, id=641, 838.13126pt x 296.10625pt>
 File: rbtInsertEg3.png Graphic file (type png)
-
-<use rbtInsertEg3.png>
+ <use rbtInsertEg3.png>
 Package pdftex.def Info: rbtInsertEg3.png used on input line 806.
-(pdftex.def)             Requested size: 324.59605pt x 99.17152pt.
+(pdftex.def)             Requested size: 318.49318pt x 112.52153pt.
 
-Overfull \hbox (17.30618pt too wide) in paragraph at lines 806--806
+Overfull \hbox (11.20331pt too wide) in paragraph at lines 806--806
  [] 
  []
 
 [84
 
- <./rbtInsertEg3.png>] <rbtInsertEg4.png, id=654, 822.07124pt x 335.2525pt>
-File: rbtInsertEg4.png Graphic file (type png)
+ <./rbtInsertEg3.png>] [85
 
-<use rbtInsertEg4.png>
-Package pdftex.def Info: rbtInsertEg4.png used on input line 816.
-(pdftex.def)             Requested size: 328.82266pt x 134.09862pt.
+] [86
 
-Overfull \hbox (21.53279pt too wide) in paragraph at lines 816--816
- [] 
- []
-
-[85
-
- <./rbtInsertEg4.png>]
-<rbtInsertEg5.png, id=664, 797.98125pt x 416.55624pt>
-File: rbtInsertEg5.png Graphic file (type png)
- <use rbtInsertEg5.png>
-Package pdftex.def Info: rbtInsertEg5.png used on input line 826.
-(pdftex.def)             Requested size: 319.18684pt x 166.61954pt.
-
-Overfull \hbox (11.89697pt too wide) in paragraph at lines 826--826
- [] 
- []
-
-[86
-
- <./rbtInsertEg5.png>] [87
-
-] [88
-
-] [89
+] [87
 
 ]
 \tf@nav=\write6
@@ -1457,11 +1439,11 @@ Overfull \hbox (11.89697pt too wide) in paragraph at lines 826--826
 \tf@snm=\write8
 \openout8 = `6_BST_RBT.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 853.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 853.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 835.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 835.
  (./6_BST_RBT.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 853.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 853.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 835.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 835.
 Package rerunfilecheck Info: File `6_BST_RBT.out' has not changed.
 (rerunfilecheck)             Checksum: 9B3998EC3BCC99674C9D115BD9457DAD;311.
 
@@ -1469,13 +1451,13 @@ Package rerunfilecheck Info: File `6_BST_RBT.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 853.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 835.
  ) 
 Here is how much of TeX's memory you used:
- 16347 strings out of 494985
- 301572 string characters out of 6180356
- 365484 words of memory out of 5000000
- 18929 multiletter control sequences out of 15000+600000
+ 16329 strings out of 494985
+ 301300 string characters out of 6180356
+ 365485 words of memory out of 5000000
+ 18917 multiletter control sequences out of 15000+600000
  22945 words of font info for 86 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  49i,16n,57p,419b,681s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1491,10 +1473,10 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt9.pfb>
-Output written on 6_BST_RBT.pdf (89 pages, 1485698 bytes).
+Output written on 6_BST_RBT.pdf (87 pages, 1527828 bytes).
 PDF statistics:
- 776 PDF objects out of 1000 (max. 8388607)
- 613 compressed objects within 7 object streams
- 186 named destinations out of 1000 (max. 500000)
- 302 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 751 PDF objects out of 1000 (max. 8388607)
+ 593 compressed objects within 6 object streams
+ 182 named destinations out of 1000 (max. 500000)
+ 292 words of extra memory for PDF output out of 10000 (max. 10000000)
 
