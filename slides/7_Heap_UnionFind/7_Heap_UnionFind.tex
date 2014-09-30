@@ -264,63 +264,6 @@
     \end{center}
 \end{frame}
 
-
-\begin{frame}{Build-Max-Heap}
-    \begin{itemize}
-        \item Given an array $A$, convert it to a max-heap
-        \item $A.length$: Length of the array
-        \item $A.heapSize$: Elements from 1 $\ldots$ A.heapSize form a heap
-        \item Build-Max-Heap($A$):
-        \begin{itemize}
-            \item A.heapSize = A.length
-            \item for $i = \lfloor A.length / 2 \rfloor$ down to $1$ \\ \qquad Max-Heapify($A,i$)
-        \end{itemize}
-        \item {\bf Analysis:} $O(n)$ (See book for details)
-    \end{itemize}
-\end{frame}
-
-
-\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
-    \begin{center}
-        \includegraphics[scale=0.5]{buildMaxHeap1.png}
-    \end{center}
-\end{frame}
-
-
-\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
-    \begin{center}
-        \includegraphics[scale=0.5]{buildMaxHeap2.png}
-    \end{center}
-\end{frame}
-
-
-\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
-    \begin{center}
-        \includegraphics[scale=0.5]{buildMaxHeap3.png}
-    \end{center}
-\end{frame}
-
-
-\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
-    \begin{center}
-        \includegraphics[scale=0.5]{buildMaxHeap4.png}
-    \end{center}
-\end{frame}
-
-
-\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
-    \begin{center}
-        \includegraphics[scale=0.5]{buildMaxHeap5.png}
-    \end{center}
-\end{frame}
-
-
-\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
-    \begin{center}
-        \includegraphics[scale=0.5]{buildMaxHeap6.png}
-    \end{center}
-\end{frame}
-
 \begin{frame}{Heap : Insert}
     \begin{center}
         \includegraphics[scale=0.5]{heapInsert1.png}
@@ -441,6 +384,8 @@
 
 
 \begin{frame}{Heap : IncreaseKey\footnote{CLRS Fig 6.5}}
+
+\tblue{IncreaseKey:} Increase value of $4$ to $15$
     \begin{center}
         \includegraphics[scale=0.5]{heapIncreaseKey1.png}
     \end{center}
@@ -473,6 +418,62 @@
         \item Fix heap violations by bubbling it up till it is fixed
         \item Complexity: \pause $O(\lg n)$
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Build-Max-Heap}
+    \begin{itemize}
+        \item Given an array $A$, convert it to a max-heap
+        \item $A.length$: Length of the array
+        \item $A.heapSize$: Elements from 1 $\ldots$ A.heapSize form a heap
+        \item Build-Max-Heap($A$):
+        \begin{itemize}
+            \item A.heapSize = A.length
+            \item for $i = \lfloor A.length / 2 \rfloor$ down to $1$ \\ \qquad Max-Heapify($A,i$)
+        \end{itemize}
+        \item {\bf Analysis:} $O(n)$ (See book for details)
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
+    \begin{center}
+        \includegraphics[scale=0.5]{buildMaxHeap1.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
+    \begin{center}
+        \includegraphics[scale=0.5]{buildMaxHeap2.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
+    \begin{center}
+        \includegraphics[scale=0.5]{buildMaxHeap3.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
+    \begin{center}
+        \includegraphics[scale=0.5]{buildMaxHeap4.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
+    \begin{center}
+        \includegraphics[scale=0.5]{buildMaxHeap5.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Build-Max-Heap : Example \footnote{CLRS Fig 6.3}}
+    \begin{center}
+        \includegraphics[scale=0.5]{buildMaxHeap6.png}
+    \end{center}
 \end{frame}
 
 
@@ -706,13 +707,151 @@
     \begin{itemize}
         \item Also called as Union-Find data structure
         \item Idea: Represent each set as a tree
+        \item Store all sets as a forest (collection of disconnected trees)
         \item Allow each node to have arbitrary number of children
+        \item Root of each tree is the leader
     \end{itemize}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{Union-Find: Up-Tree Representation\footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}}}
+    \begin{center}
+        \includegraphics[scale=0.5]{unionFindTreeRep.png} 
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Union-Find: Up-Tree Representation \footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}} }
+    \begin{center}
+        \includegraphics[scale=0.5]{unionFindTreeRep.png} 
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Union-Find: Find Operation \footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}} } 
+    \begin{center}
+        \includegraphics[scale=0.5]{unionFindTreeRepFind.png} 
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Union-Find: Union Operation \footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}} }
+    \begin{center}
+        \includegraphics[scale=0.5]{unionFindTreeRepUnion.png} 
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Union-Find: Up-Tree Implementation \footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}} }
+    \begin{center}
+        \includegraphics[scale=0.5]{unionFindTreeRepImplem.png} 
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Union-Find: Worst Case\footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}} }
+    \begin{center}
+        \includegraphics[scale=0.5]{unionFindWorstCase.png} 
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Union-Find: Candidate Improvements}
     \begin{itemize}
-        \item GiG
+        \item \pause Improve Union
+        \begin{itemize}
+            \item Union by Size
+            \item Union by Rank (depth)
+        \end{itemize}
+        \item Improve Find
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Union-Find: Improved Union\footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}}}
+
+\tblue{Union by Size (Weighted Union):} Always point smaller tree to root of larger tree. Break ties arbitrarily.
+    \begin{center}
+        \includegraphics[scale=0.5]{unionByRank.png} 
+    \end{center}
+\end{frame}
+
+\begin{frame}{Union-Find: Improved Union}
+
+\tblue{Union by Rank:} Always point tree with smaller rank (depth) to root of larger tree. Break ties arbitrarily.
+    \begin{center}
+        \includegraphics[scale=0.5]{unionByRank.png} 
+    \end{center}
+\end{frame}
+
+\begin{frame}{Union by Size: Best Case\footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}}}
+
+    \begin{center}
+        \includegraphics[scale=0.5]{unionByRankBestCase.png} 
+    \end{center}
+
+    {\bf Complexity:} \pause Union and Find take $O(1)$ time
+\end{frame}
+
+\begin{frame}{Union by Size: Worst Case\footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}}}
+    \begin{center}
+        \includegraphics[scale=0.5]{unionByRankWorstCase.png} 
+    \end{center}
+    {\bf Complexity:} \pause Union takes $O(1)$ and Find take $O(\lg n)$ time
+\end{frame}
+
+
+\begin{frame}{Union-Find: Improved Find\footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}}}
+
+    \begin{center}
+        \includegraphics[scale=0.5]{pathCompression1.png} 
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Union-Find: Improved Find\footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}}}
+
+    \tblue{Path Compression:} When doing find, point all nodes on search path to root.
+    \begin{center}
+        \includegraphics[scale=0.5]{pathCompression2.png} 
+    \end{center}
+\end{frame}
+
+\begin{frame}{Union-Find: Improved Find\footnote{CLRS Fig 21.5}}
+    \begin{center}
+        \includegraphics[scale=0.3]{pathCompression4.png} 
+    \end{center}
+\end{frame}
+
+\begin{frame}{Union-Find}
+    \begin{itemize}
+        \item Amortized analysis
+        \item Similarity with Red-Black trees
+        \item Worst Case Analysis of Union-by Size + Path Compression
+        \begin{itemize}
+            \item Single Union-by-Size:
+            \item Single Find with Path Compression: 
+            \item Amortized Complexity for $M \geq N$ operations: $O(m \log^{*} n)$
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{$Log^{*}$ Function\footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}}}
+    \begin{itemize}
+        \item $\log^{*} 2 = 1$
+        \item $\log^{*} 4 = \log^{*} 2^2 = 2$
+        \item $\log^{*} 16 = \pause \log^{*} 2^{2^{2}} = 3$ (i.e. $\log \log \log 16 = 1$)
+        \item $\log^{*} 65536 = \pause \log^{*} 2^{2^{2^{2}}} = 4$ (i.e. $\log \log \log \log 65536 = 1$)
+        \item $\log^{*} 2^{65536} = \pause \ldots = 5$ (i.e. $\log \log \log \log \log 2^65536 = 1$)
+        \item In summary for all reasonable $n$ , $\log^{*} n \leq 5 $
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Tighter Bound}
+    \begin{itemize}
+        \item Tarjan's tighter bound when $M \geq N$, $\Theta( M \alpha(M, N))$
+        \item $\alpha(a,b)$ is the inverse Ackerman function
+        \item It grows even slower than $\log^{*} n$!
     \end{itemize}
 \end{frame}
 
