@@ -755,27 +755,30 @@
 \end{frame}
 
 
-\begin{frame}{Union-Find: Candidate Improvements}
+\begin{frame}{Union-Find: Candidate Improvements\footnote{\url{http://www.eecs.wsu.edu/~ananth/CptS223/Lectures/UnionFind.pdf}}}
     \begin{itemize}
-        \item \pause Improve Union
+        \item Improve Union
         \begin{itemize}
             \item Union by Size
             \item Union by Rank (depth)
         \end{itemize}
         \item Improve Find
     \end{itemize}
-\end{frame}
-
-
-\begin{frame}{Union-Find: Improved Union\footnote{\url{http://courses.cs.washington.edu/courses/cse326/08sp/lectures/19-disjoint-union-find-part-2.pdf}}}
-
-\tblue{Union by Size (Weighted Union):} Always point smaller tree to root of larger tree. Break ties arbitrarily.
     \begin{center}
-        \includegraphics[scale=0.5]{unionByRank.png} 
+        \includegraphics[scale=0.4]{unionFindEg.png}
     \end{center}
 \end{frame}
 
-\begin{frame}{Union-Find: Improved Union}
+
+\begin{frame}{Union-Find: Improved Union\footnote{\url{http://www.eecs.wsu.edu/~ananth/CptS223/Lectures/UnionFind.pdf}}}
+
+\tblue{Union by Size (Weighted Union):} Always point smaller tree to root of larger tree. Break ties arbitrarily.
+    \begin{center}
+        \includegraphics[scale=0.3]{unionBySize.png} 
+    \end{center}
+\end{frame}
+
+\begin{frame}{Union-Find: Improved Union\footnote{\url{http://www.eecs.wsu.edu/~ananth/CptS223/Lectures/UnionFind.pdf}}}
 
 \tblue{Union by Rank:} Always point tree with smaller rank (depth) to root of larger tree. Break ties arbitrarily.
     \begin{center}
@@ -817,6 +820,8 @@
 \end{frame}
 
 \begin{frame}{Union-Find: Improved Find\footnote{CLRS Fig 21.5}}
+
+    \tblue{Path Compression:}
     \begin{center}
         \includegraphics[scale=0.3]{pathCompression4.png} 
     \end{center}
@@ -828,8 +833,8 @@
         \item Similarity with Red-Black trees
         \item Worst Case Analysis of Union-by Size + Path Compression
         \begin{itemize}
-            \item Single Union-by-Size:
-            \item Single Find with Path Compression: 
+            \item Single Union-by-Size: $O(1)$
+            \item Single Find with Path Compression: $O(\lg n)$
             \item Amortized Complexity for $M \geq N$ operations: $O(m \log^{*} n)$
         \end{itemize}
     \end{itemize}
@@ -841,7 +846,7 @@
         \item $\log^{*} 4 = \log^{*} 2^2 = 2$
         \item $\log^{*} 16 = \pause \log^{*} 2^{2^{2}} = 3$ (i.e. $\log \log \log 16 = 1$)
         \item $\log^{*} 65536 = \pause \log^{*} 2^{2^{2^{2}}} = 4$ (i.e. $\log \log \log \log 65536 = 1$)
-        \item $\log^{*} 2^{65536} = \pause \ldots = 5$ (i.e. $\log \log \log \log \log 2^65536 = 1$)
+        \item $\log^{*} 2^{65536} = \pause \ldots = 5$ (i.e. $\log \log \log \log \log 2^{65536} = 1$)
         \item In summary for all reasonable $n$ , $\log^{*} n \leq 5 $
     \end{itemize}
 \end{frame}
@@ -849,7 +854,7 @@
 
 \begin{frame}{Tighter Bound}
     \begin{itemize}
-        \item Tarjan's tighter bound when $M \geq N$, $\Theta( M \alpha(M, N))$
+        \item Tarjan's tighter bound when $M \geq N$, $\Theta( M \, \alpha(M, N))$
         \item $\alpha(a,b)$ is the inverse Ackerman function
         \item It grows even slower than $\log^{*} n$!
     \end{itemize}
