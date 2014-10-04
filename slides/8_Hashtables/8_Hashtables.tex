@@ -242,6 +242,13 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Hash Table: Sample Usecases}
+    \begin{itemize}
+        \item Frequency of word in a document
+        \item Check if any word in a set is an anagram of another
+    \end{itemize}
+\end{frame}
+
 \subsection{Collisions}
 \begin{frame}{Collisions}
     \begin{itemize}
@@ -458,21 +465,27 @@ Chained-Hash-Delete(T,x):
 \begin{frame}{Hash Tables: Practical Advice I}
     \begin{itemize}
         \item Load factor $\alpha = n/m$ (\#elements / \#table size)
-        \item Low $\alpha$: wasted space 
-        \item High $\alpha$: long time for insert and search
+        \begin{itemize}
+            \item Low $\alpha$: wasted space 
+            \item High $\alpha$: long time for insert and search
+        \end{itemize}
         \item If you know $n$, pass it to Hash table (e.g. Java, Python)
-        \item The data structure will be much faster
-        \item For eg, most languages will set $m = \frac{4}{3} n$ (with $\alpha = \frac{3}{4}$)
+        \begin{itemize}
+            \item The data structure will be much faster
+            \item For eg, most languages will set $m = \frac{4}{3} n$ (with $\alpha = \frac{3}{4}$)
+        \end{itemize}
         \item {\bf Re-hashing:} Automatically adjusting number of budgets
-        \item If $\alpha$ becomes too low or high, {\bf re-hashing} happens (it is bad!)
+        \begin{itemize}
+            \item If $\alpha$ becomes too low or high, {\bf re-hashing} happens (it is bad!)
+        \end{itemize}
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Hash Tables: Practical Advice II}
     \begin{itemize}
         \item Load factor $\alpha = n/m$ (\#elements / \#table size)
-        \item Chaining can be used when $\alpha < ~0.9$
-        \item Linear probing is used when table is sparse ($\alpha ~ 0.5$)
+        \item Chaining can be used when $\alpha < 0.9$
+        \item Linear probing is used when table is sparse ($\alpha \sim 0.5$)
         \item Double hashing is used when $\alpha < 0.66$
         \item With {\bf good} hash functions, Hash table outperforms BST, RBT etc
         \item Double hashing: $h_2(k)$ can never be $0$ (else you get infinite loop)
@@ -547,8 +560,10 @@ Chained-Hash-Delete(T,x):
 \end{frame}
 
 \begin{frame}{DHTs: Consistent Hashing}
+
+    {\bf Consistent Hashing function:}
     \begin{itemize}
-        \item Consistent Hashing function: Special type of hashing function
+        \item Special type of hashing function
         \item When $m$ (\#slots) or $n$ (\#item) is changed,  at most $O(\lg n)$ items have to be moved
         \item Great idea for P2P systems with node arrival and removal
     \end{itemize}
@@ -556,52 +571,73 @@ Chained-Hash-Delete(T,x):
 
 \section{Bloom Filters}
 \begin{frame}{}
-    \begin{itemize}
-        \item GiG
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{}
     \begin{center}
-        \includegraphics[scale=0.5]{bloomFilterGoogleChrome.png}
+        \thblue{Bloom Filters}
     \end{center}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{Bloom Filters}
+
+    {\bf Bloom Filters:}
     \begin{itemize}
-        \item GiG
+        \item Probabilistic data structure - false positives (FP) but no false negatives (FN)
+        \item Approximate set membership
+        \item {\em Extremely} space efficient - $\sim 10$ bits per element for 1\% FP 
+        \item Only insert and membership check - no deletion
+        \item Extensions for counting and deletion
+        \item FP proportional to \#elements - so becomes bad with more elements
     \end{itemize}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{Bloom Filters: Applications}
+
+    {\bf Typical Scenarios:} 
     \begin{itemize}
-        \item GiG
+        \item Membership checking (yes or no) is sufficient
+        \item Space is at a premium
+        \item No need to list the items 
+    \end{itemize}
+
+    {\bf Applications:}
+    \begin{itemize}
+        \item Distributed Web caches (most popular application)
+        \item Web proxy (such as Squid)
+        \item Google BigTable and others
+        \item Detecting malicious urls (Google SafeBrowse)
+        \item Dictionary of weak passwords
+        \item Spell-Check in phones
     \end{itemize}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{Bloom Filter in Google Chrome}
+    \begin{center}
+        \includegraphics[scale=0.5]{bloomFilterGoogleChrome.png}
+    \end{center}
     \begin{itemize}
-        \item GiG
+        \item Stores close to 1M malicious websites
+        \item Windoze:  {\scriptsize C:\textbackslash Users\textbackslash\%USERNAME\%\textbackslash AppData\textbackslash Local\textbackslash Google\textbackslash Chrome\textbackslash User Data\textbackslash}
+        \item Mac: \textasciitilde/Library/Application Support/Google/Chrome
+        \item Linux: \textasciitilde/.config/google-chrome
     \end{itemize}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{High Level Idea}
     \begin{itemize}
-        \item GiG
+        \item Create an array $T$ with $m$ bits
+        \item Select $k$ hashing functions that return value between $\{0, 1, \ldots, m-1\}$
+        \item {\bf Insert($x$):} $T[h_i(x)] = 1 \quad \forall i \in \{1, 2, \ldots, k\}$
+        \item {\bf Lookup($x$):} \\ return $T[h_1(x)] == 1 \land T[h_2(x)] == 1 \land \ldots \land T[h_k(x)] == 1$
     \end{itemize}
 \end{frame}
 
-\begin{frame}{}
-    \begin{itemize}
-        \item GiG
-    \end{itemize}
+\begin{frame}{Bloom Filter: Visualization\footnote{\url{http://en.wikipedia.org/wiki/Bloom_filter}}}
+
+    {\bf Settings:} $m=18$ and $k=3$
+    \begin{center}
+        \includegraphics[scale=0.36]{bloomFilterEg.png}
+    \end{center}
 \end{frame}
 
-\begin{frame}{}
-    \begin{itemize}
-        \item GiG
-    \end{itemize}
-\end{frame}
 
 
 

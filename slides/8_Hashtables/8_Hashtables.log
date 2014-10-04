@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  3 OCT 2014 02:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  3 OCT 2014 20:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -951,223 +951,223 @@ Overfull \hbox (26.95805pt too wide) in paragraph at lines 187--187
 
 ] [33
 
-] <hashTablesChaining.png, id=267, 880.28876pt x 374.39874pt>
+] [34
+
+] <hashTablesChaining.png, id=273, 880.28876pt x 374.39874pt>
 File: hashTablesChaining.png Graphic file (type png)
 
 <use hashTablesChaining.png>
-Package pdftex.def Info: hashTablesChaining.png used on input line 265.
+Package pdftex.def Info: hashTablesChaining.png used on input line 272.
 (pdftex.def)             Requested size: 316.9037pt x 134.78343pt.
 
-Overfull \hbox (9.61383pt too wide) in paragraph at lines 265--265
+Overfull \hbox (9.61383pt too wide) in paragraph at lines 272--272
  [] 
  []
 
-[34
+[35
 
  <./hashTablesChaining.png>]
 \openout4 = `8_Hashtables.vrb'.
 
- (./8_Hashtables.vrb) [35
-
-] [36
+ (./8_Hashtables.vrb) [36
 
 ] [37
 
+] [38
+
 ]
-<linearProbing1.png, id=294, 471.7625pt x 103.38625pt>
+<linearProbing1.png, id=300, 471.7625pt x 103.38625pt>
 File: linearProbing1.png Graphic file (type png)
 
 <use linearProbing1.png>
-Package pdftex.def Info: linearProbing1.png used on input line 313.
+Package pdftex.def Info: linearProbing1.png used on input line 320.
 (pdftex.def)             Requested size: 235.88066pt x 51.693pt.
- [38
+ [39
 
  <./linearProbing1.png>]
 File: linearProbing1.png Graphic file (type png)
  <use linearProbing1.png>
-Package pdftex.def Info: linearProbing1.png used on input line 326.
+Package pdftex.def Info: linearProbing1.png used on input line 333.
 (pdftex.def)             Requested size: 235.88066pt x 51.693pt.
 
-<linearProbing2.png, id=304, 465.74pt x 146.5475pt>
+<linearProbing2.png, id=310, 465.74pt x 146.5475pt>
 File: linearProbing2.png Graphic file (type png)
  <use linearProbing2.png>
-Package pdftex.def Info: linearProbing2.png used on input line 326.
-(pdftex.def)             Requested size: 232.86943pt x 73.27356pt.
-
-[39
-
- <./linearProbing2.png>]
-File: linearProbing1.png Graphic file (type png)
- <use linearProbing1.png>
-Package pdftex.def Info: linearProbing1.png used on input line 326.
-(pdftex.def)             Requested size: 235.88066pt x 51.693pt.
-File: linearProbing2.png Graphic file (type png)
- <use linearProbing2.png>
-Package pdftex.def Info: linearProbing2.png used on input line 326.
+Package pdftex.def Info: linearProbing2.png used on input line 333.
 (pdftex.def)             Requested size: 232.86943pt x 73.27356pt.
 
 [40
 
-]
+ <./linearProbing2.png>]
+File: linearProbing1.png Graphic file (type png)
+ <use linearProbing1.png>
+Package pdftex.def Info: linearProbing1.png used on input line 333.
+(pdftex.def)             Requested size: 235.88066pt x 51.693pt.
 File: linearProbing2.png Graphic file (type png)
  <use linearProbing2.png>
-Package pdftex.def Info: linearProbing2.png used on input line 341.
+Package pdftex.def Info: linearProbing2.png used on input line 333.
 (pdftex.def)             Requested size: 232.86943pt x 73.27356pt.
-
-<linearProbing3.png, id=321, 467.7475pt x 116.435pt>
-File: linearProbing3.png Graphic file (type png)
- <use linearProbing3.png>
-Package pdftex.def Info: linearProbing3.png used on input line 341.
-(pdftex.def)             Requested size: 233.87317pt x 58.21735pt.
 
 [41
 
- <./linearProbing3.png>]
+]
 File: linearProbing2.png Graphic file (type png)
  <use linearProbing2.png>
-Package pdftex.def Info: linearProbing2.png used on input line 341.
+Package pdftex.def Info: linearProbing2.png used on input line 348.
 (pdftex.def)             Requested size: 232.86943pt x 73.27356pt.
+
+<linearProbing3.png, id=327, 467.7475pt x 116.435pt>
 File: linearProbing3.png Graphic file (type png)
  <use linearProbing3.png>
-Package pdftex.def Info: linearProbing3.png used on input line 341.
+Package pdftex.def Info: linearProbing3.png used on input line 348.
 (pdftex.def)             Requested size: 233.87317pt x 58.21735pt.
 
 [42
 
+ <./linearProbing3.png>]
+File: linearProbing2.png Graphic file (type png)
+ <use linearProbing2.png>
+Package pdftex.def Info: linearProbing2.png used on input line 348.
+(pdftex.def)             Requested size: 232.86943pt x 73.27356pt.
+File: linearProbing3.png Graphic file (type png)
+ <use linearProbing3.png>
+Package pdftex.def Info: linearProbing3.png used on input line 348.
+(pdftex.def)             Requested size: 233.87317pt x 58.21735pt.
+
+[43
+
 ]
 File: linearProbing3.png Graphic file (type png)
  <use linearProbing3.png>
-Package pdftex.def Info: linearProbing3.png used on input line 356.
+Package pdftex.def Info: linearProbing3.png used on input line 363.
 (pdftex.def)             Requested size: 233.87317pt x 58.21735pt.
 
-<linearProbing4.png, id=338, 458.71375pt x 107.40125pt>
+<linearProbing4.png, id=345, 458.71375pt x 107.40125pt>
 File: linearProbing4.png Graphic file (type png)
 
 <use linearProbing4.png>
-Package pdftex.def Info: linearProbing4.png used on input line 356.
+Package pdftex.def Info: linearProbing4.png used on input line 363.
 (pdftex.def)             Requested size: 229.35631pt x 53.70049pt.
- [43
+ [44
 
  <./linearProbing4.png>]
 File: linearProbing3.png Graphic file (type png)
  <use linearProbing3.png>
-Package pdftex.def Info: linearProbing3.png used on input line 356.
+Package pdftex.def Info: linearProbing3.png used on input line 363.
 (pdftex.def)             Requested size: 233.87317pt x 58.21735pt.
 File: linearProbing4.png Graphic file (type png)
 
 <use linearProbing4.png>
-Package pdftex.def Info: linearProbing4.png used on input line 356.
+Package pdftex.def Info: linearProbing4.png used on input line 363.
 (pdftex.def)             Requested size: 229.35631pt x 53.70049pt.
- [44
+ [45
 
 ]
-<linearProbing5.png, id=356, 476.78125pt x 103.38625pt>
+<linearProbing5.png, id=362, 476.78125pt x 103.38625pt>
 File: linearProbing5.png Graphic file (type png)
 
 <use linearProbing5.png>
-Package pdftex.def Info: linearProbing5.png used on input line 366.
+Package pdftex.def Info: linearProbing5.png used on input line 373.
 (pdftex.def)             Requested size: 238.39003pt x 51.693pt.
- [45
+ [46
 
  <./linearProbing5.png>]
 File: linearProbing5.png Graphic file (type png)
  <use linearProbing5.png>
-Package pdftex.def Info: linearProbing5.png used on input line 383.
+Package pdftex.def Info: linearProbing5.png used on input line 390.
 (pdftex.def)             Requested size: 238.39003pt x 51.693pt.
 
-<linearProbing6.png, id=365, 452.69125pt x 109.40875pt>
+<linearProbing6.png, id=371, 452.69125pt x 109.40875pt>
 File: linearProbing6.png Graphic file (type png)
 
 <use linearProbing6.png>
-Package pdftex.def Info: linearProbing6.png used on input line 383.
+Package pdftex.def Info: linearProbing6.png used on input line 390.
 (pdftex.def)             Requested size: 226.34506pt x 54.70422pt.
- [46
+ [47
 
  <./linearProbing6.png>]
 File: linearProbing5.png Graphic file (type png)
  <use linearProbing5.png>
-Package pdftex.def Info: linearProbing5.png used on input line 383.
+Package pdftex.def Info: linearProbing5.png used on input line 390.
 (pdftex.def)             Requested size: 238.39003pt x 51.693pt.
 File: linearProbing6.png Graphic file (type png)
 
 <use linearProbing6.png>
-Package pdftex.def Info: linearProbing6.png used on input line 383.
-(pdftex.def)             Requested size: 226.34506pt x 54.70422pt.
- [47
-
-]
-File: linearProbing5.png Graphic file (type png)
- <use linearProbing5.png>
-Package pdftex.def Info: linearProbing5.png used on input line 383.
-(pdftex.def)             Requested size: 238.39003pt x 51.693pt.
-File: linearProbing6.png Graphic file (type png)
-
-<use linearProbing6.png>
-Package pdftex.def Info: linearProbing6.png used on input line 383.
+Package pdftex.def Info: linearProbing6.png used on input line 390.
 (pdftex.def)             Requested size: 226.34506pt x 54.70422pt.
  [48
 
 ]
+File: linearProbing5.png Graphic file (type png)
+ <use linearProbing5.png>
+Package pdftex.def Info: linearProbing5.png used on input line 390.
+(pdftex.def)             Requested size: 238.39003pt x 51.693pt.
+File: linearProbing6.png Graphic file (type png)
+
+<use linearProbing6.png>
+Package pdftex.def Info: linearProbing6.png used on input line 390.
+(pdftex.def)             Requested size: 226.34506pt x 54.70422pt.
+ [49
+
+]
 File: linearProbing6.png Graphic file (type png)
  <use linearProbing6.png>
-Package pdftex.def Info: linearProbing6.png used on input line 399.
+Package pdftex.def Info: linearProbing6.png used on input line 406.
 (pdftex.def)             Requested size: 226.34506pt x 54.70422pt.
 
-<linearProbing7.png, id=390, 457.71pt x 101.37875pt>
+<linearProbing7.png, id=397, 457.71pt x 101.37875pt>
 File: linearProbing7.png Graphic file (type png)
  <use linearProbing7.png>
-Package pdftex.def Info: linearProbing7.png used on input line 399.
-(pdftex.def)             Requested size: 228.85445pt x 50.68924pt.
-
-[49
-
- <./linearProbing7.png>]
-File: linearProbing6.png Graphic file (type png)
- <use linearProbing6.png>
-Package pdftex.def Info: linearProbing6.png used on input line 399.
-(pdftex.def)             Requested size: 226.34506pt x 54.70422pt.
-File: linearProbing7.png Graphic file (type png)
- <use linearProbing7.png>
-Package pdftex.def Info: linearProbing7.png used on input line 399.
+Package pdftex.def Info: linearProbing7.png used on input line 406.
 (pdftex.def)             Requested size: 228.85445pt x 50.68924pt.
 
 [50
 
-]
+ <./linearProbing7.png>]
 File: linearProbing6.png Graphic file (type png)
  <use linearProbing6.png>
-Package pdftex.def Info: linearProbing6.png used on input line 399.
+Package pdftex.def Info: linearProbing6.png used on input line 406.
 (pdftex.def)             Requested size: 226.34506pt x 54.70422pt.
 File: linearProbing7.png Graphic file (type png)
  <use linearProbing7.png>
-Package pdftex.def Info: linearProbing7.png used on input line 399.
+Package pdftex.def Info: linearProbing7.png used on input line 406.
 (pdftex.def)             Requested size: 228.85445pt x 50.68924pt.
- [51
+
+[51
 
 ]
-<linearProbing8.png, id=417, 474.77374pt x 100.375pt>
+File: linearProbing6.png Graphic file (type png)
+ <use linearProbing6.png>
+Package pdftex.def Info: linearProbing6.png used on input line 406.
+(pdftex.def)             Requested size: 226.34506pt x 54.70422pt.
+File: linearProbing7.png Graphic file (type png)
+ <use linearProbing7.png>
+Package pdftex.def Info: linearProbing7.png used on input line 406.
+(pdftex.def)             Requested size: 228.85445pt x 50.68924pt.
+ [52
+
+]
+<linearProbing8.png, id=423, 474.77374pt x 100.375pt>
 File: linearProbing8.png Graphic file (type png)
  <use linearProbing8.png>
-Package pdftex.def Info: linearProbing8.png used on input line 415.
+Package pdftex.def Info: linearProbing8.png used on input line 422.
 (pdftex.def)             Requested size: 237.38629pt x 50.18736pt.
 
-[52
+[53
 
  <./linearProbing8.png>]
-<linearProbingClustering.png, id=426, 466.74374pt x 106.3975pt>
+<linearProbingClustering.png, id=432, 466.74374pt x 106.3975pt>
 File: linearProbingClustering.png Graphic file (type png)
 
 <use linearProbingClustering.png>
-Package pdftex.def Info: linearProbingClustering.png used on input line 428.
+Package pdftex.def Info: linearProbingClustering.png used on input line 435.
 (pdftex.def)             Requested size: 233.37129pt x 53.19861pt.
- [53
+ [54
 
- <./linearProbingClustering.png>] [54
+ <./linearProbingClustering.png>] [55
 
 ]
-[55
-
-] [56
+[56
 
 ] [57
 
@@ -1177,68 +1177,85 @@ Package pdftex.def Info: linearProbingClustering.png used on input line 428.
 
 ] [60
 
-] <dhtViz.png, id=480, 695.59875pt x 363.3575pt>
+] [61
+
+] <dhtViz.png, id=487, 695.59875pt x 363.3575pt>
 File: dhtViz.png Graphic file (type png)
 
 <use dhtViz.png>
-Package pdftex.def Info: dhtViz.png used on input line 524.
+Package pdftex.def Info: dhtViz.png used on input line 537.
 (pdftex.def)             Requested size: 278.23457pt x 145.34041pt.
- [61
-
- <./dhtViz.png>]
-<dhtPut.png, id=490, 668.4975pt x 355.3275pt>
-File: dhtPut.png Graphic file (type png)
- <use dhtPut.png>
-Package pdftex.def Info: dhtPut.png used on input line 531.
-(pdftex.def)             Requested size: 267.39426pt x 142.12846pt.
  [62
 
- <./dhtPut.png>] <dhtGet.png, id=499, 671.50874pt x 346.29375pt>
-File: dhtGet.png Graphic file (type png)
- <use dhtGet.png>
-Package pdftex.def Info: dhtGet.png used on input line 538.
-(pdftex.def)             Requested size: 268.59874pt x 138.51503pt.
+ <./dhtViz.png>]
+<dhtPut.png, id=496, 668.4975pt x 355.3275pt>
+File: dhtPut.png Graphic file (type png)
+ <use dhtPut.png>
+Package pdftex.def Info: dhtPut.png used on input line 544.
+(pdftex.def)             Requested size: 267.39426pt x 142.12846pt.
  [63
 
- <./dhtGet.png>] <chordRing.png, id=508, 676.5275pt x 415.5525pt>
+ <./dhtPut.png>] <dhtGet.png, id=505, 671.50874pt x 346.29375pt>
+File: dhtGet.png Graphic file (type png)
+ <use dhtGet.png>
+Package pdftex.def Info: dhtGet.png used on input line 551.
+(pdftex.def)             Requested size: 268.59874pt x 138.51503pt.
+ [64
+
+ <./dhtGet.png>] <chordRing.png, id=514, 676.5275pt x 415.5525pt>
 File: chordRing.png Graphic file (type png)
  <use chordRing.png>
-Package pdftex.def Info: chordRing.png used on input line 547.
+Package pdftex.def Info: chordRing.png used on input line 560.
 (pdftex.def)             Requested size: 270.6062pt x 166.21805pt.
 
-[64
+[65
 
- <./chordRing.png>] [65
+ <./chordRing.png>] [66
 
-] [66
+] [67
 
-]
-<bloomFilterGoogleChrome.png, id=529, 650.43pt x 176.66pt>
-File: bloomFilterGoogleChrome.png Graphic file (type png)
-
-<use bloomFilterGoogleChrome.png>
-Package pdftex.def Info: bloomFilterGoogleChrome.png used on input line 568.
-(pdftex.def)             Requested size: 325.2142pt x 88.32977pt.
-
-Overfull \hbox (17.92433pt too wide) in paragraph at lines 568--568
- [] 
- []
-
-[67
-
- <./bloomFilterGoogleChrome.png>] [68
+] [68
 
 ] [69
 
-] [70
+]
+<bloomFilterGoogleChrome.png, id=549, 650.43pt x 176.66pt>
+File: bloomFilterGoogleChrome.png Graphic file (type png)
 
-] [71
+<use bloomFilterGoogleChrome.png>
+Package pdftex.def Info: bloomFilterGoogleChrome.png used on input line 622.
+(pdftex.def)             Requested size: 325.2142pt x 88.32977pt.
 
-] [72
+Overfull \hbox (17.92433pt too wide) in paragraph at lines 622--622
+ [] 
+ []
 
-] [73
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 622
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 622.
 
-] [74
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbackslash' on input line 622.
+
+[70
+
+ <./bloomFilterGoogleChrome.png>] [71
+
+]
+<bloomFilterEg.png, id=562, 901.3675pt x 301.125pt>
+File: bloomFilterEg.png Graphic file (type png)
+ <use bloomFilterEg.png>
+Package pdftex.def Info: bloomFilterEg.png used on input line 639.
+(pdftex.def)             Requested size: 324.49205pt x 108.4049pt.
+
+Overfull \hbox (17.20218pt too wide) in paragraph at lines 639--639
+ [] 
+ []
+
+[72
+
+ <./bloomFilterEg.png>] [73
 
 ]
 \tf@nav=\write6
@@ -1250,27 +1267,29 @@ Overfull \hbox (17.92433pt too wide) in paragraph at lines 568--568
 \tf@snm=\write8
 \openout8 = `8_Hashtables.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 622.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 622.
-
-(./8_Hashtables.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 622.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 622.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 658.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 658.
+ (./8_Hashtables.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 658.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 658.
 Package rerunfilecheck Info: File `8_Hashtables.out' has not changed.
-(rerunfilecheck)             Checksum: A53896D5157051A5879D8AF9CDD31569;324.
+(rerunfilecheck)             Checksum: 401823B298E3AEEB5EAA782B6243B8A1;324.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 622.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 658.
  ) 
 Here is how much of TeX's memory you used:
- 16103 strings out of 494985
- 297928 string characters out of 6180356
- 366453 words of memory out of 5000000
- 18751 multiletter control sequences out of 15000+600000
- 22651 words of font info for 85 fonts, out of 8000000 for 9000
+ 16126 strings out of 494985
+ 298220 string characters out of 6180356
+ 366454 words of memory out of 5000000
+ 18773 multiletter control sequences out of 15000+600000
+ 22945 words of font info for 86 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  49i,16n,57p,422b,682s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
@@ -1287,10 +1306,10 @@ s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on 8_Hashtables.pdf (74 pages, 540784 bytes).
+Output written on 8_Hashtables.pdf (73 pages, 575481 bytes).
 PDF statistics:
- 666 PDF objects out of 1000 (max. 8388607)
- 543 compressed objects within 6 object streams
- 156 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 662 PDF objects out of 1000 (max. 8388607)
+ 539 compressed objects within 6 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
