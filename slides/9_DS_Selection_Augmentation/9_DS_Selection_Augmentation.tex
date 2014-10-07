@@ -1,0 +1,150 @@
+%GiG
+\documentclass{beamer} 
+\usetheme{Copenhagen}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{hyperref}
+
+
+\definecolor{azure}{rgb}{0.0, 0.5, 1.0}
+%\newcommand{\tblue}[1]{\textcolor{blue}{#1}}
+\newcommand{\tblue}[1]{{\Large {\textcolor{azure}{#1}}}}
+\newcommand{\thblue}[1]{{\Huge {\textcolor{azure}{#1}}}}
+\newcommand{\hred}[1]{{\textcolor{red}{#1}}}
+\newcommand{\furl}[1]{{\footnote{\url{#1}}}}
+
+\title[Saravanan Thirumuruganathan] 
+{Lecture 9: Data Structures - Selection and Augmentation}
+
+\author[CSE 5311] 
+{Instructor: Saravanan Thirumuruganathan}
+
+\date[] 
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%\begin{frame}{Outline}
+%  \tableofcontents
+%  % You might wish to add the option [pausesections]
+%\end{frame}
+
+\section{Outline}
+
+\begin{frame}
+\frametitle {Outline}
+\begin{enumerate}
+\item Data Structure: Tradeoffs 
+\item Data Structure Augmentation
+\item Data Structure Selection 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{In-Class Quizzes}
+\begin{itemize}
+\item {\Large {\bf URL:}} {\LARGE \bf \url{http://m.socrative.com/}} 
+\item {\Large {\bf Room Name:} {\LARGE \bf 4f2bb99e}}
+\end{itemize}
+\end{frame}
+
+\section{Data Structures: Tradeoffs}
+
+\begin{frame}{ADTs and Data Structure}
+    \begin{center}
+    \begin{table}[h]
+        \begin{tabular}{|l|l|l|}
+            \hline
+            {\bf ADT}            & {\bf Operations}                       & {\bf Data Structures} \\ \hline
+            Dynamic Set    & Insert, Search, Delete, Min, Max & BST, RBT etc    \\ \hline
+            Priority Queue & Insert, FindMin, DeleteMin       & Binary Heap     \\ \hline
+            Disjoint Set   & MakeSet, Union, Find             & Union-Find      \\ \hline
+            Dictionary     & Insert, Delete, Search           & DAT, Hash Tables \\ \hline               
+        \end{tabular}
+    \end{table}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Data Structure: Tradeoffs}
+    \begin{center}
+    \begin{table}[h]
+        \begin{tabular}{|l|l|l|}
+            \hline
+            {\bf Data Structure}            & {\bf Constraint}                       & {\bf Tradeoff} \\ \hline
+            BST, RBT, Heap etc & $O(n)$ space & Time    \\ \hline
+            DAT, Hash Tables & $O(1)$ time & Space \\ \hline
+            Bloom filter & Space and $O(1)$ time & Correctness      \\ \hline
+        \end{tabular}
+    \end{table}
+    \end{center}
+\end{frame}
+
+\section{Data Structure Augmentation}
+
+\begin{frame}{Data Structure in Practice}
+    \begin{itemize}
+        \item Solve the problem with a text-book data structure
+        \item Solve the problem with some advanced data structure  
+        \item Design a brand new data structure
+        \item Augment a data structure 
+        \begin{itemize}
+            \item add new information and operations to existing DS
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Data Structure Augmentation}
+
+    {\bf Steps for Augmentation:}
+    \begin{itemize}
+        \item What is the underlying DS?
+        \item What is the additional information to store?
+        \item How does additional information affect existing operations?
+        \item How to maintain additional information?
+        \item What additional or extended operations can be supported?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Typical Augmentations}
+    \begin{itemize}
+        \item Sum, Min, Max
+        \item Works very well when augmented data is orthogonal to original DS
+        \item Simplifying computations - store partial computations
+    \end{itemize}
+\end{frame}
+
+%\begin{frame}{}
+%    \begin{itemize}
+%        \item GiG
+%    \end{itemize}
+%\end{frame}
+
+\section{Data Structure Selection}
+
+%\begin{frame}{}
+%    \begin{itemize}
+%        \item GiG
+%    \end{itemize}
+%\end{frame}
+
+
+
+\section{Summary}
+
+\begin{frame}{Summary}
+
+\tblue{Major Concepts:}
+\begin{itemize}
+\item ADTs and Data Structures
+\item Tradeoffs in Data Structure Selection
+\item Data Structure Augmentation
+\end{itemize}
+\end{frame}
+
+
+\end{document}
+

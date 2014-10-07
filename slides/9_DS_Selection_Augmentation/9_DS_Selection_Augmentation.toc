@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Outline}{2}{0}{1}
+\beamer@sectionintoc {2}{Data Structures: Tradeoffs}{4}{0}{2}
+\beamer@sectionintoc {3}{Data Structure Augmentation}{6}{0}{3}
+\beamer@sectionintoc {4}{Data Structure Selection}{9}{0}{4}
+\beamer@sectionintoc {5}{Summary}{9}{0}{5}

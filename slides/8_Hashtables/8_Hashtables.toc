@@ -1,8 +1,8 @@
 \beamer@endinputifotherversion {3.24pt}
 \beamer@sectionintoc {1}{Outline}{2}{0}{1}
 \beamer@sectionintoc {2}{Dictionaries}{4}{0}{2}
-\beamer@sectionintoc {3}{Hash Tables}{20}{0}{3}
-\beamer@subsectionintoc {3}{1}{Collisions}{34}{0}{3}
-\beamer@sectionintoc {4}{DHTs}{59}{0}{4}
-\beamer@sectionintoc {5}{Bloom Filters}{67}{0}{5}
-\beamer@sectionintoc {6}{Summary}{73}{0}{6}
+\beamer@sectionintoc {3}{Hash Tables}{16}{0}{3}
+\beamer@subsectionintoc {3}{1}{Collisions}{24}{0}{3}
+\beamer@sectionintoc {4}{DHTs}{49}{0}{4}
+\beamer@sectionintoc {5}{Bloom Filters}{57}{0}{5}
+\beamer@sectionintoc {6}{Summary}{63}{0}{6}
