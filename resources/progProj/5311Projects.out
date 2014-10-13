@@ -1,0 +1,11 @@
+\BOOKMARK [1][-]{section.1}{Order Statistics and Sorting}{}% 1
+\BOOKMARK [1][-]{section.2}{Large Number and Matrix Multiplication}{}% 2
+\BOOKMARK [1][-]{section.3}{Shortest Path Algorithms}{}% 3
+\BOOKMARK [1][-]{section.4}{Data Structures for Dynamic Set ADT}{}% 4
+\BOOKMARK [1][-]{section.5}{Task Scheduler using Red-Black Trees}{}% 5
+\BOOKMARK [1][-]{section.6}{MST and TSP for Metric Graphs with MST Heuristic}{}% 6
+\BOOKMARK [1][-]{section.7}{Network Flow: Resource Allocation and Project Scheduling}{}% 7
+\BOOKMARK [2][-]{subsection.7.1}{Simple Resource Allocation via Maximum Bipartite Matching}{section.7}% 8
+\BOOKMARK [2][-]{subsection.7.2}{Resource Allocation with Constraints}{section.7}% 9
+\BOOKMARK [2][-]{subsection.7.3}{Task Scheduling with Profit Constraints}{section.7}% 10
+\BOOKMARK [1][-]{section.8}{DeDuplication and Music Identification using Hashing Functions}{}% 11
